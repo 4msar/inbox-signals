@@ -8,14 +8,14 @@ Everything in this repository is published at **https://pockets.msar.me/signals*
 
 | Week ending | Page |
 | --- | --- |
-| 12 Oct 2026 | [Inbox-Signal-2026-10-12.html](https://pockets.msar.me/signals/Inbox-Signal-2026-10-12.html) |
-| 5 Oct 2026 | [Inbox-Signal-2026-10-05.html](https://pockets.msar.me/signals/Inbox-Signal-2026-10-05.html) |
-| 28 Sep 2026 | [Inbox-Signal-2026-09-28.html](https://pockets.msar.me/signals/Inbox-Signal-2026-09-28.html) |
-| 21 Sep 2026 | [Inbox-Signal-2026-09-21.html](https://pockets.msar.me/signals/Inbox-Signal-2026-09-21.html) |
-| 14 Sep 2026 | [Inbox-Signal-2026-09-14.html](https://pockets.msar.me/signals/Inbox-Signal-2026-09-14.html) |
-| 7 Sep 2026 | [Inbox-Signal-2026-09-07.html](https://pockets.msar.me/signals/Inbox-Signal-2026-09-07.html) |
-| 31 Aug 2026 | [Inbox-Signal-2026-08-31.html](https://pockets.msar.me/signals/Inbox-Signal-2026-08-31.html) |
-| 26 Aug 2026 | [Inbox-Signal-2026-08-26.html](https://pockets.msar.me/signals/Inbox-Signal-2026-08-26.html) |
+| 12 Oct 2026 | [Inbox-Signal-2026-10-12.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-10-12.html) |
+| 5 Oct 2026 | [Inbox-Signal-2026-10-05.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-10-05.html) |
+| 28 Sep 2026 | [Inbox-Signal-2026-09-28.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-09-28.html) |
+| 21 Sep 2026 | [Inbox-Signal-2026-09-21.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-09-21.html) |
+| 14 Sep 2026 | [Inbox-Signal-2026-09-14.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-09-14.html) |
+| 7 Sep 2026 | [Inbox-Signal-2026-09-07.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-09-07.html) |
+| 31 Aug 2026 | [Inbox-Signal-2026-08-31.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-08-31.html) |
+| 26 Aug 2026 | [Inbox-Signal-2026-08-26.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-08-26.html) |
 
 ## RSS feed
 

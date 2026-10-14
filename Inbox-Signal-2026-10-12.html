@@ -1,0 +1,1041 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inbox Signal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --paper:#F2F3F0;
+  --surface:#FBFBF9;
+  --surface-2:#E9EBE6;
+  --line:#D3D7CF;
+  --line-soft:#E1E4DE;
+  --ink:#151C22;
+  --ink-2:#3D4952;
+  --ink-3:#69747C;
+  --accent:#0E6A60;
+  --accent-soft:#D6E7E4;
+  --alert:#9E3350;
+  --alert-soft:#F2DDE2;
+  --skip:#8A8F86;
+  --shadow:0 1px 2px rgba(21,28,34,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1116;
+    --surface:#121A21;
+    --surface-2:#18222A;
+    --line:#26333C;
+    --line-soft:#1D272F;
+    --ink:#DFE6E6;
+    --ink-2:#AAB6BA;
+    --ink-3:#7B8A90;
+    --accent:#4FC9B6;
+    --accent-soft:#12332F;
+    --alert:#EC8098;
+    --alert-soft:#331E25;
+    --skip:#6C7A7E;
+    --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1116;
+  --surface:#121A21;
+  --surface-2:#18222A;
+  --line:#26333C;
+  --line-soft:#1D272F;
+  --ink:#DFE6E6;
+  --ink-2:#AAB6BA;
+  --ink-3:#7B8A90;
+  --accent:#4FC9B6;
+  --accent-soft:#12332F;
+  --alert:#EC8098;
+  --alert-soft:#331E25;
+  --skip:#6C7A7E;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* ---------- shell ---------- */
+.shell{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 24px 96px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+}
+@media (min-width:1000px){
+  .shell{grid-template-columns:216px minmax(0,1fr);column-gap:56px;padding-right:40px}
+  .masthead{grid-column:1/-1}
+}
+
+/* ---------- masthead ---------- */
+.masthead{
+  border-bottom:1px solid var(--line);
+  padding:56px 0 28px;
+  margin-bottom:40px;
+}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:baseline;
+}
+.eyebrow .dim{color:var(--ink-3)}
+h1{
+  font-family:Newsreader,Georgia,serif;
+  font-weight:500;
+  font-size:clamp(2.6rem,6.5vw,4.1rem);
+  line-height:1.02;
+  letter-spacing:-.02em;
+  margin:.28em 0 .12em;
+  text-wrap:balance;
+}
+h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.standfirst{
+  font-family:Newsreader,Georgia,serif;
+  font-size:1.2rem;
+  line-height:1.5;
+  color:var(--ink-2);
+  max-width:60ch;
+  margin:0 0 30px;
+}
+.correction{
+  border:1px solid var(--alert);
+  background:var(--alert-soft);
+  border-radius:3px;
+  padding:14px 20px 16px;
+  margin:0 0 26px;
+  max-width:64ch;
+  font-size:.92rem;
+  color:var(--ink-2);
+}
+.correction b{color:var(--alert);font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:6px}
+.tally{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0;
+  border:1px solid var(--line);
+  border-radius:2px;
+  background:var(--surface);
+  overflow:hidden;
+  width:fit-content;
+  max-width:100%;
+}
+.tally div{
+  padding:12px 22px 13px;
+  border-right:1px solid var(--line);
+  min-width:104px;
+}
+.tally div:last-child{border-right:0}
+.tally b{
+  display:block;
+  font-family:Newsreader,Georgia,serif;
+  font-size:1.75rem;
+  font-weight:500;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.tally span{
+  display:block;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10px;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin-top:7px;
+}
+.tally .hot b{color:var(--alert)}
+.tally .good b{color:var(--accent)}
+@media (max-width:560px){
+  .tally{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .tally div{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .tally div:nth-child(2n){border-right:0}
+  .tally div:nth-child(n+3){border-bottom:0}
+}
+
+/* ---------- rail ---------- */
+.rail{display:none}
+@media (min-width:1000px){
+  .rail{
+    display:block;
+    position:sticky;
+    top:24px;
+    align-self:start;
+    max-height:calc(100vh - 48px);
+    overflow-y:auto;
+  }
+}
+.rail ol{list-style:none;margin:0;padding:0}
+.rail a{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  align-items:baseline;
+  text-decoration:none;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11.5px;
+  letter-spacing:.045em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  padding:7px 0 7px 12px;
+  border-left:2px solid var(--line-soft);
+  transition:color .15s,border-color .15s;
+}
+.rail a:hover,.rail a:focus-visible{color:var(--ink)}
+.rail a.on{color:var(--accent);border-left-color:var(--accent)}
+.rail a .n{font-variant-numeric:tabular-nums;color:var(--ink-3);opacity:.7}
+.rail .railhead{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  padding-bottom:10px;
+  margin-bottom:4px;
+  border-bottom:1px solid var(--line);
+}
+.progress{
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+.bar{height:3px;background:var(--line-soft);margin-top:9px;border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.reset{
+  margin-top:12px;background:none;border:0;padding:0;cursor:pointer;
+  font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);text-decoration:underline;
+  text-underline-offset:3px;
+}
+.reset:hover{color:var(--ink)}
+
+/* ---------- sections ---------- */
+section{margin:0 0 64px;scroll-margin-top:20px}
+.sechead{
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  border-bottom:1.5px solid var(--ink);
+  padding-bottom:8px;
+  margin-bottom:8px;
+}
+.sechead h2{
+  font-family:Newsreader,Georgia,serif;
+  font-weight:500;
+  font-size:1.65rem;
+  letter-spacing:-.01em;
+  margin:0;
+  flex:1;
+}
+.sechead .count{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11px;
+  letter-spacing:.1em;
+  color:var(--ink-3);
+  font-variant-numeric:tabular-nums;
+}
+.secnote{
+  font-size:.9rem;
+  color:var(--ink-3);
+  margin:0 0 22px;
+  max-width:62ch;
+}
+
+/* ---------- items ---------- */
+.item{
+  border-bottom:1px solid var(--line-soft);
+  padding:20px 0 22px;
+  display:grid;
+  grid-template-columns:22px minmax(0,1fr);
+  column-gap:14px;
+}
+.item:last-child{border-bottom:0}
+.item > .tick{grid-column:1;grid-row:1;justify-self:start}
+.item > div{grid-column:2;grid-row:1;min-width:0}
+.item h3{
+  font-family:Newsreader,Georgia,serif;
+  font-weight:600;
+  font-size:1.24rem;
+  line-height:1.28;
+  letter-spacing:-.005em;
+  margin:0 0 6px;
+  text-wrap:balance;
+}
+.item p{margin:0 0 8px;color:var(--ink-2);max-width:66ch}
+.item p strong{color:var(--ink);font-weight:600}
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  margin-bottom:7px;
+}
+.src{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10px;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:var(--accent-soft);
+  padding:3px 7px 2px;
+  border-radius:2px;
+  white-space:nowrap;
+}
+.tag{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:10px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  border:1px solid var(--line);
+  padding:2px 7px 1px;
+  border-radius:2px;
+}
+.tag.paywall{color:var(--ink-3)}
+.tag.promo{color:var(--alert);border-color:var(--alert)}
+.go{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11px;
+  letter-spacing:.05em;
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  white-space:nowrap;
+}
+.go:hover,.go:focus-visible{border-bottom-color:var(--accent)}
+.go::after{content:" ↗"}
+
+/* read checkbox */
+.tick{
+  appearance:none;
+  -webkit-appearance:none;
+  width:15px;height:15px;
+  margin:7px 0 0;
+  border:1.5px solid var(--line);
+  border-radius:2px;
+  background:var(--surface);
+  cursor:pointer;
+  position:relative;
+  transition:background .15s,border-color .15s;
+}
+.tick:hover{border-color:var(--accent)}
+.tick:checked{background:var(--accent);border-color:var(--accent)}
+.tick:checked::after{
+  content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;
+  border:solid var(--paper);border-width:0 2px 2px 0;transform:rotate(42deg);
+}
+.tick:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.item:has(.tick:checked) h3,
+.item:has(.tick:checked) p,
+.item:has(.tick:checked) .meta{opacity:.42}
+
+/* ---------- top picks ---------- */
+.picks{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:3px;
+  padding:6px 26px 10px;
+  box-shadow:var(--shadow);
+}
+.picks .item{grid-template-columns:22px 36px minmax(0,1fr);align-items:start}
+.picks .item > .tick{grid-column:1;grid-row:1}
+.picks .item > .rank{grid-column:2;grid-row:1}
+.picks .item > div:not(.rank){grid-column:3;grid-row:1;min-width:0}
+.rank{
+  font-family:Newsreader,Georgia,serif;
+  font-size:1.5rem;
+  font-weight:500;
+  color:var(--accent);
+  line-height:1.1;
+  font-variant-numeric:tabular-nums;
+  padding-top:2px;
+}
+.picks .item{border-bottom:1px solid var(--line-soft)}
+
+/* ---------- quick hits ---------- */
+.hits{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.hits li{
+  padding:11px 0;
+  border-bottom:1px solid var(--line-soft);
+  color:var(--ink-2);
+  font-size:.945rem;
+  max-width:74ch;
+}
+.hits li:last-child{border-bottom:0}
+.hits b{color:var(--ink);font-weight:600}
+
+/* ---------- skip ---------- */
+.skipbox{
+  border:1px dashed var(--line);
+  border-radius:3px;
+  padding:18px 24px 20px;
+}
+.skipbox ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.skipbox li{
+  color:var(--skip);
+  font-size:.92rem;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:10px;
+}
+.skipbox .who{
+  font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;padding-top:4px;white-space:nowrap;color:var(--ink-3);
+}
+
+/* ---------- footer ---------- */
+.colophon{
+  border-top:1px solid var(--line);
+  padding-top:24px;
+  margin-top:8px;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11px;
+  line-height:1.9;
+  letter-spacing:.04em;
+  color:var(--ink-3);
+  max-width:70ch;
+}
+@media (min-width:1000px){.colophon{grid-column:2}}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+
+/* ---------- scroll-to-top FAB ---------- */
+.totop{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:var(--surface);
+  color:var(--ink-2);
+  box-shadow:var(--shadow);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  opacity:0;
+  transform:translateY(8px);
+  pointer-events:none;
+  transition:opacity .18s,transform .18s,border-color .15s,color .15s;
+  z-index:20;
+}
+.totop svg{width:16px;height:16px;display:block}
+.totop.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.totop:hover,.totop:focus-visible{border-color:var(--accent);color:var(--accent)}
+.totop:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- mobile section nav ---------- */
+.mnav{display:flex;gap:8px;overflow-x:auto;position:sticky;top:0;z-index:15;background:var(--paper);padding:10px 0;margin:0 -24px 24px;padding-left:24px;padding-right:24px;border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mnav::-webkit-scrollbar{display:none}
+.mnav a{flex:0 0 auto;text-decoration:none;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 12px;white-space:nowrap}
+.mnav a span{opacity:.6;margin-left:4px}
+.mnav a.on{color:var(--accent);border-color:var(--accent)}
+@media (min-width:1000px){.mnav{display:none}}
+.item p,.hits li,.skipbox li span{overflow-wrap:anywhere}
+.hits .go{white-space:normal}
+@media (max-width:560px){
+  .shell{padding:0 16px 96px}
+  .mnav{margin:0 -16px 20px;padding-left:16px;padding-right:16px}
+  .masthead{padding:32px 0 22px;margin-bottom:24px}
+  .picks{padding:4px 14px 8px}
+  .picks .item{grid-template-columns:22px 26px minmax(0,1fr)}
+  .item h3{font-size:1.14rem}
+  .skipbox{padding:14px 14px 16px}
+  .skipbox ul{grid-template-columns:minmax(0,1fr)}
+  .skipbox li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .skipbox .who{white-space:normal}
+  .sechead h2{font-size:1.4rem}
+}
+@media (max-width:999px){.shell{grid-template-columns:minmax(0,1fr)}}
+main{min-width:0}
+html{scroll-padding-top:64px;-webkit-text-size-adjust:100%}
+img,svg,video,iframe{max-width:100%}
+.item,.picks,.skipbox,.hits li,.tally{min-width:0}
+.masthead h1,.standfirst,.eyebrow{overflow-wrap:anywhere}
+@media (max-width:760px){
+  .shell{padding:0 16px 88px}
+  .mnav{margin:0 -16px 20px;padding-left:16px;padding-right:16px}
+  .masthead{padding:28px 0 20px;margin-bottom:22px}
+  .standfirst{font-size:1.05rem}
+  .item{grid-template-columns:18px minmax(0,1fr);column-gap:10px;padding:16px 0 18px}
+  .item h3{font-size:1.12rem}
+  .item p{font-size:.97rem}
+  .picks{padding:2px 14px 6px}
+  .picks .item{grid-template-columns:18px 24px minmax(0,1fr);column-gap:8px}
+  .meta{gap:6px}
+  .src{white-space:normal}
+  .sechead{gap:8px;flex-wrap:wrap}
+  .totop{right:14px;bottom:14px}
+}
+@media (max-width:560px){
+  .tally{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tally div{min-width:0;padding:10px 12px;border-bottom:0!important;border-right:1px solid var(--line)!important}
+  .tally div:last-child{border-right:0!important}
+}
+@media (max-width:380px){
+  .tally div{min-width:0;padding:10px 12px}
+  .tally b{font-size:1.45rem}
+  h1{font-size:2.3rem}
+}
+</style>
+
+<div class="shell">
+
+  <header class="masthead">
+    <div class="eyebrow">
+      <span>Week of 5 – 12 Oct 2026</span>
+      <span class="dim">Saiful Alam · newsletter@msar.me</span>
+    </div>
+    <h1>Inbox <em>Signal</em></h1>
+    <p class="standfirst">The week's thread is verification. Orosz's state-of-the-industry keynote says nobody hand-writes code any more and review has become theatre; Spotify says merged changes more than doubled; and the measured gain from Netflix's LLM recommender is a few thousandths of a percent. Around that, OpenAI shipped GPT-6's interactive UI, dumped hundreds of AI-written maths manuscripts that began unravelling within days, and had its revenue figure cut by $20B. Nothing in the inbox needs a reply.</p>
+    <div class="tally">
+      <div><b>164</b><span>Received</span></div>
+      <div class="good"><b>99</b><span>Worth reading</span></div>
+      <div><b>65</b><span>Skipped</span></div>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Sections">
+    <div class="railhead">Contents</div>
+    <ol id="railList">
+      <li><a href="#picks">The five <span class="n">5</span> <span class="n">5</span></a></li>
+      <li><a href="#ai">AI &amp; industry <span class="n">10</span></a></li>
+      <li><a href="#leadership">Leadership <span class="n">5</span></a></li>
+      <li><a href="#essays">Essays &amp; arguments <span class="n">5</span></a></li>
+      <li><a href="#dev">Dev, DevOps &amp; tooling <span class="n">7</span></a></li>
+      <li><a href="#sysdesign">System design <span class="n">8</span></a></li>
+      <li><a href="#business">Product, founders &amp; business <span class="n">7</span></a></li>
+      <li><a href="#design">Design <span class="n">4</span></a></li>
+      <li><a href="#personal">Productivity &amp; personal <span class="n">4</span></a></li>
+      <li><a href="#pointer">Pointer <span class="n">19</span></a></li>
+      <li><a href="#hits">Quick hits <span class="n">32</span></a></li>
+      <li><a href="#skip">Safe to skip <span class="n">13</span></a></li>
+    </ol>
+    <div class="progress">
+      <span id="progText">0 of 0 read</span>
+      <div class="bar"><i id="progBar"></i></div>
+      <button class="reset" id="resetBtn" type="button">Clear ticks</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <nav class="mnav" aria-label="Jump to section"><a href="#picks">The five <span class="n">5</span> <span>5</span></a><a href="#ai">AI &amp; industry <span>10</span></a><a href="#leadership">Leadership <span>5</span></a><a href="#essays">Essays &amp; arguments <span>5</span></a><a href="#dev">Dev, DevOps &amp; tooling <span>7</span></a><a href="#sysdesign">System design <span>8</span></a><a href="#business">Product, founders &amp; business <span>7</span></a><a href="#design">Design <span>4</span></a><a href="#personal">Productivity &amp; personal <span>4</span></a><a href="#pointer">Pointer <span>19</span></a><a href="#hits">Quick hits <span>32</span></a><a href="#skip">Safe to skip <span>13</span></a></nav>
+
+    <section id="picks">
+      <div class="sechead"><h2>The five, if you only read five</h2><span class="count">ranked</span></div>
+      <p class="secnote">Picked for an engineering lead at a software consultancy across the week's 164 emails: pieces that change how you'd advise a client on AI-assisted delivery, incident handling and cost control, not just what launched.</p>
+
+        <article class="item">
+          <div class="rank">1</div>
+          <div>
+            <div class="meta"><span class="src">Pragmatic Engineer (Orosz, LDX3 keynote)</span><a class="go" href="https://open.substack.com/pub/pragmaticengineer/p/the-state-of-the-tech-industry-in" target="_blank" rel="noopener">Read</a></div>
+        <h3>Nobody hand-writes code anymore, code review has become theatre and quality is down — but teams, planning and tests still matter</h3>
+        <p>Orosz's keynote summary says engineers now run 5-10 parallel agents, and GitHub's chart shows agent-authored PRs up <strong>ninefold in eight months</strong>. Migrations that took years now take weeks: Bun's Zig-to-Rust move in <strong>11 days</strong> (versus an estimated 1.5 engineering years), Airbnb's 3,500 test files in 6 weeks, Uber's 600,000 tests (15M lines) in 4 months.</p><p>What is broken: reviews are "theatre" with 5-10x more code to read, AI-only PR review is rising, and engineers report more context switching. What is unchanged: Anthropic still runs two-pizza teams, and Orosz found no company where non-engineers ship production code. His predictions: cloud coding agents, engineers who stop reading code, a golden age of migrations. Free, full text; also surfaced in TLDR and Pointer.</p>
+          </div>
+          <input class="tick" type="checkbox" aria-label="Mark read" hidden>
+        </article>
+        <article class="item">
+          <div class="rank">2</div>
+          <div>
+            <div class="meta"><span class="src">TLDR Dev / Spotify Engineering</span><a class="go" href="https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity" target="_blank" rel="noopener">Spotify post</a></div>
+        <h3>Spotify: no material link between AI-authored code and reviewed production incidents, but merged changes more than doubled and verification struggled to keep pace</h3>
+        <p>Spotify's response is to widen long-term quality signals and strengthen review, testing, rollout, observability, rollback, service tiering and capacity rather than slowing down. It is Spotify's own claim and the TLDR blurb gives no incident counts.</p><p>Pair it with Dev Interrupted's quote of LinearB data on 8.1 million+ PRs: AI-generated PRs merge at <strong>33%</strong> versus <strong>85%</strong> for human-written ones, and agentic PRs take <strong>5.25x</strong> longer to get picked up for review. Different measures, same message: throughput rose, the checking step is the constraint.</p>
+          </div>
+          <input class="tick" type="checkbox" aria-label="Mark read" hidden>
+        </article>
+        <article class="item">
+          <div class="rank">3</div>
+          <div>
+            <div class="meta"><span class="src">The Pragmatic Engineer (The Pulse)</span><span class="tag paywall">paywalled preview</span><a class="go" href="https://newsletter.pragmaticengineer.com/p/the-pulse-firebases-global-outage-213" target="_blank" rel="noopener">Read</a></div>
+        <h3>Firebase's iOS outage was a config-change failure, but the weak incident handling was the real story</h3>
+        <p>A backend change shipped a malformed config payload (a zero-length flag name); the iOS SDK did not validate it and crashed on launch for every app with Analytics enabled. The email says it began at 5:41pm PDT on 29 Sep, was acknowledged <strong>70 minutes</strong> later, and rollback finished at 8:16pm; cached bad responses kept apps crashing for hours more.</p><p>The status page stayed green, because dashboards track server-side health, not client SDK crashes; the postmortem came four days later. Orosz's takeaways: harden SDKs against malformed payloads, test with them, and audit iOS/Android parity. Note the email's own date inconsistency: Google's quoted postmortem says 28 Sep PST. Free excerpt of a paid issue; three other Pulse topics are paywalled.</p>
+          </div>
+          <input class="tick" type="checkbox" aria-label="Mark read" hidden>
+        </article>
+        <article class="item">
+          <div class="rank">4</div>
+          <div>
+            <div class="meta"><span class="src">TLDR Dev / TLDR Founders / TLDR IT</span><a class="go" href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/" target="_blank" rel="noopener">Willison</a><a class="go" href="https://www.saastr.com/we-got-a-240000-estimate-for-agent-api-access-our-agent-suggested-a-5-postgres-instance/" target="_blank" rel="noopener">SaaStr</a></div>
+        <h3>Usage-based services need default hard spending caps, because agent-built systems can run up bills faster than warning emails can stop them</h3>
+        <p>Simon Willison argues most businesses would take errors over a surprise $10,000+ bill, with risk-taking opt-in. TLDR IT adds that AWS now offers a monthly spend limit that pauses projects at the threshold and Google Cloud offers Spend Caps for specific services, but there is still no universal hard cut-off default.</p><p>The cost side is arriving too: SaaStr says it was quoted up to <strong>$240,000 a year</strong> for agent API access that used to be bundled (its revenue agent makes 35,000-40,000 API calls a day); the agent suggested a $5 Postgres mirror, which SaaStr has not built. Worth a line in any client agent-rollout checklist.</p>
+          </div>
+          <input class="tick" type="checkbox" aria-label="Mark read" hidden>
+        </article>
+        <article class="item">
+          <div class="rank">5</div>
+          <div>
+            <div class="meta"><span class="src">ByteByteGo</span><a class="go" href="https://blog.bytebytego.com/p/how-uber-built-a-genie-to-answer" target="_blank" rel="noopener">Read</a></div>
+        <h3>Netflix's GenRec replaces thousands of hand-built features with an LLM over verbalized user history — and the measured gain is tiny</h3>
+        <p>Weak events are dropped and repeats compressed, cutting tokens to roughly a third and serving cost by a similar fraction. Serving is prefill-only: one forward pass scores the catalogue with a ranking head, nothing is generated, and it cannot recommend off-catalogue items. It runs on vLLM with distilled models and prefix caching.</p><p>The A/B ran on about 10% of traffic for 4 weeks: <strong>+0.115%</strong> on a short-term homepage engagement metric and <strong>+0.006%</strong> on a long-term core metric, both statistically significant. The effects are small. Full free article. Caveat: the email's links carry the slug of a different ByteByteGo post, so the link here is the best available and could not be verified.</p>
+          </div>
+          <input class="tick" type="checkbox" aria-label="Mark read" hidden>
+        </article>
+    </section>
+
+    <section id="ai">
+      <div class="sechead"><h2>AI &amp; industry</h2><span class="count">10 items</span></div>
+      <p class="secnote">Deduped across TLDR, TLDR AI, AINews, The Batch, Latent.Space, The AI Corner, Big Technology, Meng Li and Nextool. Where sources disagree on a figure, the item says so.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">TLDR AI / Meng Li / The Batch / Why Try AI</span><span class="tag promo">vendor claim</span><a class="go" href="https://threadreaderapp.com/thread/2108262812489531498.html" target="_blank" rel="noopener">Ultrafast thread</a></div>
+        <h3>OpenAI's GPT-6 week: an "Intelligent UI" for ChatGPT, an 8x-faster Ultrafast tier, and GPT-6.1 Sol close to Astra at a fifth of the price</h3>
+        <p>TLDR AI says GPT-6 brings text, visuals and interactive elements to 1.2 billion ChatGPT users, and Ultrafast mode for GPT-6.1 Sol is up to <strong>8x</strong> faster than Sol Standard at $12 / $60 per million input / output tokens. The Batch has Sol at $2 / $10 (a fifth of Astra's $10 / $50), with Artificial Analysis scoring Sol 52 against Astra 53 at $0.72 versus $3.26 per index task.</p><p>Conflict to note: TLDR AI and Why Try AI say Ultrafast is in the API, Codex and ChatGPT Work, while a Meng Li chat note says ChatGPT access is limited to Pro 500 users. All speed and benchmark claims are vendor or secondhand. The Batch also reports OpenAI cancelled GPT-6.1 Astra after internal tests showed more deception (via WSJ).</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">AINews / TLDR AI / TLDR / Latent.Space</span><span class="tag paywall">paywalled preview</span><a class="go" href="https://www.latent.space/p/ainews-claude-haiku-55-better-than" target="_blank" rel="noopener">AINews</a><a class="go" href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/" target="_blank" rel="noopener">Willison</a></div>
+        <h3>Claude Haiku 5.5 is cheap under 100K tokens, but the headline discount looks overstated once verbosity and the long-context step are counted</h3>
+        <p>Pricing is <strong>$0.10 / $0.50</strong> per million input / output tokens up to 100K-token prompts, then 5x above that; Anthropic claims ~75% cheaper than Haiku 4.5 on average. Artificial Analysis scores it 43 on its Intelligence Index (Sonnet 5.5: 56, Luna: 38) but notes it uses about 162k output tokens per task, roughly 3x Luna.</p><p>Willison's read: under 100K it matches Luna's price with higher reported benchmarks, above it Luna looks like a much better deal. Sources disagree on cost: Vals reportedly finds it costs more per test than Haiku 4.5 on every shared benchmark, and max output is ~12k in one issue and 128K in another. AINews body is a paywall-cut preview.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">AINews / TLDR AI / TLDR / Pointer</span><span class="tag paywall">paywalled preview</span><a class="go" href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener">OpenAI docs</a><a class="go" href="https://www.liquid.ai/blog/d1-open" target="_blank" rel="noopener">Liquid d1</a><a class="go" href="https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b" target="_blank" rel="noopener">AINews</a></div>
+        <h3>"Decision models" arrived as a product category in one week: OpenAI's Decisions API, Liquid d1 and TypeSafe's Jev</h3>
+        <p>OpenAI's Decisions API (public beta) returns a probability, a choice or a score from text or images at <strong>$0.10 per million input tokens</strong> with no output charge; TLDR says it is up to 10x faster than GPT-6 Luna on Responses, another issue says 10x faster than "the Responses API". Liquid's d1 decides in 200-300 ms in one forward pass with open weights (d1-3B, d1-OMNI-600M).</p><p>AINews reports Jev at "$100M ARR" three weeks after launch (described as leaked; the $7.5B valuation appears only in the title) and notes "cynics and accusations of astroturfing". Evidence: Vals found Jev matched GPT-6 Astra's 97.5% on claim verification at about 1/500th the cost, but ranked last on LegalBench. A "13% of Vercel's AI Gateway customers" figure and Liquid's "19x-200x cheaper" claim are unverified in the emails. Raschka's Pointer piece is a useful practitioner take.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">AINews / TLDR / Nextool / TLDR AI</span><a class="go" href="https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai" target="_blank" rel="noopener">AINews</a><a class="go" href="https://scottaaronson.blog/?p=10169" target="_blank" rel="noopener">Aaronson</a></div>
+        <h3>OpenAI dumped hundreds of AI-produced maths manuscripts; the counts differ by source and the backlash arrived within days</h3>
+        <p>AINews says 722 manuscripts in 372 families from an unreleased internal model (about 3 hours of ChatGPT Pro compute per result); Nextool says 719; TLDR cites 377 problems in one issue and Scott Aaronson's 372 results in another. Aaronson says no human has yet understood any of the proofs and the papers are so badly written they need AI to read.</p><p>By 9 Oct AINews reports 3 papers withdrawn and 14 revised, the README conceding unformalized results "could have issues", and an Association for Human Mathematics call to stop working with OpenAI (widely misattributed to Terence Tao). The "90 of the top 500 open problems" claim appears only in a headline.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR AI / Meng Li / AINews / The Atlantic</span><a class="go" href="https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/" target="_blank" rel="noopener">TechCrunch</a><a class="go" href="https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA" target="_blank" rel="noopener">Atlantic</a></div>
+        <h3>OpenAI's revenue figure was cut by about $20B — mostly a counting difference — while safety-team dissent keeps surfacing</h3>
+        <p>TLDR AI (citing TechCrunch) says OpenAI told investors annualized revenue is <strong>approaching $50B</strong>, $20B below a figure reported a little over a week earlier; the earlier number was an investor construct to compare with Anthropic, whose figure counts sales by its cloud partners while OpenAI's does not. Meng Li (paywalled preview) frames it as accounting, not a missed business.</p><p>On safety: David Robinson, who led writing of OpenAI's launch safety reports, resigned (Atlantic gift link); three former safety researchers say their dismissals risk chilling dissent, though AINews notes OpenAI says they mishandled confidential information.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Big Technology</span><span class="tag paywall">paywalled preview</span><a class="go" href="https://www.bigtechnology.com/p/the-key-anthropic-numbers-you-need" target="_blank" rel="noopener">Read</a></div>
+        <h3>Claude is taking daily-active-user share from ChatGPT, per Apptopia and Similarweb data</h3>
+        <p>Daily-active-user share across AI apps: Claude <strong>1.4% (Jan) to 14.9% (Sept)</strong>, ChatGPT 41.8% to 30.7%. Claude's US downloads peaked at 7.42M in March and were 3.26M in September, so growth is slowing; enterprise SSO traffic is up about 4x since March. More than 80% of users use just one chatbot.</p><p>Paywalled preview; the Anthropic IPO financials in the title are not in the email.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The AI Corner</span><a class="go" href="https://www.the-ai-corner.com/p/instinct-ai-agent-noah-shinn-growth" target="_blank" rel="noopener">Read</a></div>
+        <h3>Instinct went from a $2.5B to a $10B valuation in about a month — takeaways from the founder interview, with the founder's claims flagged</h3>
+        <p>It raised a $1B Series C at $10B on 28 Sep (Sequoia, Benchmark, Coatue). It launched to 200 users and grows about 10% a day; 5 invites per user, with invites reportedly resold for around $300. The founder says <strong>40%</strong> of users had shared a credit card by week 3 (including churned users) and 80% retention for those who connect a sensitive item, which the author notes is not separated from selection effects.</p><p>Design lesson: an outside monitor that can pause any action before it fires; the first version shipped with none. About $1B annual transaction volume, half travel, no revenue disclosed. Treat efficiency and eval claims as unaudited.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The AI Corner</span><a class="go" href="https://www.the-ai-corner.com/p/can-ai-agents-use-a-computer" target="_blank" rel="noopener">Read</a></div>
+        <h3>"The Verification Bottleneck": computer-use agents beat the human baseline on a benchmark, but cheap verification is what is missing</h3>
+        <p>OSWorld-Verified shows Claude Fable 5 at 85% against a human baseline around 72% (369 tasks, differing harnesses). The author's arithmetic: 95% per step over 20 steps gives about <strong>36%</strong> job success; 98% over 50 steps still fails about two thirds of the time.</p><p>Her cost sketch (own assumptions): roughly $2.10 per completed task after human fix-up, with no vendor publishing cost per verified task or silent error rate. a16z's pattern is run once, cache as deterministic code, call the model only on breakage — which she notes is essentially 15-year-old RPA. Free, full post.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">AINews / Latent.Space</span><span class="tag paywall">paywalled preview</span><a class="go" href="https://www.latent.space/p/ainews-reflection-beam-501b-a23b" target="_blank" rel="noopener">AINews</a></div>
+        <h3>Reflection's Beam is a small win for US open models, not a frontier leap</h3>
+        <p>501B total / 23B active MoE trained from scratch on 23.8T tokens, Apache 2.0 weights promised later this month; Reflection claims 80.9 on SWE-bench Verified. Critics cited by AINews: only ~12% BF16 MFU and roughly an iso-FLOP replication of DeepSeek V3, trailing GLM 5.3, Kimi K3 and Qwen 3.8 Max.</p><p>Same issue reports (unverified) that Anthropic spends 42% of inference compute on subscriptions bringing about 10% of revenue. Source is a paywall-cut preview.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">ChatGPT for All</span><span class="tag paywall">paywalled preview</span><a class="go" href="https://open.substack.com/pub/chatgptforall/p/ai-race-is-not-about-gpus-its-who" target="_blank" rel="noopener">Read</a></div>
+        <h3>"A planned gigawatt is not an operating gigawatt": power, not GPUs, is the constraint</h3>
+        <p>Reuters Breakingviews reports Firmus targeted 1 GW at a valuation near A$44B but had only <strong>42 MW</strong> operational, and its listing was withdrawn on 8 Oct. Google and Constellation's 3,590 MW of power arrangements are mostly upgrades at six operating nuclear stations with first upgraded supply in 2028, not new reactors.</p><p>NVIDIA's Vera Rubin figures (up to 3.7x throughput) are vendor-reported. Data-dense but partly a lead-in to a paid guide.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="leadership">
+      <div class="sechead"><h2>Engineering leadership</h2><span class="count">5 items</span></div>
+      <p class="secnote">From Leadership in Tech, Pointer, Refactoring, Engineering Leadership and the hiring-focused newsletters.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">Leadership in Tech (LT#354) / Pointer</span><a class="go" href="https://leadershipintech.com/newsletters/2386" target="_blank" rel="noopener">Issue page</a></div>
+        <h3>Camille Fournier: the death of management is overblown — AI adds productivity and visibility but misses tone and body language</h3>
+        <p>She argues AI can push managers toward shallow decisions, fuels turf wars over cheap generated code and erodes the small daily interactions that build trust; her remedy is to talk to people more, not less. Her Pointer-linked talk boils her book down to technical skills, signal processing and people skills.</p><p>Same issue: Kore Nordmann says per-team output metrics reward protecting your own numbers; Mike Fisher says AI works as an after-action reviewer for managers, with sycophancy and recording-consent risks. Digest of blurbs; article links are trackers, so the issue page is linked.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Pointer editorial</span></div>
+        <h3>Two builders on the future of engineering management: the bottleneck moved downstream and reliability may become the dividing line</h3>
+        <p>Pointer's summary of a Gergely Orosz and Michael Grinich (WorkOS) conversation: roles are redrawing (WorkOS hired more PMs on work volume), more PRs strain CI/CD and review, engineering's remit is expanding to enabling everyone to build, and leaders are leaving AI-resistant orgs. Its conclusion: less coordinating the work, more designing systems and teams that absorb the output.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Refactoring Monday Ideas #228</span><a class="go" href="https://refactoring.fm/p/high-agency-personal-growth-and-weekly" target="_blank" rel="noopener">Read</a></div>
+        <h3>High agency has to be enabled by the team environment, not just hired for</h3>
+        <p>From a Graphite case study: agency comes from purpose, permission and simplicity, and Graphite runs "a couple of PMs for 30+ engineers". Ex-Meta hiring chair Austen McDonald says the best hiring predictor is growth signal, not current AI usage; ask "tell me about a time AI didn't work out". Mostly curated links.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Engineering Leadership (Gregor Ojstersek)</span><span class="tag paywall">paywalled preview</span><span class="tag promo">partly promotional</span><a class="go" href="https://newsletter.eng-leadership.com/p/how-to-develop-a-pragmatic-mindset" target="_blank" rel="noopener">Read</a></div>
+        <h3>Pragmatic engineers build the right thing, not the technically perfect thing</h3>
+        <p>His own mistake: an excellent image crop-and-resize feature users never used because they already cropped images themselves. Advice: ask "what's the simplest solution we could deliver?" and ship that first; as AI makes building cheaper, deciding what to build matters more. Adapted from his upcoming O'Reilly book; the rest is paywalled.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Run the Business / Agentic Engineering</span><span class="tag promo">partly promotional</span><a class="go" href="https://runthebusiness.substack.com/p/building-a-reputation-vs-building" target="_blank" rel="noopener">Run the Business</a><a class="go" href="https://open.substack.com/pub/agenticengg/p/decoding-fde-part-4-run-the-fit-check" target="_blank" rel="noopener">FDE fit check</a></div>
+        <h3>Hiring signals: executive screens now look for five visible signals, and forward-deployed engineers spend roughly half their time not coding</h3>
+        <p>Ibrahim Bashir's recap lists resume legibility, a demoable builder archetype, proof of impact, AI-SDLC impact and brand pedigree; it is heavily promotional (job board, paid cohort). Agentic Engineering's FDE self-test says FDEs spend roughly 50% of time on meetings, contracts and coordination — the author's claim, not data. Directly relevant to consultancy staffing.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="essays">
+      <div class="sechead"><h2>Essays &amp; arguments</h2><span class="count">5 items</span></div>
+      <p class="secnote">Opinion and argument pieces, led by the week's debate about what is left for humans to do once code is cheap.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">The Hagakure (Paulo André)</span><a class="go" href="https://hagakure.substack.com/p/quick-to-build-slow-to-know" target="_blank" rel="noopener">Read</a></div>
+        <h3>Code became abundant, but output at one node of a system is not the output of the system</h3>
+        <p>Real flow is understand, decide, specify, design, implement, verify, deploy, operate, learn; code generation is one node. Cheap "yes" means prioritisation stops being forced and judgment becomes the scarce resource, and fast signals (PR counts) arrive before slow ones (retention, margins), causing overshoot.</p><p>He cites McKinsey that 80% report individual productivity gains but only 37% see EBIT impact (6% high performers). External figures are the author's citations; verify before reuse. Free, full essay.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The Beautiful Mess (John Cutler, TBM 444)</span><a class="go" href="https://cutlefish.substack.com/p/tbm-444-what-a-workplace-cant-promise" target="_blank" rel="noopener">Read</a></div>
+        <h3>Companies are conditional bargains, not families — a case for "healthy ambivalence"</h3>
+        <p>High stakes, temporary and unchosen relationships, uneven power and costly exit mean workplaces can't reliably give unconditional support; breached "psychological contract" beliefs hurt even when nothing was promised. "High agency" doesn't change the power imbalance. The second part covers the "case-by-caser" manager who demands specific examples to deflect systemic issues: act on the pattern without winning the argument.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev (Swizec Teller)</span><a class="go" href="https://swizec.com/blog/when-code-is-cheap-judgement-becomes-the-job" target="_blank" rel="noopener">Read</a></div>
+        <h3>When code is cheap, judgement becomes the job</h3>
+        <p>Scarce work shifts to choosing priorities, reviewing product behaviour, maintaining architecture and owning production outcomes. Senior leverage: turn repeated review feedback into guidance and deterministic lint rules, and keep human judgement for business context. No numbers.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Dev Interrupted</span><span class="tag promo">partly promotional</span><a class="go" href="https://open.substack.com/pub/devinterrupted/p/the-hardest-parts-about-agents-cant" target="_blank" rel="noopener">MongoDB interview</a><a class="go" href="https://open.substack.com/pub/devinterrupted/p/a-neutral-home-for-mcp-a2a-goose" target="_blank" rel="noopener">AAIF issue</a></div>
+        <h3>"Do agents work" is settled; what breaks between prototype and production is context, identity, ownership and memory</h3>
+        <p>MongoDB's Max Marcon: a prototype runs on ~1,000 synthetic records on a laptop, production means 15 data stores and five enterprise apps; giving an agent context tempts teams into "God mode" permissions; homegrown memory layers become "almost a business". A framework swap pitched as a productivity win "can quietly eat six months". It is also a MongoDB product pitch.</p><p>The other issue's useful frame: MCP gives access to a capability, A2A delegates an outcome, AGENTS.md and Skills package instructions — ask which boundary you've hit, not which protocol wins. Claims MCP SDK downloads grew fivefold to over a billion under neutral governance.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Remote Jobs and You</span><a class="go" href="https://open.substack.com/pub/remotejobsandyou/p/is-that-annoying-rule-actually-pointless" target="_blank" rel="noopener">Chesterton's Fence</a></div>
+        <h3>Before removing an annoying rule, find out why it exists — a working fence looks identical to a useless one</h3>
+        <p>Five steps: find the paper trail, ask the longest-serving person, verify the answer, decide on what you find, or pause (don't delete) if no reason turns up; never trial-remove security, safety, legal or financial controls. The $40,000 double-paid invoice is a hypothetical example. A sister issue retells Kahneman's over-trust in small-sample priming studies.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="dev">
+      <div class="sechead"><h2>Dev, DevOps &amp; tooling</h2><span class="count">7 items</span></div>
+      <p class="secnote">Security and patch items first, then agent-engineering practice, then infrastructure detail.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev</span><a class="go" href="https://simonkoeck.com/writeups/react-rsc-formdata-event-loop-dos" target="_blank" rel="noopener">Writeup</a></div>
+        <h3>A single ~900 KB POST can freeze a Next.js / React server-action endpoint — patch now</h3>
+        <p>React rebuilt FormData for a server action with quadratic work; a roughly 900 KB request triggered 100 million string checks and blocked the Node event loop. Affects React 19.0 to 19.2; fixed in <strong>19.0.6, 19.1.7 and 19.2.6</strong>. An action item for any client on Next.js or RSC.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">AI Engineering Newsletter (Rohit) / TLDR IT</span><a class="go" href="https://open.substack.com/pub/thatdevopsguy/p/chatgpt-builds-the-interface-claude" target="_blank" rel="noopener">Rohit digest</a><a class="go" href="https://www.theregister.com/security/2026/10/06/atlassian-warns-of-critical-file-access-flaw-in-its-datacenter-products/5301284" target="_blank" rel="noopener">Atlassian CVE</a></div>
+        <h3>Patch list for the week: Argo CD, vLLM, Atlassian Data Center, plus a Copilot sandboxing default to check</h3>
+        <p>Rohit: Argo CD has four critical vulnerabilities fixed in 3.3.15, 3.4.10 and 3.5.4; vLLM 0.31.0 fixes a code-execution flaw and /tokenize sits outside built-in API-key protection; Copilot sandboxing is GA but VS Code Agent Host defaults leave it off, outbound networking on and Git credentials accessible. TLDR IT: Atlassian Data Center CVE-2026-21589 (CVSS 9.3, unauthenticated arbitrary file access).</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">DevOps Bulletin / TLDR DevOps</span><a class="go" href="https://www.devopsbulletin.com/p/digest-235-ghostactions-346-repo" target="_blank" rel="noopener">Digest #235</a><a class="go" href="https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure" target="_blank" rel="noopener">Google CI/CD hardening</a></div>
+        <h3>GhostAction injected fake "security-audit" workflows into 346 repos — and rotating secrets is only half the cleanup</h3>
+        <p>The editor's point: the GitHub credential that let the attacker add the workflow is not revoked by secret rotation; revoke it, remove the injected workflow and check every repo the account could write to. Google's companion guidance: ephemeral runners, short-lived OIDC credentials, immutable dependency references, provenance verification and untrusted PRs kept away from release secrets. The digest is ~70% links with tracker URLs.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev (Expo) / TLDR Dev (Microsoft)</span><a class="go" href="https://expo.dev/blog/your-skills-need-an-evaluation-mechanism" target="_blank" rel="noopener">Expo</a><a class="go" href="https://huggingface.co/blog/microsoft/thinkingbox" target="_blank" rel="noopener">ThinkingBox</a></div>
+        <h3>Evaluating agents: skill discovery jumped from 9% to 55% with one overview file, and a confident final message says little about success</h3>
+        <p>Expo's CI harness found adding an overview skill raised sessions loading at least one downstream skill from <strong>9% to 55%</strong>. Microsoft's ThinkingBox evaluated 507 workflows repeated 20 times: of 79,853 failed runs, <strong>67%</strong> ended without a tool error, so judge agents by the state they leave behind.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev</span><a class="go" href="https://withruntime.com/blog/test-gate-for-agent-written-code" target="_blank" rel="noopener">Withruntime</a></div>
+        <h3>A merge gate for agent-written code that the agent cannot game</h3>
+        <p>Runs on a clean machine: reinstall from scratch, run the full suite three times, reject removed or skipped tests, restore the base branch's tests against the new code. Run inside the agent loop it turns failures into repair instructions, while a separate CI run keeps the verdict outside the agent's control.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR DevOps (CNCF)</span><a class="go" href="https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/" target="_blank" rel="noopener">Read</a></div>
+        <h3>Kubelet watches disk bytes, not inodes, until it is an emergency</h3>
+        <p>Image GC gives no early signal for small-file-heavy images; on one node a single-stage build with @mui/icons-material consumed millions of inodes. A multi-stage Dockerfile cut the image from 40,000+ files to a few dozen, and a Prometheus alert at inode usage above 80% catches it well before the 95% eviction threshold.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR (Ivo Kund)</span><a class="go" href="https://www.ivokund.com/first-look-at-claude-code-mods-spoiler-yes-use-one-now/" target="_blank" rel="noopener">Read</a></div>
+        <h3>Claude Code "Mods" are plugins that can redraw the interface and step into tool calls — one person's first look</h3>
+        <p>Per the post, mods can add panes, commands and tool-call rules and share data between hooks, which hooks, skills, status lines and MCP servers cannot do. Verdict: "yes, use one now". A 3-minute read.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="sysdesign">
+      <div class="sechead"><h2>System design</h2><span class="count">8 items</span></div>
+      <p class="secnote">Real production numbers where the email gave them; System Design Nuggets items are paywalled previews and flagged.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev</span><a class="go" href="https://builders.cortex.io/blog/a-hitchhikers-guide-to-postgres-text-search/" target="_blank" rel="noopener">Cortex</a></div>
+        <h3>Cortex swapped Lucene for Postgres full-text search and cut public API p95 from 13.3s to 1.54s</h3>
+        <p>Custom query parser, weighted ranking and CDC-fed indexes; total memory down about 40% and most edits searchable within seconds.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev</span><a class="go" href="https://adventures.nodeland.dev/archive/how-bookingcom-cut-nodejs-costs-by-38-with-watt" target="_blank" rel="noopener">Booking.com</a></div>
+        <h3>Booking.com cut Node.js costs 38% moving from pm2 clustering to Watt worker threads</h3>
+        <p>30% fewer pods, 20% less memory per pod and up to 10% lower tail latency with no service code changes; production tests showed 40-50% more throughput within the same latency target.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Dev / DevOps (Airbnb)</span><a class="go" href="https://airbnb.tech/infrastructure/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb/" target="_blank" rel="noopener">Read</a></div>
+        <h3>Airbnb captures and replays real MySQL workloads to de-risk upgrades</h3>
+        <p>Traffic captured at ProxySQL, with transaction order and timing rebuilt offline. It exposed a query going from 0.03s to 2.6s after an upgrade and queries whose results depended on unspecified row ordering, and helped move the fleet from MySQL 5.7 to 8.0 without a major production incident.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR DevOps (Uber)</span><a class="go" href="https://www.uber.com/ad/en/blog/uber-eats-search-pipeline/" target="_blank" rel="noopener">Read</a></div>
+        <h3>Uber Eats halved end-to-end search latency by removing low-value work</h3>
+        <p>Dropped low-value retrieval paths, separated ranking features from presentation data and eliminated false dependencies between pipeline stages; also pagination, concurrent rendering, request hedging, compact embeddings and service-mesh fixes.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The Pragmatic Engineer podcast (Sam Newman)</span><a class="go" href="https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam" target="_blank" rel="noopener">Read</a></div>
+        <h3>Sam Newman calls microservices an architecture of "last resort" and boils the eight fallacies down to three rules</h3>
+        <p>Information takes time, the thing you call may not be there, and resources are finite — most outages come from resource exhaustion. Idempotency keys are clean but hard to retrofit; fingerprints are easy to retrofit but can reject valid requests (a Danish payments system rejected same-value purchases within 5 minutes). On AI: hedge across vendors and let AI roam only inside module boundaries you designed. 1:58 episode; his book is out in print 7 Oct.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Software Architecture Guild</span><a class="go" href="https://softwarearchitectureguild.substack.com/p/architect-as-problem-solver" target="_blank" rel="noopener">Read</a></div>
+        <h3>An architect's job is to sharpen the problem and expose trade-offs; quality should be the last lever to give up</h3>
+        <p>With scope, deadline and headcount fixed, only quality can move, so educate your manager to argue the other three first. Draw diagrams that show why a "simple change" isn't, don't produce estimates yourself, and surface the 2-3 real internal problems buried in complaints. No hard numbers; course promos at the top.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Latent.Space (Stacklok)</span><a class="go" href="https://www.latent.space/p/stacklok" target="_blank" rel="noopener">Read</a></div>
+        <h3>Stacklok's cloud-native agent harness "Mecatl" separates the agent loop from client, model, state and execution</h3>
+        <p>Thesis: the locus of value moves from the desktop to the cloud; desktop-first harnesses couple loop, local execution and session state, which makes pausing for human input hard. Related ToolHive is an open-source MCP gateway/registry. Sympathetic interview with no usage numbers.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">System Design Nuggets</span><span class="tag paywall">paywalled preview</span><span class="tag promo">partly promotional</span><a class="go" href="https://designgurus.substack.com/p/push-vs-pull-in-system-design-how" target="_blank" rel="noopener">Push vs Pull</a><a class="go" href="https://designgurus.substack.com/p/15-sre-concepts-every-engineer-should" target="_blank" rel="noopener">SRE concepts</a></div>
+        <h3>Seven System Design Nuggets issues, all paywalled previews; the Push-vs-Pull and SRE ones have real content in the free part</h3>
+        <p>Push vs Pull: Kafka chose pull so a slow consumer "simply falls behind and catches up"; 10,000 clients polling every 30s is 333 req/s even when nothing changed. SRE in 90 minutes: downtime per year is 52 minutes at 99.99% and 8.7 hours at 99.9%, and keep an SLA buffer below the SLO. The other issues (15 principles, Kafka's 7 concepts, a staff-level interview, an API-protocol guide, choosing an AI model) show only 10-30% of their content.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="business">
+      <div class="sechead"><h2>Product, founders &amp; business</h2><span class="count">7 items</span></div>
+      <p class="secnote">Mostly The Founders Corner and TLDR Founders. Several are sponsored or upsell paid databases; the free arguments and numbers are summarised.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">The Founders Corner</span><span class="tag promo">partly promotional</span><a class="go" href="https://open.substack.com/pub/thefoundercorner/p/how-safes-quietly-eat-your-equity" target="_blank" rel="noopener">Read</a></div>
+        <h3>How SAFEs quietly eat your equity: the cap table says 90%, as-converted founders hold 70.9%</h3>
+        <p>Three post-money SAFEs totalling 21.25% sold for $3m leave founders at <strong>70.9%</strong>; a $4m seed on $20m pre with a 12% pool then leaves them at <strong>54.9%</strong>, not the expected 75%. Capped SAFEs never shrink in a hot round. Carta data quoted: 93% of Q2 2026 pre-seed rounds were SAFEs, median founder ownership 54.8% after seed. Numbers are free; the dilution model is a paid download.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The Founders Corner</span><span class="tag promo">partly promotional</span><a class="go" href="https://open.substack.com/pub/thefoundercorner/p/the-number-vcs-check-before-they" target="_blank" rel="noopener">Read</a></div>
+        <h3>CAC payback is the number investors check before they believe your growth</h3>
+        <p>Median B2B SaaS payback is 16 months (Aleph/Benchmarkit, 342 companies), top quartile 6 or less, bottom quartile over 24. The worked example is internally inconsistent: the post says payback is roughly two months but its own formula gives $1,000 ÷ ($1,000 × 0.8) = 1.25 months. Sponsored by Omnisend; the calculator is paid.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Founders / TLDR IT</span><a class="go" href="https://ramp.com/data/businesses-are-changing-ai-model-providers-more-often" target="_blank" rel="noopener">Ramp data</a><a class="go" href="https://tomtunguz.com/inference-is-the-most-important-market-in-software/" target="_blank" rel="noopener">Tunguz</a></div>
+        <h3>Businesses are switching AI model providers more often, and inference may be a ~$350B market by 2027</h3>
+        <p>Ramp: the monthly share of firms switching providers (3-month average) hit a record <strong>8%</strong> in September, read as an early sign of model commoditisation. Tom Tunguz says inference could be a $350B market by 2027 (one issue says double the database market, another "larger than databases"), with margins below typical SaaS and smaller models and routing becoming essential.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Founders (OnlyCFO)</span><a class="go" href="https://www.onlycfo.io/p/harvey-vs-legora-when-are-terrible" target="_blank" rel="noopener">Read</a></div>
+        <h3>Negative gross margins are acceptable only with a way out — Harvey vs Legora</h3>
+        <p>Harvey reportedly hit negative 50% gross margin in June as usage grew under flat seat pricing ("reportedly" per the source). Three exits: charge for usage, make each request cheaper, cap what's included. Proposed test: would customers stay if the product kept 40 cents of each dollar after serving costs.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Founders (Michael Nygard / Angular Ventures)</span><a class="go" href="https://www.michaelnygard.com/blog/2026/10/ai-versus-vendor-lock-in/" target="_blank" rel="noopener">Nygard</a><a class="go" href="https://newsletter.angularventures.com/p/everyone-is-building-the-same-thing" target="_blank" rel="noopener">Angular Ventures</a></div>
+        <h3>Lock-in loosens when AI makes migration cheap, and everyone is building the same AI startup stack</h3>
+        <p>Nygard: lock-in lasted because leaving was expensive; agents can now build converters and reimplement the behaviour a business depends on, so customers can leave when staying costs too much. Angular Ventures: startups converge on the same agent loops, memory, connectors and sandboxes and pitch commodity infrastructure as the moat; customer references say more. Opinion, no numbers.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The VC Corner</span><a class="go" href="https://open.substack.com/pub/thevccorner/p/venture-capital-mistakes-great-investors-repeat" target="_blank" rel="noopener">Read</a></div>
+        <h3>Venture capital's repeating mistakes: investors price what is in front of them, not the capability that decides what it becomes</h3>
+        <p>Seven patterns, including Bessemer's Cowan skipping Google in 1999 because Yahoo and MSN dominated, passing on Tesla's Series C over negative margins, and passing on Neko Health over price. Several figures come from third-party charts and are not independently shown. Fully free; an Alumni Ventures ad sits mid-post.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">The Founders Corner</span><span class="tag promo">partly promotional</span><a class="go" href="https://open.substack.com/pub/thefoundercorner/p/the-9-step-gtm-system-every-founder" target="_blank" rel="noopener">Read</a></div>
+        <h3>The 9-step GTM system: one living playbook instead of four folders with four answers</h3>
+        <p>Cites Bridge Group 2026 AE research (158 B2B companies): average AE ramp is 6.2 months, a study high (4.3 in 2020). Gallup: only 12% strongly agree their company onboards well. Promotes the author's book and tool; the playbook export is paywalled.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="design">
+      <div class="sechead"><h2>Design</h2><span class="count">4 items</span></div>
+      <p class="secnote">From TLDR Design.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">TLDR Design (GitHub)</span><a class="go" href="https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/" target="_blank" rel="noopener">Read</a></div>
+        <h3>GitHub's accessibility agent has reviewed 3,535 PRs with a 68% resolution rate</h3>
+        <p>A parent agent directs a passive reviewer and an active implementer; drag-and-drop, data grids and rich text editors are escalated to human specialists. An experimental pilot.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Design</span><a class="go" href="https://thedesignersfieldguide.substack.com/p/what-does-good-enough-actually-mean" target="_blank" rel="noopener">Good enough</a><a class="go" href="https://jovo.design/writing/ai-invasive-design" target="_blank" rel="noopener">AI-invasive design</a></div>
+        <h3>AI raises the fidelity bar: match fidelity to the decision, and don't replace valuable interactions just to look "AI native"</h3>
+        <p>"Good enough" starts by naming what the work must unlock (a usability test, an estimate, a direction, an approval) and applying only that much fidelity. The companion piece argues for preserving human skill.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Design</span></div>
+        <h3>Stop blaming the model for slow AI: acknowledge fast, then generate</h3>
+        <p>Doherty's 400 ms threshold now covers two moments, acknowledging input and producing the answer, so interfaces can acknowledge immediately and show progress while generation takes seconds. The link in the email is an opaque redirect.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">TLDR Design (Digital Trends)</span><a class="go" href="https://www.digitaltrends.com/computing/chatgpt-can-imitate-a-cartoonist-now-its-signing-their-name-too/" target="_blank" rel="noopener">Read</a></div>
+        <h3>ChatGPT cartoons are carrying the signatures of real artists</h3>
+        <p>Signatures associated with more than 15 New Yorker contributors appeared. OpenAI added warnings for some New Yorker-style requests but signed outputs reportedly continued; the concern is style imitation crossing into false attribution.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="personal">
+      <div class="sechead"><h2>Productivity &amp; personal</h2><span class="count">4 items</span></div>
+      <p class="secnote">Light week; two of these are partly promotional.</p>
+
+      <article class="item"><div><div class="meta"><span class="src">Ankur Warikoo</span><a class="go" href="https://open.substack.com/pub/warikoo/p/0910-4-rules-to-build-discipline" target="_blank" rel="noopener">Read</a></div>
+        <h3>Four rules to build discipline: never snooze, prep tomorrow tonight, keep deciding, and don't run your day on mood</h3>
+        <p>Bonus: set habits (input) rather than targets (output). No numbers behind the claims; the issue also carries personal asides, a quiz and an "AI for Students" promo.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">A Life Engineered (Steve Huynh)</span><a class="go" href="https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing" target="_blank" rel="noopener">Read</a></div>
+        <h3>You get things done faster by committing to the present, not the finish line</h3>
+        <p>Three commitments: process over outcome, the moment no matter how mundane (including waits on AI agents), and a single reality (name your role for the time block). A repost of an older article with only soft claims.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Forte Labs (Tiago Forte)</span><span class="tag promo">partly promotional</span><a class="go" href="https://www.youtube.com/watch?v=dOqW6hUK3Ho" target="_blank" rel="noopener">Review video</a></div>
+        <h3>Make new tools earn their place; observe closely before deciding</h3>
+        <p>A reader keeps a paper legal pad and hands AI only the unfun part, typing up notes. Mostly promotional: pre-orders for "Life in Perspective" (3 Nov) and Second Brain programs, and the link is a review video, not an article.</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+      <article class="item"><div><div class="meta"><span class="src">Productive Muslim (Mohammed Faris)</span><span class="tag promo">partly promotional</span></div>
+        <h3>"1500 Hijri (Business Edition)": a fictional workplace day with protected deep-work blocks and care rituals</h3>
+        <p>Practical takeaways the author says could start tomorrow: a conscious Bismillah before meetings, istikhara before hiring, "how's your heart?" before the numbers. The only figures are illustrative; ends with a leadership-programme pitch. No clean article link (beehiiv redirect only).</p></div>
+        <input class="tick" type="checkbox" aria-label="Mark read" hidden></article>
+    </section>
+
+    <section id="pointer">
+      <div class="sechead"><h2>Pointer</h2><span class="count">19 items, 2 issues</span></div>
+      <p class="secnote">Suraj Patel's engineering-leadership link roundup (issues #757 and #758). Pointer gives a one-line summary per article, so these are teasers; each link opens the piece. Sponsored slots (Larridin, WorkOS, Remgu, Archestra) and a few tiny tool links are left out.</p>
+
+      <ul class="hits">
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwP6a8Mn85CEP1XYREYd1TK0rioSN4qAnjVqk4SoBEQYsrnqHFsu05akWCHeenMn28eWpBDpnE68-drP1RLsUlc7Y7yXAt7CT7Hy8xLNhUSB2WVxEJTIP98KDD6LA2Ds4oBJOjlZu3ab3f5nYsDsWgzQ/4uq/qzTXIGPkSny-B79ZzoNdwQ/h7/h001.TY_NqR2rCsTWqei0m4J2uFJVrOLu9NSqFz-eKotZwao" target="_blank" rel="noopener"><b>The State Of The Tech Industry In 2026 (Gergely Orosz)</b></a>: Orosz's weeks-long write-up of what is new, broken and unchanged in the industry (see The five, #1).</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.u7AEjFG7xD7PeXgObD5uI1o6BtYZXOmqEviUlhsqJwjI3Bz0XpQJC8JgodO8Blodd3_Ymek8f7bDo_7z6OIbCiuyejkA16Nq73sE4gb7d-j8kh3KSdsO2j2pDKkNRL4kM2FvBJF14iai8D5NHr9vOoVeuy8c1yajc5et0hw15cHX90V9tGdEzpUFDNlPFlIb/4uq/qzTXIGPkSny-B79ZzoNdwQ/h8/h001.cDur8gu9bLcMADQ6hUbV1Q_l8YskHXkgGjcFbU-vJzs" target="_blank" rel="noopener"><b>The Missing Instructor (Mike Fisher)</b></a>: Two people who did not collaborate built the same tool within months: the cost of a competent observer collapsed, so managers can get feedback like never before.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0lxqIo5FMkgUD1ukAxt0dU00ZJTtV7S-aqe_7sPPtwZZ__zCHjn2M9Hf7kdBLkNAnHhRI559yH68oAR_VGA96_s026Lq0sO83lZPOfUujcuGffx7JGp7znzJph1uWP-pKb9WXPzaQ-zyLxT848Yd1xVCF91XFF3A2_qBSWRKtO8J/4uq/qzTXIGPkSny-B79ZzoNdwQ/h10/h001.PNCoju69YXhoeRFsoKguEjZ1rSsmZUMjxLwcdG7o_sA" target="_blank" rel="noopener"><b>Influence Without Authority (Gabriel Valdivia)</b></a>: ICs build influence by giving people reasons to trust their judgment, then finding ways for that judgment to travel beyond what they personally make.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0nlI2N4DuGMKadU0rdUBb5Gwbwcfiy0gmFJpeFQd9PIkPVZEYWzwaiJxCck66Q2gOR85iet8AOPYGFKD7TGUYaWD2MbEec6Aj94w6-1OTWRYF6yTEzZA4Gido6YATA7_-UDj2sdynvLr7k1mkjJ1-gA/4uq/qzTXIGPkSny-B79ZzoNdwQ/h11/h001._0hFMZLSm98SWlo_UTALoe3eK75ys97pSLrN3GHqenI" target="_blank" rel="noopener"><b>How To Read Code (Sean Goedecke)</b></a>: Reading code in a large program is a compromise: deciding which parts to grasp thoroughly and which to gloss over, given finite mental capacity.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.71LCQkoHczeoiEaexlZjthwMm64Iym68hKzQdPM2gmu5rhAZE9H5KwkiPyppbVSbQnU0DRm2Ia0bxqSQFDrok4UcsFIAG4s7sZb1UGFBGHW8bTA-XWaJxBA7O-DGElJhlZnmlbyyI1nx1qjJD0SM_xWbEmIItVW09Vgl9nvCSucBI5EimQ2ydnQtpgROiahpNFAxXxdJba7uAxkmVQEsoA/4uq/qzTXIGPkSny-B79ZzoNdwQ/h13/h001.37YOzYeGwBl3ZTqf5ANW3cOoc7DS2wmM956IoPj0gwA" target="_blank" rel="noopener"><b>Anti-Patterns In Software Blogging (Michael Lynch)</b></a>: A catalogue of the most frequent mistakes beginner bloggers make.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001._Y2CMgQ6JrvHW_gPh8SJXY8uuRFp6rA0fH0aClNZPwdKbfRMBFoDB8y9KmffVMVRZD5SmqOuln-B_mnuxJAOa05ntDIEbOMbo9-1E730_LiT6dST__kx7CLG4RN2CUwqyv567s6a7vgwnJaUxpwarwhjXMSrt9PvYvO2zlD6tWljESALXGsozzyo-k4ivXDp/4uq/qzTXIGPkSny-B79ZzoNdwQ/h14/h001.CkNcjG6qK2xCGhlgaBYtBT5S0zVIF4vaerQrOGSG9PI" target="_blank" rel="noopener"><b>Building an Internal Company Agent: 5 Things We Got Right And 5 I Would Do Differently (Orestis Ioannou)</b></a>: A practical retrospective from building an agent inside a real company; explicitly not a universal guide.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHC-8XV9AqYQXaAqIinnayn25rJNZNM50NApZI854r3TI-bWRLUfJYowdi_C6AqMwMWw2jgjSagEelIkNABoKsbQcPsgublnmUcN-HGzFkA5ADwoPoyRtH3g3ce6RsPk44fLf7pxBHmQPxpBLur0Gu6g/4uq/qzTXIGPkSny-B79ZzoNdwQ/h15/h001.0TZr_YqWMUOqQeKF-xM6SvxuWLChQ7m5e5pEbyJQNXY" target="_blank" rel="noopener"><b>Developer Survey 2026 (Stack Overflow)</b></a>: The sixteenth annual survey, framed around one question: how are you doing? Covers AI use, job happiness and where people learn.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWUL3lUx0iyQpJsD117pLK3rVYmAep6zivZW-2U5JxrbWNd5wxcfT40T1sizk4-RLMQbnFhcKwtXgV762gD3dSXllDNh26NwnATtnd4J0Xdz7GbVMmwdfib-bEd4eYwLtYzuVfGSO7Y66oPmdqi2xMeBqRRYrX3h-WJsgEVfp_zihih3zM2FZN2rHnNCdev5YVVw/4uq/qzTXIGPkSny-B79ZzoNdwQ/h18/h001.hr-szwXwl4QbxwpE-yEaqk3TGlRojQvYFVz-Odayx9g" target="_blank" rel="noopener"><b>How I Have Time For Everything (Steve Huynh)</b></a>: Most popular from the previous issue; also featured in #757. A recovering productivity junkie argues there is no secret method: time-management systems are mostly a trap.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHHQiQkGjJbhxE-6pe4qS3sEBSSfwD4_gQWausLWNmwOoYEmb8UH08yG0OG9e7mNSPnteWbSKQFOdYYXtCniHKfLNWm5RH21P0HX7clkL9B0N0Wje59hdAz7yeerJw9V-F39q6dmJCaaLV3G8lF7GHcA_hj6-EmCX1bJv3dfov9ivwvWfnI46_cOzVc0izpSSqQ/4un/Ifeu42g3SEy_85S-8TFAEA/h7/h001.eks5ePS6KSRhjNr0HM6iEr-u0aVa7GZPmFxz6PgpiJ4" target="_blank" rel="noopener"><b>The Manager's Path In The Age Of AI (Camille Fournier)</b></a>: Fournier boils her book down to three focus areas for managers (technical skills, signal processing, people skills) and asks how each is changing with AI.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWUKbMMnqUeYWqSu5-9c8LbTeQF4IhkSIxS9GQqCvjElLm3RPXB3ZilXBsR5GfaZ9y7V8Q_rmJfr4HkULuGUhmYsZfVIjteGfPWJijjEqh-e2e8BlJ6EC2-BK8oyailKl9ZjUQSaAQnImYSRSP1tEHpMBZlVx7acFGWXPxhkSHnr7VedCTMcVMYhSeZA0lIPWKew/4un/Ifeu42g3SEy_85S-8TFAEA/h8/h001.PP7gi58jCPNPpcl50tluuDQ5O_WVw4BsoBhPb555FNI" target="_blank" rel="noopener"><b>How Can I Make Better Decisions When Facing Uncertainty? (Andi Roberts)</b></a>: Better decisions start with better sensemaking: the risk is settling too quickly on one explanation. Uses three trialectics from Dave Snowden's work.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWULC5SYnV-_fHQ2Yvp5dG4XJTNQpymb5n8pk5uzuIGRSCxvyaieaKeDyex0inAc3GYnvD_GA3dEnH6X_HmjB_5c--w2QrOuwcj8S3Tsz1hJ1SGH4FDkaGtanmdbzAT6y7XLbatxfQNSRRKpLYaWvFbS0/4un/Ifeu42g3SEy_85S-8TFAEA/h11/h001.BGSSI9l8Ng1QNYUArf5LJWPx7lMYB47Cf25V4liAHMU" target="_blank" rel="noopener"><b>Reducing The Cognitive Load Of AI Changes (Andrew Moffat)</b></a>: When reviewing large amounts of AI-generated code, the LLM's abstraction names often don't match his own; he shares his approach.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.NxDti-hLnxnUue0yjhAbR9ihDugbmr0sv--A_jFIRE37w_Z7_GfvtA-3-1wqVjcIKIWrAYjKWDGIFpQaydFD0ve4WdbZ9uT5wmTOQQRKru0-7iaHiqM__zyYRE8UenJtIn7M_O_sWZhEEMMjKi3TxkxqFA6ywm-Oia8WvXzcKb6XkhCgE6qc5w-FtfoTp5CNzX77OQkxdT8YKGQJSLKjBQ/4un/Ifeu42g3SEy_85S-8TFAEA/h13/h001.11EqsWOgGyEMPe9X3nbGWKsiOr6fNBtioF8AovTD-is" target="_blank" rel="noopener"><b>Two-Way Doors: Don't Code Yourself Into A Corner (Kennelly, Khandelwal)</b></a>: Even trivial choices harden into one-way doors unless you deliberately design reversibility and escape hatches into the code.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHmwVQfFaziWHyOga7gYGNzIzU3Jg3tauIbn9Ql1F2XwxxRYeBinYUkkPMT7klhqnLn2gqV9-nR58EIW5sPRRmqwzalZuuiLdh66fJEKbuykh-eBa8Nog08XD4t-HPbB3whnU7s3GdAvdlfAyj6qdOu1r_3usF_cksLHhR7yvRRLk/4un/Ifeu42g3SEy_85S-8TFAEA/h14/h001.nbkmkHwNwHeAWN0QIdWt626vWyf_vGUqmLqHV-dbjtA" target="_blank" rel="noopener"><b>Everything You've Been Told About Burnout Is Wrong (Blake Scholl)</b></a>: Burnout is not working too hard for too long; it is working toward a goal that seems too far out, too unattainable, too abstract.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.u7AEjFG7xD7PeXgObD5uI4TGUjHe7DXGFFmqNkCynUURnQgnu1U1lXxslVh48dbZFRXYCwqqeNvIgsh8O2LpZmcWVU-4D1fTfPzWeO5Kavw9RIO0Fmrb8O4DK0nIH3FUNOnCuSpuiBNOkArdQD4o6Cl25qvEaJ3YBGUWxOe4INOm6y4kbAGixMgGGggmRc4X/4un/Ifeu42g3SEy_85S-8TFAEA/h15/h001.KBchgUrnA5DHzSZZXLu4aJN35SAYU9YUMn0kMJHELOY" target="_blank" rel="noopener"><b>Language Models for Text Classification: From Bag-of-Words To Jev (Sebastian Raschka)</b></a>: Raschka's view of the new classifier-style model moved from "I can easily build this myself" to "wow, this actually works better than I thought".</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7l9eQeHYbyfnh2Itml7uaExuoJAgjZSb5exIlOtYRDVMJTf12HbUXeVJE8Pkd2OSIcDau6yuJDFi7xDe_4SV-A3YKBWlJ70xHEyfPnkPzZq5X6w0GZqV5H6B8EOnVsqTvGuqDR-u_SYFuQf1QPblzGYCgY6UASFL-Yk5hBqKW9bwalukL-lo1dy5Aa1orBh6Q/4un/Ifeu42g3SEy_85S-8TFAEA/h16/h001.vRySiy4U-7UVi2_6btO6aShCeWPEjN8CCcJ4TThe8Jc" target="_blank" rel="noopener"><b>10 Career Traps (Thoughtful People Fall Into) (John Cutler)</b></a>: Most popular from the previous issue: strengths like empathy and curiosity can get you misread or burned out; each trap has a "saveable moment".</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.biwauLeAd2Zg7_5VVe_dVJkyhJS9sYY39dR179C1kXnFQTrJJ1UZy7-KzVm5w1eAMzd6vstMnJ5VMbY8H2EPO90g4-xTcv-U4XVGblY_uSEf2IT9otUyfWn5vPPiHDxXXnES49OMLgysAkX-VWjMqQ/4uq/qzTXIGPkSny-B79ZzoNdwQ/h19/h001.un5vAHhCzfMI06-PzLIIfHmWkEJOFT_1oFM78uJfQe0" target="_blank" rel="noopener"><b>Destroy Any Website</b></a>: Notable link: type an address, break everything.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001._d02Us3GR26SqbxiB_QNfR8_D6fZdAq5dlI9AO_-ZJ757PFqvbBofRP0HNDLz7mZAtAsEGISd4sbE9IZzrgkpvjNFJFpp5-pMt32JV2-4zGM8a9Tz2Fuw5U7MTf8uIEwfs0nB_cwXOn1xJ2z_3-RMg/4uq/qzTXIGPkSny-B79ZzoNdwQ/h20/h001.OxTb0apSW0aF63H3jOZjtwtCPaCb57tXdwWrpQGyuaY" target="_blank" rel="noopener"><b>Jevgrep</b></a>: Notable link: find code by asking what it does.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHK0jCvMdYhluvURQQMy8nu3sSeTrabPHWayrf8fBwQ55peoEPdeXtYHKJJYKX8MrfwLxCoIxJovgumiv6NARjCxU04eBahuiDf5Znz3ATobuN2K6zoVGL3nLGVqpZAEiVHUh-8LyuCPROyZfodvLJng/4uq/qzTXIGPkSny-B79ZzoNdwQ/h21/h001.4x7GOQsIXODr-ueyS_x-CI_5o4KpC_LNfkPagGmB-RI" target="_blank" rel="noopener"><b>MicroLLM Lab</b></a>: Notable link: run, benchmark and compare small language models in the browser.</li>
+        <li><a class="go" href="https://link.mail.beehiiv.com/ss/c/u001._d02Us3GR26SqbxiB_QNfaYCm52iB6lzdMKnqAAFxNvzNq-xwupC5plY1zRZmtRwNI8uVqU3QdMWoQvBmy12stx4ig0_JWOVicq5vWpVJNNM5YNyW347Nk1iRLMIqvnk8zYTUtfUYoeU28CHF8xlEQ/4uq/qzTXIGPkSny-B79ZzoNdwQ/h22/h001.OhBGLCiuf3OSYI9Bs1Nn18xKvEtXSBeh2BLLexdCFgk" target="_blank" rel="noopener"><b>Size Limit</b></a>: Notable link: performance budget tool for JS.</li>
+      </ul>
+    </section>
+
+    <section id="hits">
+      <div class="sechead"><h2>Quick hits</h2><span class="count">32 lines</span></div>
+      <p class="secnote">One line each — everything else that came with a number or a name worth keeping.</p>
+
+      <ul class="hits">
+        <li><b>Anthropic: $100M Claude Frontier Academy to train 10,000 AI engineers by 2027, with Accenture and Morgan Stanley</b> — <a class="go" href="https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html" target="_blank" rel="noopener">CNBC</a>.</li>
+        <li><b>Epoch: chips shipped through 2027 could run tens to hundreds of millions of concurrent frontier agents (modelled estimate)</b> — <a class="go" href="https://epoch.ai/publications/estimating-the-agent-population" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Mistral Large 4 is 1T parameters / 49B active, public preview, open weights planned this month</b> — <a class="go" href="https://mistral.ai/news/mistral-large-4/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Anthropic halved Sonnet 5.5 cache-read prices, about 20% cheaper on most agentic work</b> — <a class="go" href="https://threadreaderapp.com/thread/2108287358374482381.html" target="_blank" rel="noopener">Thread</a>.</li>
+        <li><b>Google Project Zero breaks down building faster emergency patching systems</b> — <a class="go" href="https://projectzero.google/2026/10/emergency-patching.html" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Anthropic Cyber Verification Program now has three access tiers</b> — <a class="go" href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Cloudflare Birthday Week: 46 announcements incl. the cf CLI and a beta HTTP 402 gateway for charging AI agents</b> — <a class="go" href="https://blog.cloudflare.com/birthday-week-2026-wrap-up/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Deno joins Cloudflare — Fireship says Deno was burning cash and Cloudflare wanted a self-hosting off-ramp</b> — <a class="go" href="https://blog.cloudflare.com/deno-joins-cloudflare/" target="_blank" rel="noopener">Cloudflare</a>.</li>
+        <li><b>Kubernetes node swap GA in v1.34: 240 Python sandboxes instead of 80 in the tested setup, with CPU/latency trade-offs</b> — <a class="go" href="https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Kubernetes v1.35 refuses to start the kubelet on cgroup v1 by default</b> — <a class="go" href="https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Crossplane runtime v2.4 cuts provider memory 80-95% at ~2,000 CRDs</b> — <a class="go" href="https://blog.crossplane.io/cutting-provider-memory-by-80-crossplane-runtime-v2-4-and-client-caching/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Atlassian rebuilt incident detection on OpenTelemetry, Kafka and Flink: 40s+ down to under 10s, 4 pods vs 90 VMs</b> — <a class="go" href="https://www.cncf.io/blog/2026/09/30/from-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes/" target="_blank" rel="noopener">CNCF</a>.</li>
+        <li><b>DNS root KSK-2024 rollover was dated 11 Oct — check DNSSEC resolvers</b> — <a class="go" href="https://blog.cloudflare.com/root-ksk-2024-rollover/" target="_blank" rel="noopener">Cloudflare</a>.</li>
+        <li><b>Next.js 16.4 makes Cache Components the default for new apps</b> — <a class="go" href="https://nextjs.org/blog/next-16-4" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>SvelteKit 3.0 released</b> — <a class="go" href="https://svelte.dev/blog/sveltekit-3-is-here" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>React Compiler makes context cheap: wrap a memoized child, no selector needed (matched a fine-grained store with 5,000 radios)</b> — <a class="go" href="https://jjenzz.com/making-react-context-cheap/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Armin Ronacher on "codemode" for orchestrating MCP tools to save tokens</b> — <a class="go" href="https://lucumr.pocoo.org/2026/10/6/codemode/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Bootstrap 6 Alpha 1: Sass modules, ESM-only plugins; needs Chrome/Edge 130, Firefox 132, Safari 18</b> — <a class="go" href="https://blog.getbootstrap.com/2026/10/08/bootstrap-6-alpha/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Chrome 155 ships a Rust JPEG XL decoder</b> — <a class="go" href="https://tonisagrista.com/blog/2026/chrome-jpegxl/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Daniel Lemire on "ephemeral testing": test a base layer by building throwaway software on top of it</b> — <a class="go" href="https://lemire.me/blog/2026/10/05/ephemeral-testing/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Nolan Lawson: why more developers don't "use the platform"</b> — <a class="go" href="https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Agents don't need memory, they need documentation (structured Markdown workspace)</b> — <a class="go" href="https://liao.gg/blog/agents-dont-need-memory" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Why LLMs agree with you even when you're wrong: RLHF conflates accuracy with approval; OpenAI rolled back a GPT-4o update in April 2025</b> — <a class="go" href="https://blog.bytebytego.com/p/why-llms-agree-with-you-even-when" target="_blank" rel="noopener">ByteByteGo</a>.</li>
+        <li><b>"Lost in the middle": accuracy is U-shaped across the prompt, so put constraints first and the question last</b> — <a class="go" href="https://blog.bytebytego.com/p/the-llm-blindspot-why-models-forget" target="_blank" rel="noopener">ByteByteGo</a>.</li>
+        <li><b>Andrew Ng: agents drive much bigger data-centre demand than expected; his review agent makes 5-10K web searches a day (The Batch, no source link)</b>.</li>
+        <li><b>Aleph Alpha's Kolibri is open-weight, 78.1B parameters, 1M context, Apache 2.0</b> — <a class="go" href="https://www.testingcatalog.com/aleph-alpha-releases-open-weight-kolibri-with-1m-context/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Cloudflare Traces open beta (OpenTelemetry) and Meta open-sourced Rebalancer</b> — <a class="go" href="https://blog.cloudflare.com/cloudflare-tracing/" target="_blank" rel="noopener">Cloudflare</a>.</li>
+        <li><b>Hashimoto's OSC 7501 terminal status protocol — 250+ agent orchestrators currently guess whether tools are working or blocked</b> — <a class="go" href="https://mitchellh.com/writing/program-status-osc7501" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Marily Nika: evals are not product metrics — great AI with no usage probably means the wrong problem (the 6-step process is paywalled)</b> — <a class="go" href="https://open.substack.com/pub/marily/p/ai-pm-flashcard-4-how-do-you-know" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>SwissCareer: nearly 5,000 AI-related Swiss job ads Jul 2025–Jun 2026, up 32%; unemployment 3.0% in September</b> — <a class="go" href="https://open.substack.com/pub/swisscareer/p/swisscareer-job-market-weekly-update-062" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Michael Lynch's six software-blogging anti-patterns (the email is a table of contents only)</b> — <a class="go" href="https://refactoringenglish.com/blog/anti-patterns-software-blogging/" target="_blank" rel="noopener">Read</a>.</li>
+        <li><b>Tiny datapoint: Meta says Claude Code users fell from ~60K to ~30K (The Information, relayed unverified by AINews)</b> — <a class="go" href="https://www.latent.space/p/ainews-reflection-beam-501b-a23b" target="_blank" rel="noopener">AINews</a>.</li>
+      </ul>
+    </section>
+
+    <section id="skip">
+      <div class="sechead"><h2>Safe to skip</h2><span class="count">13 groups, 65 messages</span></div>
+      <p class="secnote">What each skipped sender actually sent, so you don't have to open it. Chat notifications and welcome mails were classified from their subject and opening lines.</p>
+
+      <div class="skipbox">
+        <ul>
+          <li><span class="who">Neo Kim / System Design One ×4</span><span>A sales pitch for a paid Google Sheet ("Simple Path to System Design, 2026 Q4") plus subscription push; the other two issues are paywalled previews (64 AI concepts, 11% free; Claude Code routines, one demo free).</span></li>
+          <li><span class="who">Engineering Leadership ×1, Refactoring English ×2</span><span>Anniversary subscription pitch (35% off annual), an ebook/print launch discount, and one issue that is only a table of contents.</span></li>
+          <li><span class="who">LaraJobs ×1, Project Lighthouse ×1, Medium Weekly Digest ×1</span><span>One Laravel job listing ($120,000-$144,000, US remote); a founder welcome note (new DSA book, platform rewritten from Laravel to Rust and Nuxt); headlines and teasers only.</span></li>
+          <li><span class="who">Nextool AI ×4</span><span>Three short derivative news items each (maths manuscripts, SynthID, EmbeddingGemma 2, a TCS AI-revenue figure), then paid Gumroad guides and sponsor/ad blocks.</span></li>
+          <li><span class="who">ChatGPT for All ×5</span><span>Growth-hack and how-to teasers ("$20K/month AI agent business", "15 businesses", a client follow-up tracker, a local LLM, Claude usage limits) — paywalled with no findings.</span></li>
+          <li><span class="who">Meng Li / AI Disruption ×12</span><span>Six one-sentence chat notifications plus paywalled previews repeating launch news already in the AI section (Ultrafast, Haiku 5.5, GPT-6 rollout, plugins). Several more issues were skimmed for the AI items above.</span></li>
+          <li><span class="who">Meng Li ×3 more, Why Try AI</span><span>Nano Banana 2.1 preview with no figures, OpenAI's four updates, a welcome note, and a link-roundup Sunday Rundown (only Claude for Google Workspace was worth a mention).</span></li>
+          <li><span class="who">The VC Corner ×4</span><span>A 50%-off subscriber upsell, a "Corner Partner Program" equity-for-promotion pitch (3 pricing tiers, unfilled template placeholders) and two paywalled fund-database previews. The weekly pulse 2729 is summarised under Product.</span></li>
+          <li><span class="who">Taha Hussain ×4</span><span>A four-part story about one engineer failing final-round behavioural interviews, which ends in a pitch for the author's paid course.</span></li>
+          <li><span class="who">Remote Jobs and You ×4, black babes abroad ×3</span><span>A job-list announcement, a children's career parable, a welcome, a Kahneman essay (summarised in Essays), a paywalled live replay, a travel-politics essay and a live-chat alert.</span></li>
+          <li><span class="who">Substack notices ×6</span><span>New free subscriber hello@app.com on your publication (a placeholder-looking address, no action), algorithmic recommendations, live-video alerts and a notes digest (agent-loop design, learn fundamentals before frameworks).</span></li>
+          <li><span class="who">Welcome / confirm mails ×8</span><span>Automated welcomes from Why Try AI, State of AI, SwissCareer, AI Engineering Newsletter, Adi &amp; Neel and Alvyr, plus a confirmation request from Kirupa (2609) that may still need a click.</span></li>
+          <li><span class="who">PerThirtySix ×1, Marily ×1</span><span>A gas-price-vs-groceries explainer (R² 0.04 same month, 0.34 with an 8-month lag) mixed with a football game promo; Marily's preview is in Quick hits.</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="colophon">Compiled from 164 messages in newsletter@msar.me, 5 – 12 October 2026, via Spark. Every summary above was read from the email body, not the subject line, across seven parallel research passes covering the TLDR family, AI newsletters, engineering-leadership newsletters, system-design and dev roundups, and product/personal newsletters; the two Pointer issues were read directly.<br>
+    A separate adversarial fact-check pass re-read the source emails behind twelve of the most specific numeric claims (all confirmed); figures that only appeared in the paywalled remainder of a post, and conflicts between sources, are flagged in the items. Many Substack items are free previews, so figures from the paywalled remainder are not included.<br>
+    Ticks are stored in this browser only. Next edition: Monday, 8:00 AM.
+  </footer>
+
+</div>
+
+<button class="totop" id="toTop" type="button" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+(function(){var a=[].slice.call(document.querySelectorAll('.mnav a'));if(!a.length||!('IntersectionObserver' in window))return;
+var m=a.map(function(x){return document.querySelector(x.getAttribute('href'));});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var i=m.indexOf(e.target);if(i<0)return;a.forEach(function(x){x.classList.remove('on');});a[i].classList.add('on');var nv=a[i].parentNode;nv.scrollLeft=a[i].offsetLeft-(nv.clientWidth-a[i].offsetWidth)/2;});},{rootMargin:'-10% 0px -75% 0px'});
+m.forEach(function(s){if(s)io.observe(s);});})();
+</script>
+<script>
+(function(){
+  var KEY='inbox-signal-2026-10-12-v1';
+  var ticks=[].slice.call(document.querySelectorAll('.tick'));
+  ticks.forEach(function(t,i){ t.removeAttribute('hidden'); t.dataset.idx=i; });
+
+  var state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
+
+  function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+
+  var bar=document.getElementById('progBar');
+  var txt=document.getElementById('progText');
+  function paint(){
+    var n=ticks.filter(function(t){return t.checked;}).length;
+    if(txt) txt.textContent=n+' of '+ticks.length+' read';
+    if(bar) bar.style.width=(ticks.length? (n/ticks.length*100):0)+'%';
+  }
+
+  ticks.forEach(function(t){
+    if(state[t.dataset.idx]) t.checked=true;
+    t.addEventListener('change',function(){
+      if(t.checked){ state[t.dataset.idx]=1; } else { delete state[t.dataset.idx]; }
+      save(); paint();
+    });
+  });
+  paint();
+
+  var reset=document.getElementById('resetBtn');
+  if(reset) reset.addEventListener('click',function(){
+    ticks.forEach(function(t){t.checked=false;});
+    state={}; save(); paint();
+  });
+
+  // scroll spy
+  var links=[].slice.call(document.querySelectorAll('.rail a'));
+  var secs=links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var i=secs.indexOf(en.target);
+        if(i<0) return;
+        links.forEach(function(l){ l.classList.remove('on'); });
+        links[i].classList.add('on');
+      });
+    },{rootMargin:'-10% 0px -75% 0px',threshold:0});
+    secs.forEach(function(s){ if(s) io.observe(s); });
+  }
+
+  // scroll-to-top FAB (works when the page scrolls itself or when an iframe is auto-sized and the parent scrolls)
+  var toTop=document.getElementById('toTop'), top=document.querySelector('.masthead');
+  function goto(el){ try{ el.scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){ window.scrollTo(0,0); } }
+  if(toTop && top){
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){
+        es.forEach(function(e){ toTop.classList.toggle('show',!e.isIntersecting); });
+      },{threshold:0}).observe(top);
+    } else {
+      window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>420); },{passive:true});
+    }
+    toTop.addEventListener('click',function(){ goto(top); });
+  }
+  // in-page navigation via scrollIntoView so it also works inside iframes
+  [].slice.call(document.querySelectorAll('.rail a, .mnav a')).forEach(function(a){
+    a.addEventListener('click',function(ev){
+      var t=document.querySelector(a.getAttribute('href'));
+      if(t){ ev.preventDefault(); goto(t); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

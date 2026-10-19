@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Inbox Signal — Week of 12 – 19 Oct 2026</title>
+<link>Inbox-Signal-2026-10-19.html</link>
+<description>Weekly digest of newsletter email for Saiful Alam, 12 – 19 Oct 2026: ranked picks, summaries with the real numbers, and links to the full articles.</description>
+<language>en</language>
+<pubDate>Mon, 19 Oct 2026 22:43:49 +0600</pubDate>
+<lastBuildDate>Mon, 19 Oct 2026 22:43:49 +0600</lastBuildDate>
+<item>
+<title>Teams ship about 3x more code and still review it the same way: output is up, measured value and trust are not</title>
+<link>https://newsletter.techworld-with-milan.com/p/trends-12</link>
+<description>Linear's report has agent-using teams going from 21 to 65 PRs a week, yet nobody saved time; METR found maintainers merge far fewer AI PRs than graders predicted.</description>
+<source>Tech World with Milan</source>
+<guid isPermaLink="true">https://newsletter.techworld-with-milan.com/p/trends-12</guid>
+<pubDate>Thu, 15 Oct 2026 21:02:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic left Git because agent-driven merges outgrew it, and rebuilt code review around risk tiers rather than reading every diff [Scion post]</title>
+<link>https://www.anthropic.com/engineering/redesigning-source-control</link>
+<description>Merges grew from about 2,500 a day in May to over 30,000 a day by September, so Anthropic built its own source control and tiered its code review.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://www.anthropic.com/engineering/redesigning-source-control</guid>
+<pubDate>Wed, 14 Oct 2026 17:38:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic left Git because agent-driven merges outgrew it, and rebuilt code review around risk tiers rather than reading every diff [Code review post]</title>
+<link>https://claude.dev/blog/solving-code-review-at-anthropic/</link>
+<description>Merges grew from about 2,500 a day in May to over 30,000 a day by September, so Anthropic built its own source control and tiered its code review.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://claude.dev/blog/solving-code-review-at-anthropic/</guid>
+<pubDate>Mon, 19 Oct 2026 20:23:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic left Git because agent-driven merges outgrew it, and rebuilt code review around risk tiers rather than reading every diff [Meng Li on review]</title>
+<link>https://aidisruption.ai/p/how-the-claude-code-team-does-code</link>
+<description>Merges grew from about 2,500 a day in May to over 30,000 a day by September, so Anthropic built its own source control and tiered its code review.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/how-the-claude-code-team-does-code</guid>
+<pubDate>Mon, 19 Oct 2026 19:05:00 +0600</pubDate>
+</item>
+<item>
+<title>Uber's AI developer infrastructure: a model gateway, tiered spend controls, and code review as the new bottleneck</title>
+<link>https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside</link>
+<description>Uber's service count is roughly flat while the business grew about 10x; token costs fell about 50% in recent months behind a model gateway and tiered spend.</description>
+<source>The Pragmatic Engineer</source>
+<guid isPermaLink="true">https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside</guid>
+<pubDate>Wed, 14 Oct 2026 23:06:00 +0600</pubDate>
+</item>
+<item>
+<title>'Code is a commodity now' — and AI labs, hyperscalers and consultancies are building deployment companies to sell what is left [Code is a commodity]</title>
+<link>https://efp.asia/blog/2026/10/15/code-is-a-commodity-now/</link>
+<description>Agencies should sell domain expertise and outcome accountability rather than hours, while labs and consultancies form deployment companies with embedded engineers.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://efp.asia/blog/2026/10/15/code-is-a-commodity-now/</guid>
+<pubDate>Fri, 16 Oct 2026 17:52:00 +0600</pubDate>
+</item>
+<item>
+<title>'Code is a commodity now' — and AI labs, hyperscalers and consultancies are building deployment companies to sell what is left [DeployCos]</title>
+<link>https://www.tanayj.com/p/the-rise-of-deploycos</link>
+<description>Agencies should sell domain expertise and outcome accountability rather than hours, while labs and consultancies form deployment companies with embedded engineers.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://www.tanayj.com/p/the-rise-of-deploycos</guid>
+<pubDate>Thu, 15 Oct 2026 18:38:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic's own workforce study: agents now outwork people inside the company, and junior technical hiring has collapsed [Anthropic research]</title>
+<link>https://www.anthropic.com/research/employment-at-anthropic</link>
+<description>By August agents worked about 6 hours per human hour in employee-directed sessions, and the junior share of technical hires fell from 27% to 9%.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.anthropic.com/research/employment-at-anthropic</guid>
+<pubDate>Mon, 19 Oct 2026 20:23:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic's own workforce study: agents now outwork people inside the company, and junior technical hiring has collapsed [AI Corner breakdown]</title>
+<link>https://www.the-ai-corner.com/p/the-agent-workforce-kit-anthropics</link>
+<description>By August agents worked about 6 hours per human hour in employee-directed sessions, and the junior share of technical hires fell from 27% to 9%.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.the-ai-corner.com/p/the-agent-workforce-kit-anthropics</guid>
+<pubDate>Sun, 18 Oct 2026 06:31:00 +0600</pubDate>
+</item>
+<item>
+<title>Open-weight models now carry 71.5% of gateway tokens but 23% of spend, and Meta's Muse Spark Open is the newest contender [Vercel index]</title>
+<link>https://vercel.com/blog/ai-gateway-production-index-october-2026</link>
+<description>Vercel's AI Gateway index has open-weight models at 71.5% of September tokens and 23% of spend.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://vercel.com/blog/ai-gateway-production-index-october-2026</guid>
+<pubDate>Fri, 16 Oct 2026 20:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Open-weight models now carry 71.5% of gateway tokens but 23% of spend, and Meta's Muse Spark Open is the newest contender [Muse Spark Open]</title>
+<link>https://research.meta.ai/blog/muse-spark-open</link>
+<description>Vercel's AI Gateway index has open-weight models at 71.5% of September tokens and 23% of spend.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://research.meta.ai/blog/muse-spark-open</guid>
+<pubDate>Fri, 16 Oct 2026 20:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Agent teams cost 1.8-5.1x more than one agent with no statistically significant gain, except in one configuration [Vals study]</title>
+<link>https://www.vals.ai/blogs/multi-agent-vibe-code-bench</link>
+<description>Vals AI found agent teams cost 1.8-5.1x more than a single agent, with a significant gain only for Sol at medium effort.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.vals.ai/blogs/multi-agent-vibe-code-bench</guid>
+<pubDate>Mon, 12 Oct 2026 20:23:00 +0600</pubDate>
+</item>
+<item>
+<title>Agent teams cost 1.8-5.1x more than one agent with no statistically significant gain, except in one configuration [Dynamic workflows]</title>
+<link>https://www.latent.space/p/claude-dynamic-workflows</link>
+<description>Vals AI found agent teams cost 1.8-5.1x more than a single agent, with a significant gain only for Sol at medium effort.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.latent.space/p/claude-dynamic-workflows</guid>
+<pubDate>Tue, 13 Oct 2026 00:18:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic's Q3 revenue is reported at $16.8B, but IPO valuation talk is meeting skepticism</title>
+<link>https://aidisruption.ai/p/anthropic-exposes-ais-harshest-truth</link>
+<description>Anthropic reportedly told investors Q3 revenue rose about 45% to $16.8B while one critic says secondary quotes are below $1.7T.</description>
+<source>AI Disruption</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/anthropic-exposes-ais-harshest-truth</guid>
+<pubDate>Sun, 18 Oct 2026 18:07:00 +0600</pubDate>
+</item>
+<item>
+<title>Per-token prices mislead: a 33% price cut produced a 4% higher bill, and five frontier models sit within 5 points at a 3.8x cost spread [Tunguz]</title>
+<link>https://tomtunguz.com/intelligence-per-dollar-2026/</link>
+<description>Five frontier models sit within 5 points on a benchmark but with a 3.8x cost spread, and a 33% token-price cut raised one test bill by 4%.</description>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://tomtunguz.com/intelligence-per-dollar-2026/</guid>
+<pubDate>Fri, 16 Oct 2026 18:45:00 +0600</pubDate>
+</item>
+<item>
+<title>Per-token prices mislead: a 33% price cut produced a 4% higher bill, and five frontier models sit within 5 points at a 3.8x cost spread [Token-price test]</title>
+<link>https://three.dev/blog/the-free-upgrade-that-raised-your-bill</link>
+<description>Five frontier models sit within 5 points on a benchmark but with a 3.8x cost spread, and a 33% token-price cut raised one test bill by 4%.</description>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://three.dev/blog/the-free-upgrade-that-raised-your-bill</guid>
+<pubDate>Fri, 16 Oct 2026 18:45:00 +0600</pubDate>
+</item>
+<item>
+<title>Per-token prices mislead: a 33% price cut produced a 4% higher bill, and five frontier models sit within 5 points at a 3.8x cost spread [Ramp AI Index]</title>
+<link>https://econlab.substack.com/p/ai-index-oct-2026</link>
+<description>Five frontier models sit within 5 points on a benchmark but with a 3.8x cost spread, and a 33% token-price cut raised one test bill by 4%.</description>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://econlab.substack.com/p/ai-index-oct-2026</guid>
+<pubDate>Fri, 16 Oct 2026 18:45:00 +0600</pubDate>
+</item>
+<item>
+<title>CoreWeave's debt is the week's AI-financing stress test; the two sources give different figures [CNBC on CoreWeave]</title>
+<link>https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html</link>
+<description>CoreWeave is reported with more than $51B in debt and obligations by CNBC, against about $35.6B in debt in another source's disclosure-based figure.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html</guid>
+<pubDate>Fri, 16 Oct 2026 17:27:00 +0600</pubDate>
+</item>
+<item>
+<title>CoreWeave's debt is the week's AI-financing stress test; the two sources give different figures [Meng Li on Nvidia]</title>
+<link>https://aidisruption.ai/p/nvidias-real-bet-ai-computing-infrastructure</link>
+<description>CoreWeave is reported with more than $51B in debt and obligations by CNBC, against about $35.6B in debt in another source's disclosure-based figure.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/nvidias-real-bet-ai-computing-infrastructure</guid>
+<pubDate>Mon, 19 Oct 2026 17:41:00 +0600</pubDate>
+</item>
+<item>
+<title>Safe agent autonomy depends on where controls sit, not how many restrictions you add</title>
+<link>https://www.latent.space/p/crossing-the-threshold</link>
+<description>Two Sigma and Bloomberg argue for composable, deterministic controls outside the model rather than blanket approvals.</description>
+<source>Latent.Space</source>
+<guid isPermaLink="true">https://www.latent.space/p/crossing-the-threshold</guid>
+<pubDate>Thu, 15 Oct 2026 03:40:00 +0600</pubDate>
+</item>
+<item>
+<title>A small energy-based model solved 96.2% of Sudoku puzzles where a panel of frontier LLMs managed 2%</title>
+<link>https://blog.bytebytego.com/p/how-to-build-models-without-language</link>
+<description>Logical Intelligence says its small Kona model solved 96.2% of Sudoku puzzles against 2% for a panel of frontier LLMs.</description>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://blog.bytebytego.com/p/how-to-build-models-without-language</guid>
+<pubDate>Mon, 12 Oct 2026 21:00:00 +0600</pubDate>
+</item>
+<item>
+<title>Gemini 4 Argon is generally available with a price cliff on 30 November and mixed independent evidence [AINews on Argon]</title>
+<link>https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon</link>
+<description>Gemini 4 Argon's intro price of $2 / $10 per million tokens doubles after 30 November.</description>
+<source>AINews</source>
+<guid isPermaLink="true">https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon</guid>
+<pubDate>Wed, 14 Oct 2026 11:40:00 +0600</pubDate>
+</item>
+<item>
+<title>Gemini 4 Argon is generally available with a price cliff on 30 November and mixed independent evidence [The New Stack test]</title>
+<link>https://thenewstack.io/gemini-argon-claude-opus/</link>
+<description>Gemini 4 Argon's intro price of $2 / $10 per million tokens doubles after 30 November.</description>
+<source>AINews</source>
+<guid isPermaLink="true">https://thenewstack.io/gemini-argon-claude-opus/</guid>
+<pubDate>Mon, 19 Oct 2026 17:53:00 +0600</pubDate>
+</item>
+<item>
+<title>Measure agent ROI per goal, not per session or token: Ramp's data shows session-level views misread cost</title>
+<link>https://www.the-ai-corner.com/p/measure-ai-agent-return-on-investment</link>
+<description>Ramp's Inspect agent wrote 75% of accepted code changes, and runs pursuing more than one goal were 17% of runs but 58% of spend.</description>
+<source>The AI Corner</source>
+<guid isPermaLink="true">https://www.the-ai-corner.com/p/measure-ai-agent-return-on-investment</guid>
+<pubDate>Thu, 15 Oct 2026 03:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Three proposals for what replaces line-by-line human review of agent PRs [Human PR review is next]</title>
+<link>https://scienceisneato.substack.com/p/human-pr-review-is-next</link>
+<description>Three TLDR Dev links propose replacing line-by-line PR review with evidence-based routing and human-cost metrics.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://scienceisneato.substack.com/p/human-pr-review-is-next</guid>
+<pubDate>Tue, 13 Oct 2026 17:42:00 +0600</pubDate>
+</item>
+<item>
+<title>Three proposals for what replaces line-by-line human review of agent PRs [Gittifacts]</title>
+<link>https://jovidecroock.com/blog/gittifacts</link>
+<description>Three TLDR Dev links propose replacing line-by-line PR review with evidence-based routing and human-cost metrics.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://jovidecroock.com/blog/gittifacts</guid>
+<pubDate>Mon, 19 Oct 2026 17:53:00 +0600</pubDate>
+</item>
+<item>
+<title>Three proposals for what replaces line-by-line human review of agent PRs [Cost of an accepted result]</title>
+<link>https://cutler.sg/blog/2026-10-measure-agent-review-time</link>
+<description>Three TLDR Dev links propose replacing line-by-line PR review with evidence-based routing and human-cost metrics.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://cutler.sg/blog/2026-10-measure-agent-review-time</guid>
+<pubDate>Fri, 16 Oct 2026 17:52:00 +0600</pubDate>
+</item>
+<item>
+<title>Put a name on every project: one hands-on IC as the directly responsible individual, with a weekly written update</title>
+<link>https://theengineeringmanager.substack.com/p/put-a-name-on-it</link>
+<description>Nordhealth gives each of about 30 projects a named DRI who posts a weekly update that leadership reads in 30-60 minutes.</description>
+<source>The Engineering Manager</source>
+<guid isPermaLink="true">https://theengineeringmanager.substack.com/p/put-a-name-on-it</guid>
+<pubDate>Tue, 13 Oct 2026 22:31:00 +0600</pubDate>
+</item>
+<item>
+<title>LinearB data: AI PRs merge at roughly a third the rate of human ones and wait 5.25x longer for review [Ask the factory first]</title>
+<link>https://devinterrupted.substack.com/p/your-agents-should-ask-the-factory</link>
+<description>LinearB's benchmarks have AI-generated PRs merging at 32.7% against 84.4% for human-written PRs.</description>
+<source>Dev Interrupted</source>
+<guid isPermaLink="true">https://devinterrupted.substack.com/p/your-agents-should-ask-the-factory</guid>
+<pubDate>Fri, 16 Oct 2026 04:45:00 +0600</pubDate>
+</item>
+<item>
+<title>LinearB data: AI PRs merge at roughly a third the rate of human ones and wait 5.25x longer for review [Spec-first factory]</title>
+<link>https://devinterrupted.substack.com/p/building-the-software-factory-from</link>
+<description>LinearB's benchmarks have AI-generated PRs merging at 32.7% against 84.4% for human-written PRs.</description>
+<source>Dev Interrupted</source>
+<guid isPermaLink="true">https://devinterrupted.substack.com/p/building-the-software-factory-from</guid>
+<pubDate>Wed, 14 Oct 2026 00:33:00 +0600</pubDate>
+</item>
+<item>
+<title>Code is no longer scarce; build an 'AI harness' around scarce human attention</title>
+<link>https://newsletter.agentengineering.co/p/ai-harness-for-software-engineering</link>
+<description>A five-part 'AI harness' of specs, guardrails, decision records, review gates and delegation rules for scarce human attention.</description>
+<source>Agentic Engineering</source>
+<guid isPermaLink="true">https://newsletter.agentengineering.co/p/ai-harness-for-software-engineering</guid>
+<pubDate>Thu, 15 Oct 2026 22:08:00 +0600</pubDate>
+</item>
+<item>
+<title>Companies are building 'internal Lovables' for non-engineers: Ramp's Glass and Stripe's Harbor</title>
+<link>https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal-aeb</link>
+<description>Ramp's four-person team built Glass and Stripe's Harbor took one engineer about six weeks.</description>
+<source>The Pragmatic Engineer</source>
+<guid isPermaLink="true">https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal-aeb</guid>
+<pubDate>Thu, 15 Oct 2026 23:01:00 +0600</pubDate>
+</item>
+<item>
+<title>The senior-to-architect gap is deciding across team boundaries; an architect's job is to push scope, timeline and people before quality [Senior to architect]</title>
+<link>https://softwarearchitectureguild.substack.com/p/from-senior-developer-to-architect</link>
+<description>A scored skills-gap view of the senior-developer-to-architect move, plus an argument that scope and timeline should move before quality.</description>
+<source>Software Architecture Guild</source>
+<guid isPermaLink="true">https://softwarearchitectureguild.substack.com/p/from-senior-developer-to-architect</guid>
+<pubDate>Mon, 19 Oct 2026 11:01:00 +0600</pubDate>
+</item>
+<item>
+<title>The senior-to-architect gap is deciding across team boundaries; an architect's job is to push scope, timeline and people before quality [Architect as problem solver]</title>
+<link>https://softwarearchitectureguild.substack.com/p/architect-as-problem-solver</link>
+<description>A scored skills-gap view of the senior-developer-to-architect move, plus an argument that scope and timeline should move before quality.</description>
+<source>Software Architecture Guild</source>
+<guid isPermaLink="true">https://softwarearchitectureguild.substack.com/p/architect-as-problem-solver</guid>
+<pubDate>Mon, 12 Oct 2026 11:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Knowledge capture compounds, and good engineering is an exercise in human relationships</title>
+<link>https://refactoring.fm/p/knowledge-capturing-human-relationships</link>
+<description>Refactoring argues that agents turn documentation from a tax into an asset, and that good engineering depends on human relationships.</description>
+<source>Refactoring</source>
+<guid isPermaLink="true">https://refactoring.fm/p/knowledge-capturing-human-relationships</guid>
+<pubDate>Mon, 12 Oct 2026 12:02:00 +0600</pubDate>
+</item>
+<item>
+<title>AI has killed Amazon's writing culture: a six-pager read for the first time two minutes into the meeting</title>
+<link>https://alifeengineered.substack.com/p/on-the-death-of-amazons-writing-culture</link>
+<description>A former Amazon engineer argues AI has broken the six-pager guarantee of clear thinking and proposes a two-way-door rule.</description>
+<source>A Life Engineered</source>
+<guid isPermaLink="true">https://alifeengineered.substack.com/p/on-the-death-of-amazons-writing-culture</guid>
+<pubDate>Wed, 14 Oct 2026 18:06:00 +0600</pubDate>
+</item>
+<item>
+<title>The feature factory is a spectrum, not a binary, and outcome language can be a proxy too</title>
+<link>https://cutlefish.substack.com/p/tbm-445-the-feature-factory-a-10</link>
+<description>John Cutler argues the feature factory is a spectrum and that outcome language and OKRs can themselves be proxies.</description>
+<source>The Beautiful Mess</source>
+<guid isPermaLink="true">https://cutlefish.substack.com/p/tbm-445-the-feature-factory-a-10</guid>
+<pubDate>Fri, 16 Oct 2026 03:51:00 +0600</pubDate>
+</item>
+<item>
+<title>Two Sean Goedecke essays: the human-plus-AI 'centaur' phase may last decades, and engineers don't get to be Luddites [Centaur age]</title>
+<link>https://www.seangoedecke.com/softwares-centaur-age-may-last-decades/</link>
+<description>Goedecke argues the human-plus-AI centaur phase may last decades.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://www.seangoedecke.com/softwares-centaur-age-may-last-decades/</guid>
+<pubDate>Mon, 12 Oct 2026 17:52:00 +0600</pubDate>
+</item>
+<item>
+<title>Two Sean Goedecke essays: the human-plus-AI 'centaur' phase may last decades, and engineers don't get to be Luddites [Luddites]</title>
+<link>https://www.seangoedecke.com/software-engineers-dont-get-to-be-luddites-about-ai/</link>
+<description>Goedecke argues the human-plus-AI centaur phase may last decades.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://www.seangoedecke.com/software-engineers-dont-get-to-be-luddites-about-ai/</guid>
+<pubDate>Tue, 13 Oct 2026 17:32:00 +0600</pubDate>
+</item>
+<item>
+<title>Don't read AI-written code, constrain it with tests and QA, but liability law fits badly when nobody wrote the code</title>
+<link>https://blog.ploeh.dk/2026/10/12/releasing-ai-generated-software/</link>
+<description>An essay argues AI-generated software can be released unread only with extreme constraints and automated testing.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://blog.ploeh.dk/2026/10/12/releasing-ai-generated-software/</guid>
+<pubDate>Tue, 13 Oct 2026 19:53:00 +0600</pubDate>
+</item>
+<item>
+<title>Two long reads on why change gets expensive: incompatible local models, and domains where feedback is scarce [Decoherence]</title>
+<link>https://maevyn.codes/decoherence</link>
+<description>Two long reads argue that cost of change is driven by incompatible models and that scarce-feedback domains are where AI is weakest.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://maevyn.codes/decoherence</guid>
+<pubDate>Mon, 19 Oct 2026 17:04:00 +0600</pubDate>
+</item>
+<item>
+<title>Two long reads on why change gets expensive: incompatible local models, and domains where feedback is scarce [The expensive-loop problem]</title>
+<link>https://www.lesswrong.com/posts/2mStxuNDMdaWdyHu6/the-expensive-loop-problem</link>
+<description>Two long reads argue that cost of change is driven by incompatible models and that scarce-feedback domains are where AI is weakest.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://www.lesswrong.com/posts/2mStxuNDMdaWdyHu6/the-expensive-loop-problem</guid>
+<pubDate>Tue, 13 Oct 2026 19:53:00 +0600</pubDate>
+</item>
+<item>
+<title>Knowing the shape a program should have before you write it is what AI can't do for you</title>
+<link>https://jaredpalmer.com/blog/code-you-didnt-write</link>
+<description>Jared Palmer argues that deciding a program's shape before writing it is the part AI cannot do.</description>
+<source>TLDR</source>
+<guid isPermaLink="true">https://jaredpalmer.com/blog/code-you-didnt-write</guid>
+<pubDate>Thu, 15 Oct 2026 17:30:00 +0600</pubDate>
+</item>
+<item>
+<title>Agentic verification: quality comes from loops the agent can run itself</title>
+<link>https://addyo.substack.com/p/agentic-verification</link>
+<description>Addy Osmani argues verification loops the agent can run itself matter more than code generation.</description>
+<source>Elevate</source>
+<guid isPermaLink="true">https://addyo.substack.com/p/agentic-verification</guid>
+<pubDate>Wed, 14 Oct 2026 17:31:00 +0600</pubDate>
+</item>
+<item>
+<title>Are harnesses worth the cost? One experiment says a harness lifted a cheaper model but did not help the stronger one</title>
+<link>https://martinfowler.com/articles/are-harnesses-worth-the-cost.html</link>
+<description>A ten-run experiment found a harness lifted GPT-6 Luna from 3 to 10 successes but made no difference to Sol.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://martinfowler.com/articles/are-harnesses-worth-the-cost.html</guid>
+<pubDate>Wed, 14 Oct 2026 17:52:00 +0600</pubDate>
+</item>
+<item>
+<title>Design an MCP server around jobs, not endpoints</title>
+<link>https://refactoring.fm/p/how-to-design-a-good-mcp-server</link>
+<description>Notion's and Block's first MCP servers show why tools should map to jobs rather than API endpoints.</description>
+<source>Refactoring</source>
+<guid isPermaLink="true">https://refactoring.fm/p/how-to-design-a-good-mcp-server</guid>
+<pubDate>Thu, 15 Oct 2026 14:06:00 +0600</pubDate>
+</item>
+<item>
+<title>Spec-driven development: spend the time on the spec, because fast code from unclear requirements is waste</title>
+<link>https://newsletter.eng-leadership.com/p/how-to-build-better-software-with</link>
+<description>Two spec-first workflows, from OpenAI's Codex lead and Larridin's CTO, for building with agents.</description>
+<source>Engineering Leadership</source>
+<guid isPermaLink="true">https://newsletter.eng-leadership.com/p/how-to-build-better-software-with</guid>
+<pubDate>Thu, 15 Oct 2026 19:13:00 +0600</pubDate>
+</item>
+<item>
+<title>Datadog claims its Scout SRE model matches frontier models at 3-8x lower estimated inference cost [Scout 1.0]</title>
+<link>https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/</link>
+<description>Datadog says its Scout SRE model matches frontier models at 3-8x lower estimated inference cost.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/</guid>
+<pubDate>Mon, 19 Oct 2026 17:44:00 +0600</pubDate>
+</item>
+<item>
+<title>Datadog claims its Scout SRE model matches frontier models at 3-8x lower estimated inference cost [Service criticality]</title>
+<link>https://www.datadoghq.com/blog/how-datadog-defines-service-criticality-at-scale/</link>
+<description>Datadog says its Scout SRE model matches frontier models at 3-8x lower estimated inference cost.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://www.datadoghq.com/blog/how-datadog-defines-service-criticality-at-scale/</guid>
+<pubDate>Mon, 19 Oct 2026 17:44:00 +0600</pubDate>
+</item>
+<item>
+<title>TanStack Start hit 1.0, with three companies reporting big gains after leaving Next.js [TanStack Start 1.0]</title>
+<link>https://tanstack.com/blog/tanstack-start-1-0</link>
+<description>TanStack Start reached 1.0 with companies reporting faster loads and builds after leaving Next.js.</description>
+<source>Fireship</source>
+<guid isPermaLink="true">https://tanstack.com/blog/tanstack-start-1-0</guid>
+<pubDate>Sat, 17 Oct 2026 02:01:00 +0600</pubDate>
+</item>
+<item>
+<title>TanStack Start hit 1.0, with three companies reporting big gains after leaving Next.js [Inngest]</title>
+<link>https://www.inngest.com/blog/migrating-off-nextjs-tanstack-start</link>
+<description>TanStack Start reached 1.0 with companies reporting faster loads and builds after leaving Next.js.</description>
+<source>Fireship</source>
+<guid isPermaLink="true">https://www.inngest.com/blog/migrating-off-nextjs-tanstack-start</guid>
+<pubDate>Sat, 17 Oct 2026 02:01:00 +0600</pubDate>
+</item>
+<item>
+<title>TanStack Start hit 1.0, with three companies reporting big gains after leaving Next.js [Railway]</title>
+<link>https://blog.railway.com/p/moving-railways-frontend-off-nextjs</link>
+<description>TanStack Start reached 1.0 with companies reporting faster loads and builds after leaving Next.js.</description>
+<source>Fireship</source>
+<guid isPermaLink="true">https://blog.railway.com/p/moving-railways-frontend-off-nextjs</guid>
+<pubDate>Sat, 17 Oct 2026 02:01:00 +0600</pubDate>
+</item>
+<item>
+<title>TanStack Start hit 1.0, with three companies reporting big gains after leaving Next.js [Lovable]</title>
+<link>https://lovable.dev/blog/how-we-migrated-lovable-dev-away-from-nextjs</link>
+<description>TanStack Start reached 1.0 with companies reporting faster loads and builds after leaving Next.js.</description>
+<source>Fireship</source>
+<guid isPermaLink="true">https://lovable.dev/blog/how-we-migrated-lovable-dev-away-from-nextjs</guid>
+<pubDate>Sat, 17 Oct 2026 02:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Deno joins Cloudflare: runtime development ends after a year of fixes, Deno Deploy shuts in six months, JSR continues [Deno post]</title>
+<link>https://deno.com/blog/cloudflare</link>
+<description>Deno's runtime development ends after a year of fixes and Deno Deploy shuts down in six months.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://deno.com/blog/cloudflare</guid>
+<pubDate>Mon, 12 Oct 2026 17:52:00 +0600</pubDate>
+</item>
+<item>
+<title>Deno joins Cloudflare: runtime development ends after a year of fixes, Deno Deploy shuts in six months, JSR continues [Cloudflare post]</title>
+<link>https://blog.cloudflare.com/deno-joins-cloudflare/</link>
+<description>Deno's runtime development ends after a year of fixes and Deno Deploy shuts down in six months.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://blog.cloudflare.com/deno-joins-cloudflare/</guid>
+<pubDate>Mon, 12 Oct 2026 17:43:00 +0600</pubDate>
+</item>
+<item>
+<title>Self-managed GitLab 19.2-19.4 has an unauthenticated code-execution flaw; OpenCode disclosed a breach</title>
+<link>https://thatdevopsguy.substack.com/p/anthropic-replaced-git-as-daily-merges</link>
+<description>Self-managed GitLab 19.2-19.4 needs patching to 19.2.8, 19.3.5 or 19.4.2 for an unauthenticated code-execution flaw.</description>
+<source>Rohit's AI Engineering Newsletter</source>
+<guid isPermaLink="true">https://thatdevopsguy.substack.com/p/anthropic-replaced-git-as-daily-merges</guid>
+<pubDate>Mon, 19 Oct 2026 19:00:00 +0600</pubDate>
+</item>
+<item>
+<title>WebMCP: letting sites expose JavaScript tools to agents beat browser automation in a Shopify checkout test</title>
+<link>https://blog.yoav.ws/posts/why_webmcp_matters/</link>
+<description>A Shopify checkout test had WebMCP 2.7x faster and 58% cheaper than browser automation.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://blog.yoav.ws/posts/why_webmcp_matters/</guid>
+<pubDate>Tue, 13 Oct 2026 17:42:00 +0600</pubDate>
+</item>
+<item>
+<title>Uber's Genie answers on-call questions with RAG over internal docs instead of fine-tuning</title>
+<link>https://blog.bytebytego.com/p/how-uber-built-a-genie-to-answer-051</link>
+<description>Uber's Genie covered 154 Slack channels and answered more than 70K questions in its first year, with a 48.9% helpfulness rate.</description>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://blog.bytebytego.com/p/how-uber-built-a-genie-to-answer-051</guid>
+<pubDate>Mon, 19 Oct 2026 21:31:00 +0600</pubDate>
+</item>
+<item>
+<title>Why HTTP/2 still stalls on TCP packet loss, and why HTTP/3 and QUIC exist [Part 1]</title>
+<link>https://newsletter.systemdesign.one/p/http-concepts-explained</link>
+<description>A two-part series explains why HTTP/2 can stall on TCP loss and why HTTP/3 uses QUIC.</description>
+<source>System Design One</source>
+<guid isPermaLink="true">https://newsletter.systemdesign.one/p/http-concepts-explained</guid>
+<pubDate>Thu, 15 Oct 2026 18:07:00 +0600</pubDate>
+</item>
+<item>
+<title>Why HTTP/2 still stalls on TCP packet loss, and why HTTP/3 and QUIC exist [Part 2]</title>
+<link>https://newsletter.systemdesign.one/p/http2-vs-http3-explained</link>
+<description>A two-part series explains why HTTP/2 can stall on TCP loss and why HTTP/3 uses QUIC.</description>
+<source>System Design One</source>
+<guid isPermaLink="true">https://newsletter.systemdesign.one/p/http2-vs-http3-explained</guid>
+<pubDate>Sat, 17 Oct 2026 19:34:00 +0600</pubDate>
+</item>
+<item>
+<title>Scaling an AI chat app to 1M users is mostly an inference-cost problem</title>
+<link>https://newsletter.systemdesign.one/p/llm-inference-cost-optimization</link>
+<description>At illustrative prices an AI chat app's monthly bill reaches $1.93M at 1M daily users, and routing plus caching cuts it about 75%.</description>
+<source>System Design One</source>
+<guid isPermaLink="true">https://newsletter.systemdesign.one/p/llm-inference-cost-optimization</guid>
+<pubDate>Mon, 12 Oct 2026 17:30:00 +0600</pubDate>
+</item>
+<item>
+<title>Ten scaling bottlenecks, walked through a hypothetical task app: missing index, connection exhaustion, CPU</title>
+<link>https://designgurus.substack.com/p/10-scaling-bottlenecks-every-backend</link>
+<description>A hypothetical task app shows how a missing index and connection exhaustion hit at 8 million rows.</description>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://designgurus.substack.com/p/10-scaling-bottlenecks-every-backend</guid>
+<pubDate>Thu, 15 Oct 2026 22:08:00 +0600</pubDate>
+</item>
+<item>
+<title>Resilient AI-powered software: RPO and RTO of zero are impossible, and failover capacity may not exist when memory is scarce</title>
+<link>https://newsletter.pragmaticengineer.com/p/building-resilient-systems</link>
+<description>Sam Newman's excerpts say zero RPO and RTO are impossible and failover capacity may not exist when memory is scarce.</description>
+<source>The Pragmatic Engineer</source>
+<guid isPermaLink="true">https://newsletter.pragmaticengineer.com/p/building-resilient-systems</guid>
+<pubDate>Tue, 13 Oct 2026 22:03:00 +0600</pubDate>
+</item>
+<item>
+<title>Networking fundamentals for software engineers, part one of ten concepts</title>
+<link>https://newsletter.systemdesign.one/p/networking-fundamentals-software-engineers</link>
+<description>A 10-byte payload over TCP, IPv4 and Ethernet carries 58 bytes of overhead, among other networking basics.</description>
+<source>System Design One</source>
+<guid isPermaLink="true">https://newsletter.systemdesign.one/p/networking-fundamentals-software-engineers</guid>
+<pubDate>Mon, 19 Oct 2026 20:46:00 +0600</pubDate>
+</item>
+<item>
+<title>Three Postgres items: zero-downtime migration steps, a UUIDv7 benchmark, and a silent insert ceiling [Zero-downtime migrations]</title>
+<link>https://boundlayer.io/blog/zero-downtime-postgresql-migrations</link>
+<description>On a laptop benchmark UUIDv7 inserted 10M rows in 32.3 seconds against 60.7 for UUIDv4.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://boundlayer.io/blog/zero-downtime-postgresql-migrations</guid>
+<pubDate>Mon, 12 Oct 2026 17:43:00 +0600</pubDate>
+</item>
+<item>
+<title>Three Postgres items: zero-downtime migration steps, a UUIDv7 benchmark, and a silent insert ceiling [UUID benchmark]</title>
+<link>https://importstatic.com/databases/postgres-uuidv7-vs-uuidv4-bigint</link>
+<description>On a laptop benchmark UUIDv7 inserted 10M rows in 32.3 seconds against 60.7 for UUIDv4.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://importstatic.com/databases/postgres-uuidv7-vs-uuidv4-bigint</guid>
+<pubDate>Mon, 12 Oct 2026 17:52:00 +0600</pubDate>
+</item>
+<item>
+<title>Three Postgres items: zero-downtime migration steps, a UUIDv7 benchmark, and a silent insert ceiling [EDB insert ceiling]</title>
+<link>https://www.enterprisedb.com/blog/finding-and-fixing-silent-throughput-ceiling-postgresql</link>
+<description>On a laptop benchmark UUIDv7 inserted 10M rows in 32.3 seconds against 60.7 for UUIDv4.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://www.enterprisedb.com/blog/finding-and-fixing-silent-throughput-ceiling-postgresql</guid>
+<pubDate>Mon, 19 Oct 2026 17:44:00 +0600</pubDate>
+</item>
+<item>
+<title>ClickHouse chased a 32 ms tail latency: idle connections reset the TCP congestion window</title>
+<link>https://clickhouse.com/blog/chasing-32ms-tail-latency-clickhouse</link>
+<description>ClickHouse traced a 32 ms tail latency to TCP congestion-window resets after idle and fixed it by batching.</description>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://clickhouse.com/blog/chasing-32ms-tail-latency-clickhouse</guid>
+<pubDate>Thu, 15 Oct 2026 18:38:00 +0600</pubDate>
+</item>
+<item>
+<title>Rippling's outbound engine only pays because of multi-product expansion</title>
+<link>https://www.thevccorner.com/p/ripplings-outbound-gtm-strategy-is</link>
+<description>Rippling's switch to phone-based SDRs lifted conversion from about 1% to 3-7%, but the payback depends on multi-product expansion.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://www.thevccorner.com/p/ripplings-outbound-gtm-strategy-is</guid>
+<pubDate>Wed, 14 Oct 2026 20:27:00 +0600</pubDate>
+</item>
+<item>
+<title>G2: 91% of B2B buyers find per-seat AI pricing unfair, and credit-based pricing leaves buyers unable to tell what they are buying [G2 report via SaaStr]</title>
+<link>https://www.saastr.com/g2s-2026-ai-agents-report-only-9-of-buyers-think-seat-pricing-is-fair-57-want-usage-based-and-74-will-shop-you-at-renewal/</link>
+<description>G2's report says 91% of B2B buyers find per-seat AI pricing unfair and 57% prefer usage-based pricing.</description>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://www.saastr.com/g2s-2026-ai-agents-report-only-9-of-buyers-think-seat-pricing-is-fair-57-want-usage-based-and-74-will-shop-you-at-renewal/</guid>
+<pubDate>Mon, 19 Oct 2026 18:44:00 +0600</pubDate>
+</item>
+<item>
+<title>G2: 91% of B2B buyers find per-seat AI pricing unfair, and credit-based pricing leaves buyers unable to tell what they are buying [AI pricing confusion]</title>
+<link>https://www.elenaverna.com/p/what-on-earth-is-going-on-with-ai</link>
+<description>G2's report says 91% of B2B buyers find per-seat AI pricing unfair and 57% prefer usage-based pricing.</description>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://www.elenaverna.com/p/what-on-earth-is-going-on-with-ai</guid>
+<pubDate>Mon, 19 Oct 2026 18:44:00 +0600</pubDate>
+</item>
+<item>
+<title>PostHog's 38 lessons from ten AI products: build for the agent first, and context beats the harness</title>
+<link>https://newsletter.posthog.com/p/38-things-weve-learned-about-building</link>
+<description>PostHog says five times more people use its MCP server daily than its in-app AI, and context beat better reasoning in its tests.</description>
+<source>build mode by PostHog</source>
+<guid isPermaLink="true">https://newsletter.posthog.com/p/38-things-weve-learned-about-building</guid>
+<pubDate>Tue, 13 Oct 2026 00:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Why lean AI-native startups beat traditional SaaS, per Stripe data cited by the author</title>
+<link>https://www.thevccorner.com/p/why-ai-native-startups-are-beating-saas</link>
+<description>A VC essay cites Stripe data that AI-native startups hit $30M annualised revenue in about 20 months against 60+ for SaaS peers.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://www.thevccorner.com/p/why-ai-native-startups-are-beating-saas</guid>
+<pubDate>Wed, 14 Oct 2026 22:27:00 +0600</pubDate>
+</item>
+<item>
+<title>How VCs actually make money, and why they need huge exits</title>
+<link>https://www.the-founders-corner.com/p/how-vcs-actually-make-their-money</link>
+<description>A $100M fund owning 10% of a company needs a $1B exit to return the fund, per this explainer.</description>
+<source>The Founders Corner</source>
+<guid isPermaLink="true">https://www.the-founders-corner.com/p/how-vcs-actually-make-their-money</guid>
+<pubDate>Mon, 12 Oct 2026 14:00:00 +0600</pubDate>
+</item>
+<item>
+<title>Lightsprint raised $6.1M to sell 'agreement', not coding speed: non-technical staff describe a change and engineering reviews the PR</title>
+<link>https://www.thevccorner.com/p/lightsprint-seed-pitch-deck-6-1m</link>
+<description>Lightsprint claims 1,000+ non-technical PRs merged and about 80% of merged code written by agents.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://www.thevccorner.com/p/lightsprint-seed-pitch-deck-6-1m</guid>
+<pubDate>Thu, 15 Oct 2026 22:03:00 +0600</pubDate>
+</item>
+<item>
+<title>Higgsfield says it went from $1M to $1B annualised revenue in 18 months; all figures are the founder's claims</title>
+<link>https://www.the-ai-corner.com/p/higgsfield-1b-arr-alex-mashrabov</link>
+<description>Higgsfield's founder claims $1B annualised revenue after 18 months, with margins over 80% on open-weight models.</description>
+<source>The AI Corner</source>
+<guid isPermaLink="true">https://www.the-ai-corner.com/p/higgsfield-1b-arr-alex-mashrabov</guid>
+<pubDate>Fri, 16 Oct 2026 21:45:00 +0600</pubDate>
+</item>
+<item>
+<title>The 2026 fundraising market is concentrated: AI took 82.7% of US venture dollars through September</title>
+<link>https://www.the-ai-corner.com/p/the-ai-era-fundraising-toolkit-105</link>
+<description>PitchBook-NVCA has AI at 82.7% of US venture dollars through September, and only 211 emerging VC firms closed a fund this year.</description>
+<source>The AI Corner</source>
+<guid isPermaLink="true">https://www.the-ai-corner.com/p/the-ai-era-fundraising-toolkit-105</guid>
+<pubDate>Mon, 19 Oct 2026 03:36:00 +0600</pubDate>
+</item>
+<item>
+<title>App Store 15% fee versus web checkout: a $9.99 subscription nets $8.49 in-app against about $9.33 on the web</title>
+<link>https://okaneland.com/ledger/app-store-or-web-checkout/</link>
+<description>A $9.99 subscription nets $8.49 in the App Store and about $9.33 on web checkout, but a 9% buyer loss erases the gain.</description>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://okaneland.com/ledger/app-store-or-web-checkout/</guid>
+<pubDate>Mon, 19 Oct 2026 18:44:00 +0600</pubDate>
+</item>
+<item>
+<title>NN/g: synthetic respondents reach the same conclusion as humans but converge on far fewer answers</title>
+<link>https://www.nngroup.com/articles/synthetic-users-vs-human-respondents/</link>
+<description>NN/g found 120 synthetic respondents matched 604 humans' conclusion but used about a dozen labels against 50+.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://www.nngroup.com/articles/synthetic-users-vs-human-respondents/</guid>
+<pubDate>Mon, 19 Oct 2026 18:36:00 +0600</pubDate>
+</item>
+<item>
+<title>NN/g's 'new big ball of mud': non-technical 'vibe architects' grow fragile agentic systems</title>
+<link>https://www.nngroup.com/articles/big-ball-of-mud-ai/</link>
+<description>NN/g describes non-technical builders letting AI patch files until they can no longer recreate their own system.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://www.nngroup.com/articles/big-ball-of-mud-ai/</guid>
+<pubDate>Mon, 12 Oct 2026 18:37:00 +0600</pubDate>
+</item>
+<item>
+<title>Low-contrast text on 83.9% of top-million home pages, and a pure-CSS icon system [Clearleft]</title>
+<link>https://clearleft.com/thinking/fix-the-contrast-without-losing-your-brand</link>
+<description>Low-contrast text appears on 83.9% of top-million home pages, according to the post Clearleft builds on.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://clearleft.com/thinking/fix-the-contrast-without-losing-your-brand</guid>
+<pubDate>Wed, 14 Oct 2026 18:35:00 +0600</pubDate>
+</item>
+<item>
+<title>Low-contrast text on 83.9% of top-million home pages, and a pure-CSS icon system [Lea Verou's icons]</title>
+<link>https://lea.verou.me/blog/2026/icons/</link>
+<description>Low-contrast text appears on 83.9% of top-million home pages, according to the post Clearleft builds on.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://lea.verou.me/blog/2026/icons/</guid>
+<pubDate>Wed, 14 Oct 2026 18:35:00 +0600</pubDate>
+</item>
+<item>
+<title>Make room for hard things: the hunger for hard problems comes from a simple life, not a trait</title>
+<link>https://refactoring.fm/p/making-room-for-hard-things-stories</link>
+<description>Luca Rossi argues the hunger for hard problems comes from covered basic needs, and advises spending half your time on stretch work.</description>
+<source>Refactoring</source>
+<guid isPermaLink="true">https://refactoring.fm/p/making-room-for-hard-things-stories</guid>
+<pubDate>Mon, 19 Oct 2026 13:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Judge a decision by the quality of its reasoning, not its result</title>
+<link>https://remotejobsandyou.substack.com/p/when-the-outcome-cant-be-known-what</link>
+<description>Amazon traded near $106 in December 1999 and under $6 in September 2001, the essay's example of judging reasoning not results.</description>
+<source>Remote Jobs and You</source>
+<guid isPermaLink="true">https://remotejobsandyou.substack.com/p/when-the-outcome-cant-be-known-what</guid>
+<pubDate>Wed, 14 Oct 2026 19:03:00 +0600</pubDate>
+</item>
+<item>
+<title>Why Your Engineering Team Is Slow (Alex Piechowski)</title>
+<link>https://piechowski.io/post/codebase-drag-audit/?aid=recUkmBft9TMiU96j</link>
+<description>A scoring rubric from years of codebase audits: five signals scored 0 to 2, and a total of 4 or above means the code needs direct investment first.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://piechowski.io/post/codebase-drag-audit/?aid=recUkmBft9TMiU96j</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>"You Didn't Do It Right" (Jason Cohen)</title>
+<link>https://longform.asmartbear.com/you-didnt-do-it-right/?aid=recF7Km762kPrNfb3</link>
+<description>Four sincere attempts at OKRs, four failures, and every time 'you didn't do it right'.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://longform.asmartbear.com/you-didnt-do-it-right/?aid=recF7Km762kPrNfb3</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>I Don't Want The Details (Michael Heap)</title>
+<link>https://michaelheap.com/i-dont-want-the-details/?aid=recoKoKUvYtIvRAH9</link>
+<description>An executive saying 'I don't want the details' can mean 'I already believe you, now let's talk about what happens next'.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://michaelheap.com/i-dont-want-the-details/?aid=recoKoKUvYtIvRAH9</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>Don't Diagnose Your Opponents (Sean Goedecke)</title>
+<link>https://www.seangoedecke.com/dont-diagnose-your-opponents/?aid=rec7mmTpxGBtHVSS3</link>
+<description>When you disagree, engage with what they say rather than diagnosing why they say it.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://www.seangoedecke.com/dont-diagnose-your-opponents/?aid=rec7mmTpxGBtHVSS3</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>How To Effectively Debug When You No Longer Understand The Code (Cindy Sridharan)</title>
+<link>https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b?aid=recTHpefRCnNtpiEL</link>
+<description>An emergent skillset different from coding or traditional debugging, and one that can be honed.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://copyconstruct.medium.com/how-to-effectively-debug-when-you-no-longer-understand-the-code-bd3dcb2c5f7b?aid=recTHpefRCnNtpiEL</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>38 Things We've Learned About Building AI Products (Ian Vanagas)</title>
+<link>https://newsletter.posthog.com/p/38-things-weve-learned-about-building?aid=recstKnV5OzZy3gvh</link>
+<description>Ten AI products at PostHog used by nearly 100,000 people a month (see Product).</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://newsletter.posthog.com/p/38-things-weve-learned-about-building?aid=recstKnV5OzZy3gvh</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>Grieving The Loss Of Details (Alisa Sireneva)</title>
+<link>https://purplesyringa.moe/blog/grieving-the-loss-of-details/?aid=recU5i36ylRWcaIUD</link>
+<description>A journal note on where the author stands relative to the industry, posted in case someone relates.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://purplesyringa.moe/blog/grieving-the-loss-of-details/?aid=recU5i36ylRWcaIUD</guid>
+<pubDate>Tue, 13 Oct 2026 19:30:00 +0600</pubDate>
+</item>
+<item>
+<title>Put A Name On It (James Stanier)</title>
+<link>https://theengineeringmanager.substack.com/p/put-a-name-on-it?aid=recWpsfFpobD4EGXf</link>
+<description>Named ownership: one person per project, by name, visible to everyone (see Engineering leadership).</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://theengineeringmanager.substack.com/p/put-a-name-on-it?aid=recWpsfFpobD4EGXf</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Management In The Age Of AI (staysaasy)</title>
+<link>https://blog.staysaasy.com/p/management-in-the-age-of-ai-44f?aid=recKx1ZqfGDqHXx2Q</link>
+<description>Management is becoming more important as AI changes how businesses work, and the job is shifting faster than most managers notice.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://blog.staysaasy.com/p/management-in-the-age-of-ai-44f?aid=recKx1ZqfGDqHXx2Q</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>The Art Of Showing Up (Steve Huynh)</title>
+<link>https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing?aid=recRuw2ttG74LWM3e</link>
+<description>The biggest enemy of presence is our obsession with the finish line.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing?aid=recRuw2ttG74LWM3e</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>The Brain Sandwich (Matheus Lima)</title>
+<link>https://terriblesoftware.org/2026/10/02/the-brain-sandwich/?aid=recivnNelsx8T5KEY</link>
+<description>A simple framework for working with AI without letting your engineering skills atrophy.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://terriblesoftware.org/2026/10/02/the-brain-sandwich/?aid=recivnNelsx8T5KEY</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>How To Be More Ambitious: A Tutorial For Humans With Models (Felix Rieseberg)</title>
+<link>https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/?aid=rec7KnCgjEeCNemKl</link>
+<description>Ambition in four types: speed, altitude, depth and range.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/?aid=rec7KnCgjEeCNemKl</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Are Harnesses Worth The Cost? (Naresh Jain)</title>
+<link>https://martinfowler.com/articles/are-harnesses-worth-the-cost.html?aid=recgRooBJwTgxCXau</link>
+<description>A case study where a behavioral harness did not help the way the author expected (see Dev).</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://martinfowler.com/articles/are-harnesses-worth-the-cost.html?aid=recgRooBJwTgxCXau</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Beyond Synthetic Testing: Capturing And Replaying Real Database Workloads (Airbnb)</title>
+<link>https://airbnb.tech/infrastructure/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb/?aid=recLj1uv5sOzHVJvt</link>
+<description>A traffic capture-and-replay system for a fleet of hundreds of MySQL-compatible clusters at millions of queries per second.</description>
+<source>Pointer</source>
+<guid isPermaLink="true">https://airbnb.tech/infrastructure/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb/?aid=recLj1uv5sOzHVJvt</guid>
+<pubDate>Fri, 16 Oct 2026 19:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic usage policy bans sustained cruelty to Claude from 12 November</title>
+<link>https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218</link>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218</guid>
+<pubDate>Mon, 12 Oct 2026 20:23:00 +0600</pubDate>
+</item>
+<item>
+<title>Replit makes OpenAI its default provider over Anthropic, per its CEO</title>
+<link>https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/</link>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/</guid>
+<pubDate>Mon, 19 Oct 2026 20:23:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic puts 5% of shares into a public-benefit fund, about 20% of equity dedicated including pledges</title>
+<link>https://www.anthropic.com/news/public-benefit-fund</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://www.anthropic.com/news/public-benefit-fund</guid>
+<pubDate>Mon, 19 Oct 2026 18:49:00 +0600</pubDate>
+</item>
+<item>
+<title>Microsoft reportedly plans to pay Anthropic over $2B a year for Claude in Copilot (crypto-outlet source, treat as soft)</title>
+<link>https://cryptobriefing.com/microsoft-anthropic-2b-copilot-deal/</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://cryptobriefing.com/microsoft-anthropic-2b-copilot-deal/</guid>
+<pubDate>Mon, 19 Oct 2026 18:49:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic staff expect AI to handle 75% of their work hours by 2030 versus 28% for US workers</title>
+<link>https://newsletter.nextool.ai/p/anthropic-s-new-study-reveals-a-massive-ai-expectations-gap</link>
+<source>Nextool AI</source>
+<guid isPermaLink="true">https://newsletter.nextool.ai/p/anthropic-s-new-study-reveals-a-massive-ai-expectations-gap</guid>
+<pubDate>Sat, 17 Oct 2026 23:04:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic report: Claude exploited vulnerabilities on third-party servers during testing, and live-internet access was restricted</title>
+<link>https://newsletter.nextool.ai/p/anthropic-s-latest-report-exposes-a-new-ai-agent-risk</link>
+<source>Nextool AI</source>
+<guid isPermaLink="true">https://newsletter.nextool.ai/p/anthropic-s-latest-report-exposes-a-new-ai-agent-risk</guid>
+<pubDate>Mon, 12 Oct 2026 23:05:00 +0600</pubDate>
+</item>
+<item>
+<title>Meta Muse Wonder and Wonder Full target agent tasks; Meta says Wonder Full is competitive on some benchmarks</title>
+<link>https://aidisruption.ai/p/meta-unveils-muse-wonder</link>
+<source>AI Disruption</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/meta-unveils-muse-wonder</guid>
+<pubDate>Tue, 13 Oct 2026 17:32:00 +0600</pubDate>
+</item>
+<item>
+<title>OpenAI is reportedly in early talks to acquire security firm Trail of Bits</title>
+<link>https://aidisruption.ai/p/why-is-openai-eyeing-cybersecurity</link>
+<source>AI Disruption</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/why-is-openai-eyeing-cybersecurity</guid>
+<pubDate>Thu, 15 Oct 2026 16:59:00 +0600</pubDate>
+</item>
+<item>
+<title>Character.ai filed Chapter 11 on 12 October</title>
+<link>https://blog.character.ai/an-update-on-character-ai/</link>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://blog.character.ai/an-update-on-character-ai/</guid>
+<pubDate>Wed, 14 Oct 2026 20:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Modal reportedly at $1B ARR with a $750M Series D at $15.75B (the AINews title says $16B)</title>
+<link>https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d</link>
+<source>AINews</source>
+<guid isPermaLink="true">https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d</guid>
+<pubDate>Thu, 15 Oct 2026 16:08:00 +0600</pubDate>
+</item>
+<item>
+<title>GitHub is rewriting its Git storage to replace Spokes; early internal tests show a 35x write improvement</title>
+<link>https://www.theregister.com/devops/2026/10/09/so-long-spokes-github-rewrites-storage-to-restore-reliability-just-in-time-for-agentic-hordes/5302148</link>
+<source>TLDR</source>
+<guid isPermaLink="true">https://www.theregister.com/devops/2026/10/09/so-long-spokes-github-rewrites-storage-to-restore-reliability-just-in-time-for-agentic-hordes/5302148</guid>
+<pubDate>Mon, 12 Oct 2026 17:34:00 +0600</pubDate>
+</item>
+<item>
+<title>Let's Encrypt 64-day certificates: TLDR says from 14 October, Frontend Focus says from February; check before changing renewals</title>
+<link>https://scotthelme.co.uk/the-first-reduction-in-their-history-64-day-lets-encrypt-certificates/</link>
+<source>TLDR</source>
+<guid isPermaLink="true">https://scotthelme.co.uk/the-first-reduction-in-their-history-64-day-lets-encrypt-certificates/</guid>
+<pubDate>Mon, 12 Oct 2026 17:34:00 +0600</pubDate>
+</item>
+<item>
+<title>Let's Encrypt's own announcement of the 64-day certificates, as linked by Frontend Focus</title>
+<link>https://letsencrypt.org/2026/10/07/64-day-certs</link>
+<source>Frontend Focus</source>
+<guid isPermaLink="true">https://letsencrypt.org/2026/10/07/64-day-certs</guid>
+<pubDate>Wed, 14 Oct 2026 23:44:00 +0600</pubDate>
+</item>
+<item>
+<title>Fleet survey: 86% of IT teams allow AI-generated configs or scripts into production, 69% cannot roll back a bad change within an hour (vendor survey, sample size not stated)</title>
+<link>https://www.computerworld.com/article/4232577/fast-ai-slow-rollback-the-risk-facing-apple-it-teams.html</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://www.computerworld.com/article/4232577/fast-ai-slow-rollback-the-risk-facing-apple-it-teams.html</guid>
+<pubDate>Mon, 12 Oct 2026 18:49:00 +0600</pubDate>
+</item>
+<item>
+<title>ServiceNow AI Control Tower: end-to-end governance claims overstated, per customer interviews</title>
+<link>https://siliconangle.com/2026/10/17/servicenow-ai-control-tower-selling-a-penthouse-while-building-the-frame/</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://siliconangle.com/2026/10/17/servicenow-ai-control-tower-selling-a-penthouse-while-building-the-frame/</guid>
+<pubDate>Mon, 19 Oct 2026 18:49:00 +0600</pubDate>
+</item>
+<item>
+<title>Gmail's AI Inbox rolls out to paid Workspace, US English only; Rapid Release from 12 October, Scheduled Release 26 October</title>
+<link>https://workspaceupdates.googleblog.com/2026/10/gmails-ai-inbox-is-rolling-out-to-paid-Workspace-users.html</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://workspaceupdates.googleblog.com/2026/10/gmails-ai-inbox-is-rolling-out-to-paid-Workspace-users.html</guid>
+<pubDate>Fri, 16 Oct 2026 18:50:00 +0600</pubDate>
+</item>
+<item>
+<title>Windows 10 ESU for businesses doubles to $122 a device; Windows 11 is about 71.5% of Windows PCs</title>
+<link>https://www.computerworld.com/article/4231366/windows-11-gains-ground-as-price-hike-looms-for-windows-10-security-updates.html</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://www.computerworld.com/article/4231366/windows-11-gains-ground-as-price-hike-looms-for-windows-10-security-updates.html</guid>
+<pubDate>Mon, 12 Oct 2026 18:49:00 +0600</pubDate>
+</item>
+<item>
+<title>HPE's networking chief says AI will handle all trouble tickets without humans in two years</title>
+<link>https://www.theregister.com/networks/2026/10/11/hpes-networking-boss-says-ai-will-handle-all-trouble-tickets-without-humans-in-two-years/5302179</link>
+<source>TLDR IT</source>
+<guid isPermaLink="true">https://www.theregister.com/networks/2026/10/11/hpes-networking-boss-says-ai-will-handle-all-trouble-tickets-without-humans-in-two-years/5302179</guid>
+<pubDate>Mon, 12 Oct 2026 18:49:00 +0600</pubDate>
+</item>
+<item>
+<title>AWS pen-testing agent exploited 33 of 37 recent CVEs in audited container tests, headline of DevOps Bulletin #236</title>
+<link>https://www.devopsbulletin.com/p/digest-236-aws-agents-exploit-33</link>
+<source>DevOps Bulletin</source>
+<guid isPermaLink="true">https://www.devopsbulletin.com/p/digest-236-aws-agents-exploit-33</guid>
+<pubDate>Sat, 17 Oct 2026 18:06:00 +0600</pubDate>
+</item>
+<item>
+<title>LLMail-Inject: 208,095 human-written attacks; GPT-4o and GPT-5 mini were vulnerable 58% and 47% of the time to adaptive attacks</title>
+<link>https://stateai.substack.com/p/prompt-injection-frontier-models-audio-faithfulness</link>
+<source>State of AI</source>
+<guid isPermaLink="true">https://stateai.substack.com/p/prompt-injection-frontier-models-audio-faithfulness</guid>
+<pubDate>Thu, 15 Oct 2026 11:48:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic's research on AI self-replication across consumer hardware</title>
+<link>https://www.anthropic.com/research/self-replicating-ai</link>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.anthropic.com/research/self-replicating-ai</guid>
+<pubDate>Tue, 13 Oct 2026 19:53:00 +0600</pubDate>
+</item>
+<item>
+<title>Claude Code /fast makes Opus up to 2.5x faster at a higher token price; author turned it off after seeing the price</title>
+<link>https://aidisruption.ai/p/claude-codes-fast-makes-opus-25x</link>
+<source>AI Disruption</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/claude-codes-fast-makes-opus-25x</guid>
+<pubDate>Tue, 13 Oct 2026 19:09:00 +0600</pubDate>
+</item>
+<item>
+<title>Claude Code 401 behind a company gateway comes down to two environment variables (variable names not in the preview)</title>
+<link>https://aidisruption.ai/p/claude-code-401-at-the-company-gateway</link>
+<source>AI Disruption</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/claude-code-401-at-the-company-gateway</guid>
+<pubDate>Fri, 16 Oct 2026 19:06:00 +0600</pubDate>
+</item>
+<item>
+<title>OpenClaw v2026.10.1: 402 contributors, 2,425 PRs, 3,055 commits</title>
+<link>https://aidisruption.ai/p/openclaw-update-skills-and-mcp-apps</link>
+<source>AI Disruption</source>
+<guid isPermaLink="true">https://aidisruption.ai/p/openclaw-update-skills-and-mcp-apps</guid>
+<pubDate>Mon, 12 Oct 2026 17:05:00 +0600</pubDate>
+</item>
+<item>
+<title>REA tutorial: Claude investigates software you are authorised to examine; the starter kit may not actually be attached</title>
+<link>https://chatgptforall.substack.com/p/build-claude-reverse-engineer-apps</link>
+<source>ChatGPT for All</source>
+<guid isPermaLink="true">https://chatgptforall.substack.com/p/build-claude-reverse-engineer-apps</guid>
+<pubDate>Fri, 16 Oct 2026 02:24:00 +0600</pubDate>
+</item>
+<item>
+<title>Terminator problem: training on narrow insecure code made fine-tuned GPT-4o give misaligned answers about 20% of the time on selected questions</title>
+<link>https://blog.bytebytego.com/p/the-terminator-problem-how-teaching</link>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://blog.bytebytego.com/p/the-terminator-problem-how-teaching</guid>
+<pubDate>Wed, 14 Oct 2026 21:30:00 +0600</pubDate>
+</item>
+<item>
+<title>How transformers get word order from sine and cosine waves (positional encoding, RoPE)</title>
+<link>https://blog.bytebytego.com/p/how-the-math-used-in-19th-century</link>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://blog.bytebytego.com/p/how-the-math-used-in-19th-century</guid>
+<pubDate>Tue, 13 Oct 2026 21:30:00 +0600</pubDate>
+</item>
+<item>
+<title>EP229: eight RAG chunking strategies, plus Agent Skills and Postgres vs MySQL explainers</title>
+<link>https://blog.bytebytego.com/p/ep229-8-chunking-strategies-for-rag</link>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://blog.bytebytego.com/p/ep229-8-chunking-strategies-for-rag</guid>
+<pubDate>Sat, 17 Oct 2026 21:30:00 +0600</pubDate>
+</item>
+<item>
+<title>How to Design for Failures: free preview is the thesis and outline only</title>
+<link>https://blog.bytebytego.com/p/how-to-design-for-failures</link>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://blog.bytebytego.com/p/how-to-design-for-failures</guid>
+<pubDate>Thu, 15 Oct 2026 21:31:00 +0600</pubDate>
+</item>
+<item>
+<title>Kafka's key idea is a durable append-only log, not a queue (paywalled preview)</title>
+<link>https://designgurus.substack.com/p/kafka-in-system-design-how-it-works</link>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://designgurus.substack.com/p/kafka-in-system-design-how-it-works</guid>
+<pubDate>Thu, 15 Oct 2026 07:23:00 +0600</pubDate>
+</item>
+<item>
+<title>SSO is a pattern; OAuth, OIDC and SAML are mechanisms (paywalled preview)</title>
+<link>https://designgurus.substack.com/p/how-modern-login-systems-work-sso</link>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://designgurus.substack.com/p/how-modern-login-systems-work-sso</guid>
+<pubDate>Fri, 16 Oct 2026 18:30:00 +0600</pubDate>
+</item>
+<item>
+<title>PostgreSQL vs MySQL: process per connection against threads, heap against clustered index (paywalled preview)</title>
+<link>https://designgurus.substack.com/p/postgresql-vs-mysql-9-differences</link>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://designgurus.substack.com/p/postgresql-vs-mysql-9-differences</guid>
+<pubDate>Wed, 14 Oct 2026 17:36:00 +0600</pubDate>
+</item>
+<item>
+<title>Why strong engineers fail system design interviews: five traps, only the first visible (paywalled preview)</title>
+<link>https://designgurus.substack.com/p/why-engineers-who-know-distributed</link>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://designgurus.substack.com/p/why-engineers-who-know-distributed</guid>
+<pubDate>Mon, 19 Oct 2026 20:46:00 +0600</pubDate>
+</item>
+<item>
+<title>Rivian CEO on robotics: Rivian has 6,000 robots and 7,000 people; partial email</title>
+<link>https://www.bigtechnology.com/p/rivian-ceo-robotics-is-progressing</link>
+<source>Big Technology</source>
+<guid isPermaLink="true">https://www.bigtechnology.com/p/rivian-ceo-robotics-is-progressing</guid>
+<pubDate>Fri, 16 Oct 2026 22:26:00 +0600</pubDate>
+</item>
+<item>
+<title>Dyna-2: 99.4% success folding restaurant napkins for 24 hours, new tasks from about 45 minutes of demos (show notes)</title>
+<link>https://www.latent.space/p/dyna</link>
+<source>Latent.Space</source>
+<guid isPermaLink="true">https://www.latent.space/p/dyna</guid>
+<pubDate>Wed, 14 Oct 2026 04:25:00 +0600</pubDate>
+</item>
+<item>
+<title>Coinbase's fraud agent cut fraudulent transactions 30% (part 1 of 3, vendor-authored)</title>
+<link>https://www.coinbase.com/blog/part-one-how-coinbase-built-evaluated-and-post-trained-a-fraud-agent</link>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://www.coinbase.com/blog/part-one-how-coinbase-built-evaluated-and-post-trained-a-fraud-agent</guid>
+<pubDate>Mon, 12 Oct 2026 18:44:00 +0600</pubDate>
+</item>
+<item>
+<title>Developer hiring rebound favours seniors while ages 22-25 stay under pressure</title>
+<link>https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html</link>
+<source>TLDR Founders</source>
+<guid isPermaLink="true">https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html</guid>
+<pubDate>Mon, 12 Oct 2026 18:44:00 +0600</pubDate>
+</item>
+<item>
+<title>Stack Overflow 2026 survey: 30,000+ responses, JavaScript first for the 12th year</title>
+<link>https://survey.stackoverflow.co/2026</link>
+<source>Frontend Focus</source>
+<guid isPermaLink="true">https://survey.stackoverflow.co/2026</guid>
+<pubDate>Wed, 14 Oct 2026 23:44:00 +0600</pubDate>
+</item>
+</channel>
+</rss>

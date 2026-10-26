@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Inbox Signal — Week of 19 – 26 Oct 2026</title>
+  <link>Inbox-Signal-2026-10-26.html</link>
+  <description>Linked items from the weekly Inbox Signal digest.</description>
+  <language>en</language>
+  <pubDate>Mon, 26 Oct 2026 12:24:53 +0600</pubDate>
+  <lastBuildDate>Mon, 26 Oct 2026 12:24:53 +0600</lastBuildDate>
+  <item>
+    <title>Anthropic replaced Git for its monorepo because agent-driven merges outgrew it [Anthropic post]</title>
+    <link>https://www.anthropic.com/research/redesigning-source-control</link>
+    <description>Merges rose from about 2,500 a day in May to over 30,000 a day by September, with about 25 million CI checkouts a day.</description>
+    <source>TLDR DevOps / Pragmatic Engineer / Rohit / AINews</source>
+    <guid isPermaLink="true">https://www.anthropic.com/research/redesigning-source-control</guid>
+    <pubDate>Thu, 22 Oct 2026 21:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Anthropic replaced Git for its monorepo because agent-driven merges outgrew it [Pragmatic Engineer]</title>
+    <link>https://open.substack.com/pub/pragmaticengineer/p/the-pulse-anthropic-builds-its-own</link>
+    <description>Merges rose from about 2,500 a day in May to over 30,000 a day by September, with about 25 million CI checkouts a day.</description>
+    <source>TLDR DevOps / Pragmatic Engineer / Rohit / AINews</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/the-pulse-anthropic-builds-its-own</guid>
+    <pubDate>Thu, 22 Oct 2026 21:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The Claude Code team reviews by verification first, machine review first, and a human-approved merge</title>
+    <link>https://open.substack.com/pub/aidisruption/p/how-the-claude-code-team-does-code</link>
+    <description>Summarizing Anthropic's October 15 post, the author reports that roughly 90% of Claude Code's code is written by Claude, merged PRs more than doubled from June to September, and the share needing rollback fell by more than 40%.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/how-the-claude-code-team-does-code</guid>
+    <pubDate>Mon, 19 Oct 2026 19:16:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI spend is up sharply at most firms, but ROI is still unproven</title>
+    <link>https://open.substack.com/pub/pragmaticengineer/p/whats-the-roi-of-software-engineers</link>
+    <description>Across 27 companies, CodeRabbit shows weekly PRs per developer up 113% year over year.</description>
+    <source>The Pragmatic Engineer</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/whats-the-roi-of-software-engineers</guid>
+    <pubDate>Tue, 20 Oct 2026 23:41:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Human review is the bottleneck for agent-written code, and the merge data is stark</title>
+    <link>https://open.substack.com/pub/devinterrupted/p/multiplayer-ai-will-revolutionize</link>
+    <description>LinearB data across more than 8.1 million PRs: agentic PRs wait 5.25x longer for pickup, and 33% of them merge against 85% of human-written ones.</description>
+    <source>Dev Interrupted</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/devinterrupted/p/multiplayer-ai-will-revolutionize</guid>
+    <pubDate>Tue, 20 Oct 2026 22:23:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A per-token price does not tell you what a finished task costs</title>
+    <link>https://www.onlycfo.io/p/ai-tokenomics</link>
+    <description>OpenRouter's figures show open-weight models carry about 60% of weekly tokens but only 26% of spending.</description>
+    <source>TLDR Founders</source>
+    <guid isPermaLink="true">https://www.onlycfo.io/p/ai-tokenomics</guid>
+    <pubDate>Fri, 23 Oct 2026 18:44:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>OpenAI is raising up to $30B, led by UAE investors, at a valuation sources put between $1.25T and $1.4T</title>
+    <link>https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html</link>
+    <description>TLDR AI says the round is a bridge ahead of a potential IPO, with signatures targeted by the end of next week and the final size still being set.</description>
+    <source>TLDR AI / TLDR IT / Meng Li</source>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html</guid>
+    <pubDate>Fri, 23 Oct 2026 20:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Anthropic's Claude Duet is a proactive agent that watches your connected apps</title>
+    <link>https://claude.com/resources/articles/claude-duet</link>
+    <description>Powered by Opus 5.5, Duet monitors connected apps, prioritizes tasks and works autonomously, asking approval before certain actions.</description>
+    <source>TLDR AI / TLDR / TLDR IT / TLDR Dev</source>
+    <guid isPermaLink="true">https://claude.com/resources/articles/claude-duet</guid>
+    <pubDate>Thu, 22 Oct 2026 20:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Cloudflare's Clairic extracts values without generating tokens</title>
+    <link>https://blog.cloudflare.com/clairic-extraction-model</link>
+    <description>Clairic is a non-generative extraction model that returns extracted, computed or forecast values directly, so it cannot produce a mistyped answer the way an LLM can.</description>
+    <source>TLDR AI / TLDR IT / TLDR</source>
+    <guid isPermaLink="true">https://blog.cloudflare.com/clairic-extraction-model</guid>
+    <pubDate>Tue, 20 Oct 2026 19:54:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AWS's TorchNeuron runs native PyTorch on Trainium, challenging CUDA lock-in [PyTorch post]</title>
+    <link>https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/</link>
+    <description>It is an open-source native PyTorch backend with eager execution, released in public beta under Apache 2.0, and TechCrunch reports AWS will upstream code to PyTorch.</description>
+    <source>TLDR AI / TLDR IT / Meng Li</source>
+    <guid isPermaLink="true">https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/</guid>
+    <pubDate>Tue, 20 Oct 2026 19:54:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AWS's TorchNeuron runs native PyTorch on Trainium, challenging CUDA lock-in [TechCrunch]</title>
+    <link>https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/</link>
+    <description>It is an open-source native PyTorch backend with eager execution, released in public beta under Apache 2.0, and TechCrunch reports AWS will upstream code to PyTorch.</description>
+    <source>TLDR AI / TLDR IT / Meng Li</source>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/</guid>
+    <pubDate>Tue, 20 Oct 2026 19:54:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>DeepSeek open-sourced DeepInfer, an offline inference stack for DeepSeek-V4.1-Flash</title>
+    <link>https://qz.com/deepseek-open-source-deepinfer-inference-software-ai-102026</link>
+    <description>The release runs DeepSeek-V4.1-Flash on NVIDIA SM100 GPUs or Huawei Ascend 950 NPUs, but leaves out the KV-cache system, prefill/decode disaggregation and load balancing a full service needs.</description>
+    <source>TLDR AI / TLDR IT / AINews / Nextool AI</source>
+    <guid isPermaLink="true">https://qz.com/deepseek-open-source-deepinfer-inference-software-ai-102026</guid>
+    <pubDate>Wed, 21 Oct 2026 20:09:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Google is paying for a 1 GW virtual power plant to serve AI load in PJM</title>
+    <link>https://open.substack.com/pub/aidisruption/p/google-builds-virtual-power-grid</link>
+    <description>Rather than buy more electricity, Google pays Voltus to aggregate flexible demand from homes and businesses in the PJM region, so they draw less when the grid is strained, freeing capacity.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/google-builds-virtual-power-grid</guid>
+    <pubDate>Sun, 25 Oct 2026 19:23:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Pichai says recursive self-improvement is 'pretty far' from its end state, and compute is short for everyone</title>
+    <link>https://open.substack.com/pub/bigtechnology/p/sundar-pichai-googles-frontier-imperative</link>
+    <description>Models already help build models, Pichai says, but the end state is far off.</description>
+    <source>Big Technology</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bigtechnology/p/sundar-pichai-googles-frontier-imperative</guid>
+    <pubDate>Tue, 20 Oct 2026 23:49:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Claude text output now carries an invisible SynthID-Text watermark</title>
+    <link>https://www.oreilly.com/radar/the-latest-anthropic-claude-models-contain-ai-text-watermarks-what-does-this-mean-for-you/</link>
+    <description>The latest Claude models embed a SynthID-Text watermark in text output to comply with the EU AI Act.</description>
+    <source>TLDR AI</source>
+    <guid isPermaLink="true">https://www.oreilly.com/radar/the-latest-anthropic-claude-models-contain-ai-text-watermarks-what-does-this-mean-for-you/</guid>
+    <pubDate>Fri, 23 Oct 2026 20:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Good work does not speak for itself, and managers may see only about 40% of it</title>
+    <link>https://open.substack.com/pub/gregorojstersek/p/how-to-communicate-your-impact</link>
+    <description>Ojstersek's point is that you have to communicate impact deliberately, because silence costs burnout, marginalization and manager disinterest.</description>
+    <source>Engineering Leadership (Gregor Ojstersek)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/gregorojstersek/p/how-to-communicate-your-impact</guid>
+    <pubDate>Thu, 22 Oct 2026 05:21:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Hiring is a default fix that defers the prioritization decision</title>
+    <link>https://open.substack.com/pub/theengineeringmanager/p/only-hire-when-it-hurts</link>
+    <description>Stanier argues a hire costs several times salary.</description>
+    <source>The Engineering Manager (James Stanier)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/theengineeringmanager/p/only-hire-when-it-hurts</guid>
+    <pubDate>Thu, 22 Oct 2026 22:33:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI speeds up building but not learning whether value was created</title>
+    <link>https://open.substack.com/pub/hagakure/p/the-ctos-hardest-job-isnt-technical</link>
+    <description>Output gets optimized because it is measurable, so the CTO's job is to tie engineering capacity to the binding business constraint, such as adoption, and make the allocation trade-offs explicit.</description>
+    <source>The Hagakure (Paulo André)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/hagakure/p/the-ctos-hardest-job-isnt-technical</guid>
+    <pubDate>Tue, 20 Oct 2026 19:53:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Architects should facilitate, not supply the answers</title>
+    <link>https://open.substack.com/pub/softwarearchitectureguild/p/architect-as-facilitator</link>
+    <description>The advice is to show up regularly, ask questions in refinement, and mediate cross-team concerns without taking the decision.</description>
+    <source>Software Architecture Guild</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/softwarearchitectureguild/p/architect-as-facilitator</guid>
+    <pubDate>Mon, 26 Oct 2026 12:03:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Felix Rieseberg: people under-use AI, so aim at outcomes and challenge assumptions</title>
+    <link>https://leadershipintech.com/links/23516/2c8b17c2-c8a5-4928-93ea-ce276b049077/email</link>
+    <description>The lead piece advises aiming at outcomes, building expert depth, drawing ideas across fields and challenging assumptions.</description>
+    <source>Leadership in Tech (LT#357)</source>
+    <guid isPermaLink="true">https://leadershipintech.com/links/23516/2c8b17c2-c8a5-4928-93ea-ce276b049077/email</guid>
+    <pubDate>Thu, 22 Oct 2026 12:07:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Delegate the toil to AI, but keep the struggle, because learning comes from it</title>
+    <link>https://open.substack.com/pub/tidyfirst/p/take-my-toil-leave-me-my-struggle</link>
+    <description>Beck reformatted a 2013 essay with an AI 'genie' to show what delegation looks like, then argues the struggle is where learning happens and should be kept.</description>
+    <source>Kent Beck (Software Design: Today and Tomorrow)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/tidyfirst/p/take-my-toil-leave-me-my-struggle</guid>
+    <pubDate>Tue, 20 Oct 2026 19:18:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Self-sabotage can be protective, and trying harder to fix it can reinforce it</title>
+    <link>https://open.substack.com/pub/cutlefish/p/tbm-447-why-we-sabotage-our-careers</link>
+    <description>Cutler argues career self-sabotage often protects something, so forcing it away can entrench the pattern, and feelings need not always be regulated away.</description>
+    <source>The Beautiful Mess (John Cutler)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/cutlefish/p/tbm-447-why-we-sabotage-our-careers</guid>
+    <pubDate>Mon, 26 Oct 2026 04:28:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI is a new instrument, and the value lies in point of view</title>
+    <link>https://open.substack.com/pub/on/p/model-behavior-rick-rubin</link>
+    <description>Rubin argues that rejecting AI outright repeats the 'wah-wah' mistake, and that readers should choose their own filters rather than platform-wide scores.</description>
+    <source>On (Rick Rubin with Chris Best)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/on/p/model-behavior-rick-rubin</guid>
+    <pubDate>Fri, 23 Oct 2026 00:13:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI made writing cheap, so documents no longer prove effort, and reading culture is fading too</title>
+    <link>https://open.substack.com/pub/alifeengineered/p/you-are-what-you-read</link>
+    <description>Huynh argues that when AI makes writing cheap, a document no longer shows the author did the work, and that Amazon's edge came from writing plus reading.</description>
+    <source>A Life Engineered (Steve Huynh)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/alifeengineered/p/you-are-what-you-read</guid>
+    <pubDate>Wed, 21 Oct 2026 18:21:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Hard growth needs room in your energy budget</title>
+    <link>https://open.substack.com/pub/refactoring/p/making-room-for-hard-things-stories</link>
+    <description>The author's rule of thumb is to spend at least half your time on stretch work.</description>
+    <source>Refactoring (Monday Ideas)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/refactoring/p/making-room-for-hard-things-stories</guid>
+    <pubDate>Mon, 19 Oct 2026 13:05:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Two critical PHP RCE flaws affect every version from PHP 5 onward, and unmanaged servers need the patch now</title>
+    <link>https://www.digitalocean.com/blog/critical-php-rce-vulnerabilities-patch-now</link>
+    <description>CVE-2026-109618 and CVE-2026-109619 were disclosed October 21 with proof-of-concept code.</description>
+    <source>TLDR DevOps / DevOps Bulletin / Fireship / TLDR IT</source>
+    <guid isPermaLink="true">https://www.digitalocean.com/blog/critical-php-rce-vulnerabilities-patch-now</guid>
+    <pubDate>Fri, 23 Oct 2026 17:42:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A Cisco Secure Email Gateway zero-day (CVE-2026-76519) is being exploited</title>
+    <link>https://diesec.com/2026/10/cisco-secure-email-gateway-zero-day-cve-2026-76519/</link>
+    <description>The path-traversal flaw, scored CVSS 9.8, lets unauthenticated attackers write files and run root commands through crafted email attachments when File Reputation is enabled.</description>
+    <source>TLDR IT / TLDR</source>
+    <guid isPermaLink="true">https://diesec.com/2026/10/cisco-secure-email-gateway-zero-day-cve-2026-76519/</guid>
+    <pubDate>Tue, 20 Oct 2026 18:36:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>LiteLLM's v1.107.0 release was compromised after a leaked key was never revoked</title>
+    <link>https://docs.litellm.ai/blog/security-incident-oct-21-2026</link>
+    <description>A malicious LiteLLM package was live on PyPI for about two hours before it was pulled.</description>
+    <source>DevOps Bulletin / TLDR / TLDR AI</source>
+    <guid isPermaLink="true">https://docs.litellm.ai/blog/security-incident-oct-21-2026</guid>
+    <pubDate>Sun, 25 Oct 2026 22:59:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>tsrs, Cloudflare and VoidZero's Rust port of TypeScript, is faster but not yet compatible</title>
+    <link>https://blog.cloudflare.com/typescript-rust-port/</link>
+    <description>Built in the Oxc toolchain with the TypeScript team, tsrs reports up to 8x faster checking and about 70% less memory than TypeScript 7.0 on matched configurations.</description>
+    <source>TLDR Dev / Fireship / JavaScript Weekly</source>
+    <guid isPermaLink="true">https://blog.cloudflare.com/typescript-rust-port/</guid>
+    <pubDate>Wed, 21 Oct 2026 17:49:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Shopify rebuilt natively rather than staying on React Native, and coding agents made that cheaper</title>
+    <link>https://open.substack.com/pub/bytebytego/p/why-shopify-migrated-from-react-native</link>
+    <description>Shopify chose a greenfield native rebuild, starting with the Shop app, with reviewed checkpoints along the way.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/why-shopify-migrated-from-react-native</guid>
+    <pubDate>Tue, 20 Oct 2026 21:38:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Datadog's Scout 1.0 targets frontier-level incident investigation at a fraction of the cost</title>
+    <link>https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/</link>
+    <description>Scout is reported to match general frontier models on production investigation at an estimated three to eight times lower inference cost.</description>
+    <source>TLDR DevOps</source>
+    <guid isPermaLink="true">https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/</guid>
+    <pubDate>Mon, 19 Oct 2026 17:44:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Uber's support bot answers with cited sources, and its numbers are more modest than the headline</title>
+    <link>https://open.substack.com/pub/bytebytego/p/how-uber-built-a-genie-to-answer-051</link>
+    <description>Each retrieved chunk keeps its source URL, so answers cite it, and feedback splits Resolved, Helpful, Not Helpful and Not Relevant.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/how-uber-built-a-genie-to-answer-051</guid>
+    <pubDate>Mon, 19 Oct 2026 21:37:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Haiku 5.5 is the new default Haiku on the API, with 1M context at $0.10 in and $0.50 out per million tokens</title>
+    <link>https://open.substack.com/pub/claudecodemasterclass/p/last-week-in-claude-code-7-haiku</link>
+    <description>Haiku 4.5 was $1 and $5 per million tokens; prompts over 100K cost $0.50 and $2.50.</description>
+    <source>Claude Code Course / AI Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/claudecodemasterclass/p/last-week-in-claude-code-7-haiku</guid>
+    <pubDate>Wed, 21 Oct 2026 23:22:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Ten networking concepts, framed by a VPC mistake that took down an app</title>
+    <link>https://open.substack.com/pub/systemdesignone/p/networking-fundamentals-software-engineers</link>
+    <description>A 10-byte payload carries 58 bytes of TCP, IPv4 and Ethernet overhead.</description>
+    <source>Neo Kim (System Design One)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/networking-fundamentals-software-engineers</guid>
+    <pubDate>Fri, 23 Oct 2026 22:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Agentic RAG loops until the evidence is sufficient</title>
+    <link>https://open.substack.com/pub/bytebytego/p/ep230-rag-vs-agentic-rag</link>
+    <description>Plain RAG retrieves once; agentic RAG picks tools, checks the evidence and searches again.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/ep230-rag-vs-agentic-rag</guid>
+    <pubDate>Fri, 23 Oct 2026 21:37:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Prompt caching and semantic caching reuse different kinds of work</title>
+    <link>https://open.substack.com/pub/bytebytego/p/llm-prompt-caching-versus-semantic</link>
+    <description>Prompt caching reuses processed prefix state, so stable content goes first; semantic caching reuses answers by embedding similarity and needs a tuned threshold and invalidation.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/llm-prompt-caching-versus-semantic</guid>
+    <pubDate>Wed, 21 Oct 2026 21:37:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Algorithm choice changes performance even on identical hardware</title>
+    <link>https://open.substack.com/pub/designgurus/p/load-balancing-algorithms-how-they</link>
+    <description>Round robin is safe only with identical servers and similar request durations.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/load-balancing-algorithms-how-they</guid>
+    <pubDate>Tue, 20 Oct 2026 19:46:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>CI/CD makes releases boring by shipping small changes often</title>
+    <link>https://open.substack.com/pub/designgurus/p/the-complete-cicd-guide-pipeline</link>
+    <description>Release risk scales with change size and the time since the last release.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/the-complete-cicd-guide-pipeline</guid>
+    <pubDate>Sun, 25 Oct 2026 01:07:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Mixture-of-experts cuts compute, not memory</title>
+    <link>https://open.substack.com/pub/systemdesignone/p/advanced-ai-concepts-software-engineers</link>
+    <description>A router picks a few experts per token (the illustration uses 2 of 8).</description>
+    <source>Neo Kim (System Design One)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/advanced-ai-concepts-software-engineers</guid>
+    <pubDate>Fri, 23 Oct 2026 22:10:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Salesforce is buying Braze for about $5.66B</title>
+    <link>https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html</link>
+    <description>Salesforce offers $47.50 per share in cash, with close expected in fiscal 2028 pending approvals.</description>
+    <source>TLDR IT</source>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html</guid>
+    <pubDate>Thu, 22 Oct 2026 18:37:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Foursquare's end: a 17-year company whose equity ended at $0</title>
+    <link>https://teendrama.substack.com/p/some-final-words-on-foursquare</link>
+    <description>The post says Foursquare was acquired about a month ago in a $0 outcome for equity holders, after a leadership change its founder says it could not survive.</description>
+    <source>TLDR Founders</source>
+    <guid isPermaLink="true">https://teendrama.substack.com/p/some-final-words-on-foursquare</guid>
+    <pubDate>Wed, 21 Oct 2026 18:45:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Moving app checkout to the web saves less than the 15% fee suggests</title>
+    <link>https://okaneland.com/ledger/app-store-or-web-checkout/</link>
+    <description>On a $9.99 subscription, Apple's 15% leaves $8.49 in-app against about $9.33 after Stripe card and billing fees.</description>
+    <source>TLDR Founders</source>
+    <guid isPermaLink="true">https://okaneland.com/ledger/app-store-or-web-checkout/</guid>
+    <pubDate>Mon, 19 Oct 2026 18:44:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Chesky: the same AI tools widen the gap, and volume of ideas decides who gains</title>
+    <link>https://open.substack.com/pub/theaicorner1/p/brian-chesky-airbnb-ai-lessons</link>
+    <description>Airbnb ships 80% more features than a year ago.</description>
+    <source>The AI Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/brian-chesky-airbnb-ai-lessons</guid>
+    <pubDate>Tue, 20 Oct 2026 18:53:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Anthropic and Nscale are reportedly in talks on another $45B compute deal</title>
+    <link>https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/</link>
+    <description>The two companies announced a $45B deal a little over a month ago, and this would be a second one.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/</guid>
+    <pubDate>Tue, 20 Oct 2026 19:54:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Nvidia's tie to CoreWeave goes beyond supplier and customer</title>
+    <link>https://open.substack.com/pub/aidisruption/p/nvidias-real-bet-ai-computing-infrastructure</link>
+    <description>Jensen Huang said on October 15 that CoreWeave does not need an Nvidia financial backstop, but the author argues Nvidia is also a shareholder and a supplier, and has a contractual obligation to buy part of unsold capacity.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/nvidias-real-bet-ai-computing-infrastructure</guid>
+    <pubDate>Mon, 19 Oct 2026 17:42:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A new Head of Product must choose between hands-on decisions and owning the operating system</title>
+    <link>https://open.substack.com/pub/runthebusiness/p/what-id-tell-a-new-head-of-product</link>
+    <description>The essay separates machinery problems (loops and interfaces) from strategy problems (trade-offs), and argues a new head should diagnose which one they face before acting.</description>
+    <source>Run the Business (Ibrahim Bashir)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/runthebusiness/p/what-id-tell-a-new-head-of-product</guid>
+    <pubDate>Mon, 19 Oct 2026 20:17:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>ChatGPT Slides on Windows 10 produces a PowerPoint file, not a collaborative deck</title>
+    <link>https://mixed-news.com/en/chatgpt-slides-launch-windows-10-powerpoint-mxc-component/</link>
+    <description>The rollout began October 16 for Pro, Business and Enterprise users with Space access.</description>
+    <source>TLDR Design</source>
+    <guid isPermaLink="true">https://mixed-news.com/en/chatgpt-slides-launch-windows-10-powerpoint-mxc-component/</guid>
+    <pubDate>Fri, 23 Oct 2026 18:37:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Gemini Notebook adds a review gate before slides and video render</title>
+    <link>https://ux-news.com/gemini-notebook-review-slides-video-before-generation/</link>
+    <description>An optional Review toggle lets users request edits, such as an executive summary or reordered scenes, before choosing Proceed.</description>
+    <source>TLDR Design</source>
+    <guid isPermaLink="true">https://ux-news.com/gemini-notebook-review-slides-video-before-generation/</guid>
+    <pubDate>Thu, 22 Oct 2026 18:27:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Figma Code Layers enters open beta, with Specs and a backend for Make</title>
+    <link>https://ux-news.com/figma-code-layers-specs-payload-update/</link>
+    <description>Code Layers runs interactive prototypes beside design frames, with generation and editing free on paid plans through November 4.</description>
+    <source>TLDR Design</source>
+    <guid isPermaLink="true">https://ux-news.com/figma-code-layers-specs-payload-update/</guid>
+    <pubDate>Mon, 19 Oct 2026 18:36:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Figma co-founder Dylan Field says MCP is not a perfect protocol</title>
+    <link>https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/</link>
+    <description>Field argues MCP favors frontier AI labs and needs improvement.</description>
+    <source>TLDR Design</source>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/</guid>
+    <pubDate>Wed, 21 Oct 2026 18:39:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI Made Developers Faster. Is Their Judgment Keeping Up? (Brian Houck, Scott Carey)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYZaBcLWTqvnQh8p0MtEOhobS53iPq-qt87yXYSTtOJSkqBkab-LZrIKsSI1NEdzrTuWqXCCm0Vy5nyS794ic6k1QrNnLFhsZqi9laVADGdBvBIfulWij217KTgMNPcI8KFYLt6R2UQ_WjFEpN0sBogyylv87q_hUY7gPNR_T9bsu/4v4/TeGXvQxHRyGrzdlETyh10g/h8/h001.vkfh-zuaC1FhlU3IxhpbeA0xj6v-4lnspcUMmdhgx_8</link>
+    <description>Introduces the 'hollow orchestrator': a developer can approve more work each month without getting better equipped to judge it.</description>
+    <source>Pointer #762</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYZaBcLWTqvnQh8p0MtEOhobS53iPq-qt87yXYSTtOJSkqBkab-LZrIKsSI1NEdzrTuWqXCCm0Vy5nyS794ic6k1QrNnLFhsZqi9laVADGdBvBIfulWij217KTgMNPcI8KFYLt6R2UQ_WjFEpN0sBogyylv87q_hUY7gPNR_T9bsu/4v4/TeGXvQxHRyGrzdlETyh10g/h8/h001.vkfh-zuaC1FhlU3IxhpbeA0xj6v-4lnspcUMmdhgx_8</guid>
+    <pubDate>Fri, 23 Oct 2026 19:01:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>On Managing Up (James Samuel)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHEYOIO5p-6ftxBc5GUZaFO9_-rJN9wfbbMJP6tuqQxMIuFy_LmcyVwQ8EB5-HMdJKbIovaTL9g9BPg-uHdBJSr73PXXoFw7pP_YqlS5Ifh0iiRgT4izfP8_8Tz7yF9JLCOQGbWCkMf9u2Fk04y1S7kmCtIWU6-Z1dDek2ngEP4AcSbEvzNyUsGw3W77fokcT0Q/4v4/TeGXvQxHRyGrzdlETyh10g/h10/h001.M8_0R9Z2JT877FzCGV6fl-kpVnsznXYN6e6XJkKQZHs</link>
+    <description>Ask what direct report you would love to work with, and why; that lens shows how to manage up.</description>
+    <source>Pointer #762</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHEYOIO5p-6ftxBc5GUZaFO9_-rJN9wfbbMJP6tuqQxMIuFy_LmcyVwQ8EB5-HMdJKbIovaTL9g9BPg-uHdBJSr73PXXoFw7pP_YqlS5Ifh0iiRgT4izfP8_8Tz7yF9JLCOQGbWCkMf9u2Fk04y1S7kmCtIWU6-Z1dDek2ngEP4AcSbEvzNyUsGw3W77fokcT0Q/4v4/TeGXvQxHRyGrzdlETyh10g/h10/h001.M8_0R9Z2JT877FzCGV6fl-kpVnsznXYN6e6XJkKQZHs</guid>
+    <pubDate>Fri, 23 Oct 2026 19:01:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The Git Commands I Run Before Reading Any Code (Alex Piechowski)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.PFjHD-ii0vvUj1FcNnOS5oXRyt4nXMwlJhDmQ7aFCau0LAoT6PkgnBhb5iYho5hMRcddrFQFcGCMjLHzqZLr4WUkrzb9E2Q_ryQ09UGH2XI4R7ZXvfK1c_t_Wh8HkRrzW3zxTOqwmYGEGv0t7_Sh23Y8g0PzsPUVNWbLxSTnZDJOU9H180mznk3V8vuged5h/4v4/TeGXvQxHRyGrzdlETyh10g/h11/h001.bI_pVF1_gOhrcW7peS1m4F98z_XNOZCmnaFY3y2csgM</link>
+    <description>The commit history gives a diagnostic picture of a project (who built it, where problems cluster) before you open a single file.</description>
+    <source>Pointer #762</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.PFjHD-ii0vvUj1FcNnOS5oXRyt4nXMwlJhDmQ7aFCau0LAoT6PkgnBhb5iYho5hMRcddrFQFcGCMjLHzqZLr4WUkrzb9E2Q_ryQ09UGH2XI4R7ZXvfK1c_t_Wh8HkRrzW3zxTOqwmYGEGv0t7_Sh23Y8g0PzsPUVNWbLxSTnZDJOU9H180mznk3V8vuged5h/4v4/TeGXvQxHRyGrzdlETyh10g/h11/h001.bI_pVF1_gOhrcW7peS1m4F98z_XNOZCmnaFY3y2csgM</guid>
+    <pubDate>Fri, 23 Oct 2026 19:01:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Agentic Monitoring (Ben Congdon)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHqs7xs-O1BuVSGTZ9rHUyERnu1OLC6WPbdjO-YyEujHZjMSUsNCGJ1uZavTfSO9-Izhe5Rmmbx8kf9Ee_Gvc5fNA7fA6BBjUnGVd-W7NWrot8Bu_2iNxMtqPImGXhnPOfGAWbaT1tz6r0enba0prs33-Q656u2Xzy8GiJ37sHy80/4v4/TeGXvQxHRyGrzdlETyh10g/h13/h001.luql3EqNX0y6p-VhFNahOkNdJ4NcAHGmHzU7TjU-yFc</link>
+    <description>Monitoring with agents is the obvious path for software operations, per the author's argument.</description>
+    <source>Pointer #762</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHqs7xs-O1BuVSGTZ9rHUyERnu1OLC6WPbdjO-YyEujHZjMSUsNCGJ1uZavTfSO9-Izhe5Rmmbx8kf9Ee_Gvc5fNA7fA6BBjUnGVd-W7NWrot8Bu_2iNxMtqPImGXhnPOfGAWbaT1tz6r0enba0prs33-Q656u2Xzy8GiJ37sHy80/4v4/TeGXvQxHRyGrzdlETyh10g/h13/h001.luql3EqNX0y6p-VhFNahOkNdJ4NcAHGmHzU7TjU-yFc</guid>
+    <pubDate>Fri, 23 Oct 2026 19:01:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>How AI Has Changed My Engineering Leadership Role (Bjorn Roche)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHsNrNGA23zG3GfBuURKrXWZypCP6E622p7x_TyEdn3JGZaBbvAPza4sV2Nxm1XhIRcrtyt2zhfk2OzxEsvU2qEwi0h5FxX1X3FnL6BuTVVYmC1APA8mmFbHxH_8IX3Z8KmRKlmHfNRTdocc3fPyNX4XF_8LqWjnne8WVV6Sc53k9/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h7/h001.4DGmVd-KjcECNuGriSeKp2WWK3lzJunfFdH5mkpwtBw</link>
+    <description>Hands-on, faster onboarding, less caution about dependencies, and a bus-factor concern that matters less.</description>
+    <source>Pointer #761</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHsNrNGA23zG3GfBuURKrXWZypCP6E622p7x_TyEdn3JGZaBbvAPza4sV2Nxm1XhIRcrtyt2zhfk2OzxEsvU2qEwi0h5FxX1X3FnL6BuTVVYmC1APA8mmFbHxH_8IX3Z8KmRKlmHfNRTdocc3fPyNX4XF_8LqWjnne8WVV6Sc53k9/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h7/h001.4DGmVd-KjcECNuGriSeKp2WWK3lzJunfFdH5mkpwtBw</guid>
+    <pubDate>Tue, 20 Oct 2026 19:30:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>New Trend Of Building Internal Vibe-Coding Apps (Gergely Orosz)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwj1O1C73_6WZg0LjFhl1ttzpJcv-YUOX6RYvwI_Kfg58kz1NTT2rv19Iwo2QtRrK4X1R0yv-zFUQfkC0C0jbWwI-vMHKRv1kS2ViSXMyEm2hHo2zLGMGpUawo-wzqnCF8eAtRMjsNWHsIJU9zFhmTvOZDxzUKM3KAiGF-lew8h-E/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h8/h001.PSdOzUv1MJsv2jZscVHJcVY3TfNDy9gQ_iTw7jwvpQk</link>
+    <description>Ramp and Stripe built platforms for non-engineers to build internal tools, and both are taking off in those workplaces.</description>
+    <source>Pointer #761</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwj1O1C73_6WZg0LjFhl1ttzpJcv-YUOX6RYvwI_Kfg58kz1NTT2rv19Iwo2QtRrK4X1R0yv-zFUQfkC0C0jbWwI-vMHKRv1kS2ViSXMyEm2hHo2zLGMGpUawo-wzqnCF8eAtRMjsNWHsIJU9zFhmTvOZDxzUKM3KAiGF-lew8h-E/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h8/h001.PSdOzUv1MJsv2jZscVHJcVY3TfNDy9gQ_iTw7jwvpQk</guid>
+    <pubDate>Tue, 20 Oct 2026 19:30:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>How Do I Give Feedback To Someone Who Thinks They Are Performing Well? (Andi Roberts)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWUKbMMnqUeYWqSu5-9c8LbTeZXJRI2O5thYj0NhJlLLBKOcA992ZJbZBc1gnv9a8HBe8pOyGOKV4l9MTyShzJVdeVJKjWkGRf7y_6gITpHAYZ7Zq1h-3fFo6CXpG_H8pajyTn4V4jMrroxaKq4afL5ZGzXsNNX5MBpdvswKofGSO7AmCu9DTSTPDfnWB2LJv_Nw/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h10/h001.3MhYR9mYEnp016dWG4zvIEoDipI6T86_iXLb52AFaMo</link>
+    <description>Treat it as a perception gap: explain the gap first, then surface your evidence and invite them to make sense of it with you.</description>
+    <source>Pointer #761</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWUKbMMnqUeYWqSu5-9c8LbTeZXJRI2O5thYj0NhJlLLBKOcA992ZJbZBc1gnv9a8HBe8pOyGOKV4l9MTyShzJVdeVJKjWkGRf7y_6gITpHAYZ7Zq1h-3fFo6CXpG_H8pajyTn4V4jMrroxaKq4afL5ZGzXsNNX5MBpdvswKofGSO7AmCu9DTSTPDfnWB2LJv_Nw/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h10/h001.3MhYR9mYEnp016dWG4zvIEoDipI6T86_iXLb52AFaMo</guid>
+    <pubDate>Tue, 20 Oct 2026 19:30:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>I Am Often Wrong (Boris Cherny)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.Q968EDyWJ4rKU96VioeBdDmxgQo3Q7y5kY3oL3fFcafoEHxMIOkhY-0w5yNukzDEpMbznS4a9i0Mqcj9-lcwKNqplISUbfdK3dRI9O_MuxgT_jV3YgMGhC6H06qx8-jhcn9fo0MYutIQKhrdT3cSBvGZ85IqX46pwv2lpSZcONojvtCrumD0sCgMD8yjpIgnhUQs1CEY6khYAAJvWVmAQg/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h11/h001.NQxRuiTdtHlTaNDtDNtq7_mGn_J_xA4JAV9rnuwypgw</link>
+    <description>A note on building product in the age of AI, shared first with his team.</description>
+    <source>Pointer #761</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Q968EDyWJ4rKU96VioeBdDmxgQo3Q7y5kY3oL3fFcafoEHxMIOkhY-0w5yNukzDEpMbznS4a9i0Mqcj9-lcwKNqplISUbfdK3dRI9O_MuxgT_jV3YgMGhC6H06qx8-jhcn9fo0MYutIQKhrdT3cSBvGZ85IqX46pwv2lpSZcONojvtCrumD0sCgMD8yjpIgnhUQs1CEY6khYAAJvWVmAQg/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h11/h001.NQxRuiTdtHlTaNDtDNtq7_mGn_J_xA4JAV9rnuwypgw</guid>
+    <pubDate>Tue, 20 Oct 2026 19:30:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Speeding Up Code Review With 'small-change' (Will Larson)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9Cax6yDyo9w8XMjUkmn_jba0DuYD3-D2LXl2plvNKT3CIbfzn-ihNA77i9vXl1gy4Kyic4VJf2bE9WVA0zq0rZQLP5YqD6GadjIAGzb2MI2kxEQk1KzaI0jXErYRPXMAJZA/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h13/h001.TQYC6yuiTLHUWWWeJWXbXY5nSto3ZqfDBahWd7rLGLE</link>
+    <description>Median PR review time rose from about 33 minutes to about 77 minutes as merges grew; the team's answer is a 'small-change' approach.</description>
+    <source>Pointer #761</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9Cax6yDyo9w8XMjUkmn_jba0DuYD3-D2LXl2plvNKT3CIbfzn-ihNA77i9vXl1gy4Kyic4VJf2bE9WVA0zq0rZQLP5YqD6GadjIAGzb2MI2kxEQk1KzaI0jXErYRPXMAJZA/4v1/P-9TBgbpSk-0Uo0PG9RHLQ/h13/h001.TQYC6yuiTLHUWWWeJWXbXY5nSto3ZqfDBahWd7rLGLE</guid>
+    <pubDate>Tue, 20 Oct 2026 19:30:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Modal: over $1B annualized run rate and a $750M Series D at $16B</title>
+    <link>https://open.substack.com/pub/swyx/p/modal-d</link>
+    <source>Latent Space</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/swyx/p/modal-d</guid>
+    <pubDate>Thu, 22 Oct 2026 23:43:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Anthropic traced the origins of five NIST prime curves, with no cryptographic break found</title>
+    <link>https://www.anthropic.com/research/ecdsa-curve-origins</link>
+    <source>TLDR Dev</source>
+    <guid isPermaLink="true">https://www.anthropic.com/research/ecdsa-curve-origins</guid>
+    <pubDate>Mon, 19 Oct 2026 17:53:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Replit makes OpenAI its default over Anthropic, per its CEO; insiders dispute the claim</title>
+    <link>https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/</link>
+    <source>TLDR Design</source>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/</guid>
+    <pubDate>Tue, 20 Oct 2026 18:29:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Microsoft says AI agents are insider threats because frontier models 'can't be trusted'</title>
+    <link>https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/</link>
+    <source>TLDR IT</source>
+    <guid isPermaLink="true">https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/</guid>
+    <pubDate>Wed, 21 Oct 2026 18:50:00 +0600</pubDate>
+  </item>
+</channel>
+</rss>

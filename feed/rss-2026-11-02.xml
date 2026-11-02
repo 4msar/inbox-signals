@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Inbox Signal — Week of 26 Oct – 2 Nov 2026</title>
+  <link>Inbox-Signal-2026-11-02.html</link>
+  <description>Linked items from the weekly Inbox Signal digest.</description>
+  <language>en</language>
+  <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0600</lastBuildDate>
+  <item>
+    <title>Claude Code's team now merges more than twice as many PRs, and reverts fell by over 40% [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/theaicorner1/p/ai-code-review-claude-code-team</link>
+    <description>Anthropic's own account, relayed by TLDR and The AI Corner, says Claude writes about 90% of Claude Code's code and that merged PRs more than doubled from June to September while the share needing reverts fell by over 40%. The review design is layered: automated review before and after PR creation, human approval scaled by risk, and fast rollback. The AI Corner adds Faros AI data from 1,255 teams, where high AI adoption came with 98% more merged PRs, review time up 91% and bugs per developer up 9%. The Anthropic numbers are self-reported and 'reverted' is not defined.</description>
+    <source>The AI Corner / TLDR Dev</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/ai-code-review-claude-code-team</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI is tilting software security toward attackers, and a CA key failure and a PHP RCE pair show why [Read]</title>
+    <link>https://open.substack.com/pub/pragmaticengineer/p/the-pulse-time-to-rethink-software</link>
+    <description>Orosz's week includes eMudhra, an intermediate certificate authority whose ECC private keys were tiny numbers from 30 April 2025, undetected for 18 months; its stock fell about 40% in two days. Two critical PHP RCE flaws were found by researchers using GPT-5.6 Sol, and exploitation began before disclosure. AWS saw an attempt four days before the CVEs went public. His prescriptions are automated patching, expecting day-zero exploits, and defenders using AI too.</description>
+    <source>The Pragmatic Engineer (The Pulse)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/the-pulse-time-to-rethink-software</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI SRE mostly speeds up investigation, not the autonomous fixes shown in demos [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/pragmaticengineer/p/ai-sre</link>
+    <description>Agents have roughly doubled PR frequency, so incident rate rises, and Rootly data shows pages and out-of-hours pages nearly doubled. ResolveAI rebuilt its agent three times, and context rot and self-confirmation drove the rebuilds. Stripe's in-house agent takes 3 minutes for a simple run and 14 minutes for a deep one, and humans still approve every PR. The article is paywalled after about 60%, and the authors say vendors will likely beat in-house builds (Orosz is an investor in incident.io).</description>
+    <source>The Pragmatic Engineer</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/ai-sre</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The 'software factory' is partly identity defense, and it builds new silos [Read]</title>
+    <link>https://open.substack.com/pub/cutlefish/p/tbm-448-the-software-factory-as-identity</link>
+    <description>Cutler argues that when AI makes building cheap, engineers move up to design and govern the factory. That keeps their identity as builders and is also real adaptation. He asks whether a factory model fits end-to-end product work, since engineering, product and GTM factories each stop at their own profession's boundary and design is left in the middle. No figures; it is opinion, and a useful counter-narrative to the factory pitches in this week's mail.</description>
+    <source>The Beautiful Mess (John Cutler)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/cutlefish/p/tbm-448-the-software-factory-as-identity</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Usage and outcome pricing are replacing seats, and hybrid is now the most common model [Read]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/the-new-b2b-pricing-models</link>
+    <description>Growth Unhinged's 2026 survey, quoted by The VC Corner, puts hybrid pricing at 37%, up from 25% a year earlier, and respondents think investors prefer hybrid 35% to 5% over seats. Zylo's data shows average SaaS spend per organisation up 8% to $55.7M while app count stayed about 305. The advice for startups is to name one countable unit, write down what 'resolved' means, and track unit cost from day one.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/the-new-b2b-pricing-models</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Anthropic's S-1 shows a Q2 operating profit, while H1 stays an operating loss and most of the $80.7B loss is non-cash [Read]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/anthropic-s1-ipo-filing</link>
+    <description>H1 2026 revenue was $16.29B, with Q2 at $11.56B (up 1,368% year on year) and a $974M Q2 operating profit; H1 as a whole was an operating loss of $693M. The author attributes $72.4B of the loss to fair-value changes on convertibles and SAFEs, and H1 operating cash flow was +$3.9B. Customers paying over $100K rose from over 950 to over 11,900. The valuation range ($1.5T to over $2T) is press reporting, not from the filing, and the multiples are the author's arithmetic.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/anthropic-s1-ipo-filing</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Gemini 4 Carbon is reported as an energy-efficiency model; the restricted-access and pricing claims could not be confirmed [Google blog]</title>
+    <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</link>
+    <description>The TLDR AI item of 29 October describes energy efficiency only. Earlier-quoted benchmark scores (SEC-bench Pro, CWE-bench), a restricted cyber-defender rollout and intro pricing were not found in that source, so they are omitted here.</description>
+    <source>TLDR Dev / Google</source>
+    <guid isPermaLink="true">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Mistral releases Large 4 as open weights, but trails the best Chinese open models [Mistral]</title>
+    <link>https://mistral.ai/news/mistral-large-4-oss/</link>
+    <description>Mistral claims leading open-weight agentic-coding results and cyber capability comparable to GLM-5.3; those are vendor claims. The Latent Space recap puts it at 26 on Artificial Analysis Intelligence Index v5, the top non-Chinese open model but 6 points behind DeepSeek V4.1 Flash and GLM-5.3, with 1M context and $0.70/$2.10 per million tokens.</description>
+    <source>TLDR AI / Mistral</source>
+    <guid isPermaLink="true">https://mistral.ai/news/mistral-large-4-oss/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Open-weight models can turn unshipped security patches into working exploits [Epoch AI]</title>
+    <link>https://epoch.ai/publications/open-weight-models-patch-gap</link>
+    <description>Epoch reports that GLM 5.3 can find and exploit vulnerabilities in recent Firefox builds using published but not yet shipped fixes, and that open-weight models can do much or all of this unaided. Open-source projects are the most exposed. The write-up is Epoch's own analysis.</description>
+    <source>TLDR AI / Epoch AI</source>
+    <guid isPermaLink="true">https://epoch.ai/publications/open-weight-models-patch-gap</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI got about 13x cheaper per year, yet only 37% of firms report an EBIT gain [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/theaicorner1/p/state-of-ai-report-2026-findings</link>
+    <description>Epoch AI says the cost to reach a fixed benchmark score fell about 47% per quarter, and GPQA Diamond got roughly 725x cheaper in about 18 months. The caveat is that agents multiply billed calls, so total bills can still rise. Via the State of AI Report 2026, McKinsey finds 37% of firms say AI added to EBIT, and about $285B of software market value was erased in February 2026.</description>
+    <source>The AI Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/state-of-ai-report-2026-findings</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Uber built an MCP gateway because per-team integrations fragmented tooling, security and discovery [Read]</title>
+    <link>https://open.substack.com/pub/bytebytego/p/how-uber-built-a-gateway-for-ai-agents</link>
+    <description>The gateway has a registry (control plane) and a proxy (data plane). AutoCrawler reads existing IDLs and uses an LLM to write tool descriptions. Newly discovered tools start disabled until the owning team approves them through a reviewed diff, and auth uses per-tool policies with PII redaction. Uber's stated lesson is that discovery, security and reliability are the hard part of agentic systems, not the model. There are no quantitative results.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/how-uber-built-a-gateway-for-ai-agents</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Salesforce swapped its one-big-prompt agent for deterministic code plus reasoning models [Read]</title>
+    <link>https://open.substack.com/pub/bytebytego/p/a-deep-dive-into-salesforces-agent</link>
+    <description>In Agentforce v1, instruction following broke down beyond about eight instructions. The IFScale benchmark (20 models, up to 500 instructions) found the best model followed only 68% at 500. The fix runs four systems outside the prompt, and the context-engine demo uses 124,000 tokens against 9,000 for one insurance question. Those are vendor demo figures from interviews with Salesforce executives.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/a-deep-dive-into-salesforces-agent</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Apple fits a 3B-parameter model on the iPhone through compression and KV-cache sharing [Read]</title>
+    <link>https://open.substack.com/pub/bytebytego/p/how-apple-fits-an-llm-on-your-iphone</link>
+    <description>At 16-bit, 3B parameters is almost 6 GB. A mix of 2-bit and 4-bit palettization averages 3.7 bits per weight, about 1.39 GB. Cross-layer KV sharing cuts KV-cache memory by 37.5%, and rank-16 LoRA adapters are tens of MB. The 2026 AFM 3 claims appear only in the conclusion and are unsourced.</description>
+    <source>ByteByteGo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/how-apple-fits-an-llm-on-your-iphone</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Google Cloud grew 103% and AWS 39.3%, but capex is outrunning cash flow [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/aidisruption/p/cloud-giants-push-ai-who-can-bear</link>
+    <description>Google Cloud Q3 revenue rose 103% and AWS 39.3%. Alphabet had a net free cash outflow of about $9.1B in the quarter, and Amazon's trailing-12-month free cash flow was a net outflow of about $42.4B. Combined 2026 capex is about $415B to $425B. The 'who can bear it' analysis is in the paywalled part.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/cloud-giants-push-ai-who-can-bear</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Frontier models' robot-arm control roughly doubles every 54 days [LessWrong]</title>
+    <link>https://www.lesswrong.com/posts/ndS9Xn8Qx5PppHJ3Q/the-ability-of-frontier-models-to-control-robots-is-rapidly</link>
+    <description>Nine multimodal models were tested on six real-arm tasks from July to October. The best execution rate rose 4.4x and the lowest cost per subtask fell 6.2x. The author says efficiency and precision, not reasoning, hold them back. The sample is small and the trend is extrapolated from four months of data.</description>
+    <source>TLDR AI / LessWrong</source>
+    <guid isPermaLink="true">https://www.lesswrong.com/posts/ndS9Xn8Qx5PppHJ3Q/the-ability-of-frontier-models-to-control-robots-is-rapidly</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The AI industry is waiting for a catastrophe before acting, and that is backwards [Read]</title>
+    <link>https://open.substack.com/pub/bigtechnology/p/why-are-we-all-just-waiting-for-the</link>
+    <description>Kantrowitz argues cybersecurity is the likeliest disaster area: practitioners call October 'Black October' after a flood of AI-found vulnerabilities. He cites a 26-year-old who allegedly hacked several South Korean banks with an open-source model and Claude Code, and a group that hit 400+ financial targets in Latin America. He says pledges to pace the frontier are largely unpaced. The claims are the author's, with thin attribution.</description>
+    <source>Big Technology (Alex Kantrowitz)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/bigtechnology/p/why-are-we-all-just-waiting-for-the</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Titus Winters: Google-scale lessons, and a warning that AI-era outages are rising [Read]</title>
+    <link>https://open.substack.com/pub/pragmaticengineer/p/software-engineering-at-google-and</link>
+    <description>Google's 2010 C++ refactor covered about 250M lines and 10,000 engineers, run by a dozen people using a MapReduce over ASTs, with generated edits sharded by directory. Testing was mandated around 2007 after Search could only ship quarterly. On AI, Winters says peer companies report code output up hugely and outages up about 30% with features shipped flat; the 30% is anecdotal from his conversations. He would grade prompts and tests rather than code.</description>
+    <source>The Pragmatic Engineer</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/software-engineering-at-google-and</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Meta's 'Forum' was built AI-native, reaching Facebook Groups feature parity in eight weeks [Meta Engineering]</title>
+    <link>https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/</link>
+    <description>Agents plan, implement, test and correct changes while engineers set goals and approve. A small team reached Facebook Groups feature parity in eight weeks, per Meta's engineering post. Only the TLDR summary was read; the team size and measurements are in Meta's post.</description>
+    <source>TLDR Dev / Meta</source>
+    <guid isPermaLink="true">https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Amazon says token counts are a flawed metric and is counting launches and production changes [CNBC]</title>
+    <link>https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html</link>
+    <description>Amazon's memo says token usage, AI-tool adoption rate and code changes or reviews are flawed measures that raise cost and complexity. It is shifting to counting launches and successful production changes, and it is being pickier about AI use with no token caps.</description>
+    <source>TLDR Dev / CNBC</source>
+    <guid isPermaLink="true">https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>monday.com's agents resolve about half of ~1,688 monthly infra tickets without escalation [monday.com Engineering]</title>
+    <link>https://engineering.monday.com/how-we-gave-ai-agents-the-keys-to-production-and-still-sleep-at-night/</link>
+    <description>After one quarter in production, monday.com's shared agent platform with standardized guardrails resolves about 50% of roughly 1,688 monthly infrastructure tickets without escalation. The figures are self-reported by monday.com.</description>
+    <source>TLDR IT / monday.com</source>
+    <guid isPermaLink="true">https://engineering.monday.com/how-we-gave-ai-agents-the-keys-to-production-and-still-sleep-at-night/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Hand fuzzy, repetitive dev chores to scheduled agents, and keep humans on review [Read]</title>
+    <link>https://open.substack.com/pub/productforengineers/p/scheduled-agents</link>
+    <description>PostHog's flaky-test agent has filed 72 diagnostic reports since July, and 11 led to merged fixes. Agent-feedback reports number a few thousand since July, so a human triages them monthly in a couple of hours. A docs agent wrongly treated flag removal as GA until human feedback corrected its own prompt. The piece is company content and partly promotes PostHog's product.</description>
+    <source>build mode by PostHog</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/productforengineers/p/scheduled-agents</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>LeetCode-style interviews are declining, but not dead, and AI-allowed pair sessions work better [Read]</title>
+    <link>https://open.substack.com/pub/gregorojstersek/p/is-leetcode-dead-whats-the-alternative</link>
+    <description>Big Tech still uses LeetCode-style rounds, especially for backend roles, because of applicant volume. Google is piloting a 'Code Comprehension' round: a 200 to 500 line unfamiliar codebase, 60 minutes, with Gemini allowed, reported via Business Insider. Felix Rieseberg says he removed the coding interview from his team's loops this month. Ojstersek recommends open-ended project discussion, then AI-allowed pair programming, and advises against take-homes. The evidence is anecdotal.</description>
+    <source>Gregor Ojstersek (Engineering Leadership)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/gregorojstersek/p/is-leetcode-dead-whats-the-alternative</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Managing up means building trust, not pleasing your boss [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/gregorojstersek/p/how-to-manage-up</link>
+    <description>The free part lists three mistakes he made: going over his manager's head, trying to change the manager, and keeping problems to himself. Managing up is defined as proactive communication, helping with the manager's problems, and transparency. The five-step framework is paywalled, and the piece is partly a book promotion.</description>
+    <source>Gregor Ojstersek (Engineering Leadership)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/gregorojstersek/p/how-to-manage-up</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI removes the glue work of management, but adds review load and slop [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/refactoring/p/how-ai-is-changing-engineering-management</link>
+    <description>Rossi's view is that a manager's purpose is unchanged, citing Grove's output formula across Product, Tech, Process and Team. AI removes status and note-taking, while the job gains review, slop control and setting a quality bar. The preview is cut off after the first section and contains no data.</description>
+    <source>Refactoring (Luca Rossi)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/refactoring/p/how-ai-is-changing-engineering-management</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Governance acts as an accelerant, and a study ties maturity to agent adoption [Read]</title>
+    <link>https://open.substack.com/pub/refactoring/p/bicycle-gears-governance-fences-and</link>
+    <description>A late-2025 Google Cloud and CSA study found agentic AI adoption at 46% with full governance, 25% with partial governance and 12% still in development. Rossi notes correlation is not causation. The issue also cites Summerlin's playground-fence study and Geoffrey Litt's argument for small teachable primitives over labelled modes.</description>
+    <source>Refactoring, Monday Ideas</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/refactoring/p/bicycle-gears-governance-fences-and</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A ten-person team reports 77,000 substantial changes in 30 days with permanent agents [TLDR summary]</title>
+    <link>https://links.tldrnewsletter.com/v3skhA</link>
+    <description>Spawn reports $3.1M in token spend and agents that are permanent and each own part of the company. Its process is direct production feedback, frequent tests, hourly deploys, fast recovery and hard-coded gates for irreversible actions. Humans supply product taste and the ambitious ideas agents rarely propose. The figures are self-reported.</description>
+    <source>Spawn (via TLDR Dev)</source>
+    <guid isPermaLink="true">https://links.tldrnewsletter.com/v3skhA</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Two founders spend about $28,000 a year on AI, less than one engineer, and merged 657 PRs in a month [Read]</title>
+    <link>https://allen.hutchison.org/2026/10/26/tokens-over-hires</link>
+    <description>The biggest bill is about $1,500 a month for an AI code reviewer. The limit they hit was attention: while one reviewer was busy with other work, a small database problem grew until it took the product down. The next engineer will own one piece of the product, agents included. It is an anecdote from one team.</description>
+    <source>Allen Hutchison (via TLDR Founders)</source>
+    <guid isPermaLink="true">https://allen.hutchison.org/2026/10/26/tokens-over-hires</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>We should be more ambitious with the software we build [Read]</title>
+    <link>https://danluu.com/ambitious/</link>
+    <description>Luu argues that better coding tools make projects like database rewrites, regex engines and compiler improvements feasible for smaller teams. People who say software is solved, he argues, are not working on hard problems. The post is 25 to 37 minutes long; TLDR gives no numbers.</description>
+    <source>Dan Luu (via TLDR Dev)</source>
+    <guid isPermaLink="true">https://danluu.com/ambitious/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Erin Meyer's Culture Map: eight scales explain behaviour that looks like character [Read]</title>
+    <link>https://open.substack.com/pub/softwarearchitectureguild/p/book-review-the-culture-map</link>
+    <description>The scales are Communicating, Evaluating, Persuading, Leading, Deciding, Trusting, Disagreeing and Scheduling, and positions are relative. The reviewer says emotional expressiveness is a useful extra axis, and suggests asking early whether a decision is provisional or final. He notes the limits: country scales are tendencies, and the model puts the adjustment burden on whoever notices.</description>
+    <source>Software Architecture Guild</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/softwarearchitectureguild/p/book-review-the-culture-map</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>At most one in three ideas has a measurable effect, and cheap AI coding makes validation matter more [Read]</title>
+    <link>https://open.substack.com/pub/techworldwithmilan/p/why-most-of-what-you-build-creates</link>
+    <description>Gilad's Confidence Meter caps opinion evidence at 0.1 out of 10, desk review at 0.5, and data gathering at 3. He argues that AI made validation more expensive relative to building, and that launch-and-iterate is a costly way to learn. The '1 in 3' figure is his claim and cites no source in the body.</description>
+    <source>Techworld with Milan (Itamar Gilad)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/techworldwithmilan/p/why-most-of-what-you-build-creates</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI is weak at judgment and accountability, so keep the 'brain' in code and the voice in the model [Read]</title>
+    <link>https://open.substack.com/pub/hagakure/p/the-irony-of-this-whole-ai-moment</link>
+    <description>After almost a year of heavy use, André moved training-plan logic for his endurance-coaching app into deterministic code, leaving the LLM as the coach's voice and some analysis, because unpredictable plans risk injury. He quotes Torsten Slok: 'AI does not understand accountability, trust, culture, unwritten rules, ethical trade-offs or fairness.' No figures.</description>
+    <source>Paulo André (The Hagakure)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/hagakure/p/the-irony-of-this-whole-ai-moment</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Delegation, feedback loops, and what AI-generated code takes away [Read]</title>
+    <link>https://open.substack.com/pub/hagakure/p/notes-from-the-week</link>
+    <description>André argues engineering leaders keep teams dependent by solving everyone's problems, and that leaders must become less central to daily work. With AI-written code, he says, what is lost is not comprehension but the process of discovering what to build by building it. No figures.</description>
+    <source>Paulo André (The Hagakure)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/hagakure/p/notes-from-the-week</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Deep search agents give shallow answers unless validation and replanning are built in [Read]</title>
+    <link>https://open.substack.com/pub/agenticengg/p/11-deep-search-can-still-give-you</link>
+    <description>The four-phase loop plans subtasks with dependencies, executes with tools, validates, then synthesizes or replans. Validation checks consistency, completeness, reasonableness (is 500% YoY growth a parsing error?) and missing evidence. The worked example is finance using SEC EDGAR. No benchmark numbers; the three architectures promised in the email were not read.</description>
+    <source>Kent Beck's peers: Tanya / Agentic Engineering</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/agenticengg/p/11-deep-search-can-still-give-you</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Discounts failed in India because buyers distrusted them [Read]</title>
+    <link>https://open.substack.com/pub/warikoo/p/3010-daal-mein-kuch-kaala-hai</link>
+    <description>Warikoo recalls Groupon's 2011 India launch, which offered 30 to 50% off MRP, and says buyers saw the deals and left. He argues that in a trust-deficient market, generous discounts trigger 'what's the catch?' suspicion, so an uncertain purchase experience outweighs low prices. The argument rests on one anecdote. The issue is also promotional for his MockMentor product.</description>
+    <source>Ankur Warikoo</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/warikoo/p/3010-daal-mein-kuch-kaala-hai</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>People notice you less than you think, so make your work visible anyway [Read]</title>
+    <link>https://open.substack.com/pub/alifeengineered/p/worth-repeating-nobodys-watching</link>
+    <description>Huynh uses a noisy bag of Doritos in an Amazon negotiation to argue that people overestimate how much others notice them. The cost shows up in promotions, where good work goes unseen. His fix is a periodic contribution digest to your manager and proactive status updates. The post is a republished piece from August 2024; the event promo is skipped.</description>
+    <source>Steve Huynh (A Life Engineered)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/alifeengineered/p/worth-repeating-nobodys-watching</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Three Friday sermons: prophets' duas, hikma and ilm, and the purpose of Umrah [Read]</title>
+    <link>https://open.substack.com/pub/banglakhutba/p/0a4</link>
+    <description>The summary covers three khutbas from the past two weeks, on about 55 Qur'anic duas, on seeking knowledge rather than having it handed over, and on Umrah becoming a 'ritual vacation'. The author says the summary is written from memory, has no Qur'an or hadith references, may contain errors, and asks readers to verify. Religious content was not verified here.</description>
+    <source>Ishtiaque Hussain (Bangla Jumu'a Khutba)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/banglakhutba/p/0a4</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Cognitive Mercantilism: AI fear underrates ordinary people's demand for intelligence [Read]</title>
+    <link>https://contraptions.venkateshrao.com/p/cognitive-mercantilism</link>
+    <description>Rao argues that treating intelligence as scarce is a mistake, and that widespread AI could spark a 'cognitive industrious revolution' with demand for intelligence expanding. The essay is long and philosophical; TLDR gives no numbers.</description>
+    <source>Venkatesh Rao (via TLDR Dev and IT)</source>
+    <guid isPermaLink="true">https://contraptions.venkateshrao.com/p/cognitive-mercantilism</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A restaurant platform moved 10,000+ sites to Astro and cut menu-page LCP from 5.4s to 0.7s [Owner engineering blog]</title>
+    <link>https://building.owner.com/project-speed</link>
+    <description>Owner's 'Project Speed' moved more than 10,000 restaurant sites to Astro with edge caching. Menu-page p75 LCP fell from 5.4s to 0.7s, and per-restaurant revenue rose more than 4%. React Digest adds that infrastructure cost fell by up to $10,000 a month and page load was cut 87%; those extra figures are from the React Digest summary.</description>
+    <source>TLDR Dev / Owner / React Digest</source>
+    <guid isPermaLink="true">https://building.owner.com/project-speed</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Design systems slow down under load: a 249-option dropdown took over 200 ms in two popular libraries [Read]</title>
+    <link>https://denodell.com/blog/design-systems-should-be-fast-by-default</link>
+    <description>With the CPU slowed 4x, opening a 249-country dropdown took 84ms in Mantine, 134ms in Ant Design, and over 200ms in MUI and React Spectrum, past his 100ms budget. Spectrum's cause is that React Aria measures options one at a time, forcing layout each time, and a fix is in review. The benchmarks are the author's own.</description>
+    <source>Den Odell (via React Status)</source>
+    <guid isPermaLink="true">https://denodell.com/blog/design-systems-should-be-fast-by-default</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Next.js 16.4's agent skill removed nearly 2 MB of compressed client JS [Next.js blog]</title>
+    <link>https://nextjs.org/blog/ship-less-javascript-with-ai</link>
+    <description>The skill uses Turbopack's module graph to find unneeded client JavaScript. Vercel reports removing or deferring nearly 2 MB of compressed JS across v0 and vercel.com, checked with snapshot comparisons. It is a vendor report on its own sites.</description>
+    <source>TLDR Dev / Next.js</source>
+    <guid isPermaLink="true">https://nextjs.org/blog/ship-less-javascript-with-ai</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Broccoli2Shell (CVE-2026-111497): a critical Brotli decoder RCE [Wiz]</title>
+    <link>https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js</link>
+    <description>The flaw affects Node.js, Bun and Envoy. Wiz says 91% of cloud environments have vulnerable resources. The fix is to update and rebuild affected workloads; Node.js security releases in the same week fixed ten CVEs, including a Brotli RCE. Bundled Brotli copies elsewhere also need patching.</description>
+    <source>Wiz (via TLDR DevOps)</source>
+    <guid isPermaLink="true">https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Railway's October incident may have exposed environment variables for about 100,000 workspaces [Railway report]</title>
+    <link>https://blog.railway.com/p/preliminary-report-october-security-incident</link>
+    <description>An attacker accessed internal systems between 20 and 22 October to target AI provider API keys. Environment variables for about 100,000 workspaces (1.85% of total) were potentially compromised. Railway revoked partner credentials and accelerated its single-tenant builder infrastructure. The report is preliminary.</description>
+    <source>Railway (via TLDR DevOps)</source>
+    <guid isPermaLink="true">https://blog.railway.com/p/preliminary-report-october-security-incident</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Gheist automates abuse of stolen GitHub tokens, targeting over 850 compromised accounts [Wiz]</title>
+    <link>https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles</link>
+    <description>Attackers plant secret-dumping workflows in repositories using stolen tokens. GitHub's new controls blocked the attack in public repositories, but private and enterprise repositories remain exposed according to Wiz. The guidance is to revoke and rotate tokens.</description>
+    <source>Wiz (via TLDR DevOps and IT)</source>
+    <guid isPermaLink="true">https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>DBOS reaches 1M durable workflows per second on Postgres across 50 shards [DBOS]</title>
+    <link>https://www.dbos.dev/blog/one-million-workflows</link>
+    <description>The benchmark scaled a no-op workflow load from 20,000 per second on one Postgres server to 1M per second across 50 shards using PgDog. The obstacle was a contention feedback loop that collapsed throughput when a shard slowed; advisory locks limiting concurrent dequeuers restored stable scaling. It is a vendor benchmark of no-op workflows.</description>
+    <source>TLDR DevOps / DBOS</source>
+    <guid isPermaLink="true">https://www.dbos.dev/blog/one-million-workflows</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>One Argo CD hub managed 34 clusters, and onboarding fell from four days to 1.7 hours [Read]</title>
+    <link>https://cloudnativenow.com/contributed-content/one-hub-34-clusters-lessons-from-a-gitops-control-plane-at-scale/</link>
+    <description>The hub covered 34 clusters across 22 AWS accounts and one Oracle Cloud tenancy, driven by 174 Helm charts. Per-cluster contracts, CI manifest diffs and no-prune settings kept it safe. The onboarding figures are reported by the author.</description>
+    <source>TLDR DevOps / Cloud Native Now</source>
+    <guid isPermaLink="true">https://cloudnativenow.com/contributed-content/one-hub-34-clusters-lessons-from-a-gitops-control-plane-at-scale/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Why Kubernetes autoscalers keep fighting each other [Read]</title>
+    <link>https://thenewstack.io/why-kubernetes-autoscalers-fight/</link>
+    <description>The author argues that HPA, VPA, KEDA and Karpenter mutate the same workload fields from independent loops, causing four failure modes including a VPA/HPA death spiral and GitOps drift ping-pong. The piece pitches a unified predictive autoscaler, so treat it as opinion.</description>
+    <source>TLDR DevOps / TheNewStack</source>
+    <guid isPermaLink="true">https://thenewstack.io/why-kubernetes-autoscalers-fight/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>GitHub is moving from repo-wide write serialization to per-reference quorums [GitHub Blog]</title>
+    <link>https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</link>
+    <description>The change was made to overcome cross-region latency during the Azure migration. Internal tests show 3 to 4x higher throughput for writes to different refs. An object-storage-backed design lets read capacity scale independently. The numbers are GitHub's internal tests.</description>
+    <source>TLDR DevOps / GitHub Blog</source>
+    <guid isPermaLink="true">https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Python and Postgres disagree on 'CET', and that broke a merge-freeze queue [Read]</title>
+    <link>https://mergify.com/blog/python-postgres-disagree-on-cet</link>
+    <description>A timezone Python accepted was rejected by Postgres, breaking Mergify's merge-freeze queries. Four timezone names silently differ by an hour in summer. The fix is one curated timezone list plus cross-system integration tests.</description>
+    <source>TLDR Dev / Mergify</source>
+    <guid isPermaLink="true">https://mergify.com/blog/python-postgres-disagree-on-cet</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Workers AI leaked other customers' responses through a KV cache bug [Cloudflare]</title>
+    <link>https://blog.cloudflare.com/kv-cache-exposure-remediation/</link>
+    <description>A capacity mismatch in the KV cache, combined with an SGLang error-handling bug, let 155 GLM-5.3 responses expose other customers' data after oversized prompts. The model was restored in September. The root-cause write-up is Cloudflare's own.</description>
+    <source>TLDR Dev / Cloudflare</source>
+    <guid isPermaLink="true">https://blog.cloudflare.com/kv-cache-exposure-remediation/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Schema-valid tool calls: Kimi K2.6 on vLLM produced valid calls only 92% of the time [Ubicloud]</title>
+    <link>https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm</link>
+    <description>Constrained decoding raised schema accuracy to 100% for supported Kimi and DeepSeek models. The author notes that schema-valid does not mean the call is useful. The post is Ubicloud's own benchmark.</description>
+    <source>TLDR DevOps / Ubicloud</source>
+    <guid isPermaLink="true">https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Ruby 4.0.9 patch availability lags: core tools shipped in minutes, the default Docker image in 16 hours [Read]</title>
+    <link>https://paagman.dev/how-fast-can-you-patch-ruby/</link>
+    <description>The author argues for auditing the whole update path. Some cloud runtimes took days to pick up the patch.</description>
+    <source>TLDR Dev / Paagman</source>
+    <guid isPermaLink="true">https://paagman.dev/how-fast-can-you-patch-ruby/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Soft-navigation web vitals: Sentry SDK v11 measures LCP, CLS and INP on client-side route changes [Sentry]</title>
+    <link>https://blog.sentry.io/measuring-soft-navigation-web-vitals/</link>
+    <description>Initial page-load metrics miss slow routes. The feature needs Chromium 151 or later, and soft-navigation scores should be filtered separately because their clocks start at different points.</description>
+    <source>TLDR Dev / Sentry</source>
+    <guid isPermaLink="true">https://blog.sentry.io/measuring-soft-navigation-web-vitals/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>DeadTag: forgotten third-party script tags become a spyware delivery network [Frontend Focus]</title>
+    <link>https://frontendfoc.us/link/192090/21b65b1c52</link>
+    <description>Attackers buy expired domains once used by analytics, ad and widget scripts, so sites still carrying the old tag load attacker code. The advice is to audit your third-party tags.</description>
+    <source>Frontend Focus</source>
+    <guid isPermaLink="true">https://frontendfoc.us/link/192090/21b65b1c52</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>TypeScript 7.1 beta adds content mappers for non-TS files [TypeScript blog]</title>
+    <link>https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/</link>
+    <description>Content mappers are tsconfig-registered plugins that turn files such as .sql, .html or .vue into virtual TypeScript files, so the checker can report errors and completions at positions in the original file. The Fireship take is that it arrives late to matter much.</description>
+    <source>TypeScript / JavaScript Weekly</source>
+    <guid isPermaLink="true">https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Claude Code /batch turns one large change into many scoped work orders [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/aidisruption/p/claude-code-batch-20-way-batch-code</link>
+    <description>The author says /batch cuts a mechanical change, such as swapping API calls across 300 files, into scoped work orders with acceptance criteria. This avoids messy scripts and a single session whose context fills halfway. The preview is cut off before the work-order guidance.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/claude-code-batch-20-way-batch-code</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Claude Code's fork subagent inherits the full session context, so side tasks need no re-briefing [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/aidisruption/p/claude-code-fork-subagent-a-context</link>
+    <description>The anecdote: mid-fix on a payment callback, the author typed a subtask to write unit tests and kept working, and the results came back already aware of the files in play. There are no metrics.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/claude-code-fork-subagent-a-context</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Pasting a bare error into Claude Code gives generic guesses; add a screenshot, files and expected behaviour [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/aidisruption/p/how-i-made-claude-code-understand</link>
+    <description>A login button did nothing and the console showed a 400. The generic request produced three plausible but useless causes. The real cause was a new global style that pushed the button outside the form, visible only in a screenshot. No figures.</description>
+    <source>Meng Li (AI Disruption)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/how-i-made-claude-code-understand</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Claude Code skills for teams: what to move out of CLAUDE.md [Read]</title>
+    <link>https://dev.to/aiworkspacebuilder/claude-code-skills-for-teams-what-to-move-out-of-claudemd-4f6o</link>
+    <description>Keep always-needed rules in CLAUDE.md and move task procedures into on-demand skills. Make side-effecting skills, such as deploy, manual-only with reviewed tool permissions.</description>
+    <source>TLDR Dev / Dev.to</source>
+    <guid isPermaLink="true">https://dev.to/aiworkspacebuilder/claude-code-skills-for-teams-what-to-move-out-of-claudemd-4f6o</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Quorums work because any two majorities overlap; R + W &gt; N gives read-after-write consistency [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/designgurus/p/quorum-in-system-design-read-write</link>
+    <description>A majority of 3 nodes is 2, of 5 is 3, of 7 is 4. Four nodes tolerate one failure, the same as three, which is why odd sizes are recommended. With N=3, R=2/W=2 is balanced, R=1/W=3 gives fast reads but one failure blocks writes, and R=1/W=1 is only eventually consistent. The consensus section is paywalled.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/quorum-in-system-design-read-write</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Latency, throughput and bandwidth are three different problems [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/designgurus/p/performance-basics-every-backend</link>
+    <description>Latency is time per operation, throughput is the achieved rate and bandwidth is the capacity ceiling. A New York to London round trip cannot beat about 55 ms because light in fibre is roughly 200,000 km/s, so only moving data closer lowers that floor. The article is paywalled after propagation and transmission delay.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/performance-basics-every-backend</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The 100-term system design glossary, with the claim that knowing these terms earns staff offers [Read]</title>
+    <link>https://open.substack.com/pub/designgurus/p/the-system-design-glossary-100-terms</link>
+    <description>The post defines 100 terms in four categories and argues that mechanism matters more than the label: for a circuit breaker, know the closed, open and half-open transitions. It gives 99.9% availability as about 8.7 hours of downtime a year. Its claim that candidates who know terms 76 to 100 receive staff offers is unsupported.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/the-system-design-glossary-100-terms</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Most teams should start with a modular monolith, but only enforced boundaries make it work [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/designgurus/p/how-to-build-a-modular-monolith-20</link>
+    <description>The post argues that a modular monolith without enforced boundaries is just a monolith with extra folders. A wrong module boundary costs about a day to fix, versus weeks for a wrong microservice boundary. The preview covers principles 1 to 5 of 20 and cuts off at principle 6.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/how-to-build-a-modular-monolith-20</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Architecture patterns fail through pattern blindness or pattern worship [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/designgurus/p/10-top-architecture-patterns-every</link>
+    <description>The post claims monoliths suit teams under 10 to 15 engineers, and that breaking one up should follow concrete pain, not team growth alone. Premature microservices produce distributed-systems problems with no autonomy benefit. The rest is paywalled after pattern 4, and the post plugs the author's course.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/10-top-architecture-patterns-every</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Eleven scalability patterns for interviews, each with its trade-off [Read]</title>
+    <link>https://open.substack.com/pub/systemdesignone/p/scalability-patterns-system-design</link>
+    <description>Sharding strategies compared: hash gives an even spread but is bad for range queries, range causes hot shards, and directory adds a dependency. Consistent hashing with virtual nodes limits data movement, while modulo hashing remaps keys when a shard is added. Its bottom line is to start small, measure, and scale when needed. Generic interview-prep content.</description>
+    <source>Neo Kim (systemdesignone)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/scalability-patterns-system-design</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Signed JWTs are misused: a signature proves integrity, not secrecy [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/designgurus/p/jwt-in-90-minutes-a-backend-engineers</link>
+    <description>A standard JWT is signed, not encrypted, so never put secrets in it. HS256 shares one key, so any verifying service can forge tokens; RS256 or ES256 keep the private key at the issuer. Rotate keys by publishing the new key and keeping the old public key until old tokens expire. The post is paywalled at Part 4.</description>
+    <source>System Design Nuggets</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/jwt-in-90-minutes-a-backend-engineers</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>GitOps with ArgoCD: pull-based deploys shrink the blast radius of a compromised CI [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/systemdesignone/p/how-argocd-works-gitops-kubernetes</link>
+    <description>Push-based CD puts cluster credentials in CI, so a compromised pipeline is effectively a compromised cluster. Pull-based ArgoCD runs inside the cluster, so a compromised CI can only change Git, which is reviewed and reconciled. The production-hardening sections are paywalled.</description>
+    <source>Neo Kim (systemdesignone)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/how-argocd-works-gitops-kubernetes</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Cloudflare rebuilt origin range requests in Pingora and roughly halved R2 p99 time-to-first-byte [Cloudflare]</title>
+    <link>https://blog.cloudflare.com/origin-range-requests/</link>
+    <description>The rebuild also removed customer-managed range sizes. A follow-up cut tiered-cache traffic by about 6%. The figures are Cloudflare's own.</description>
+    <source>TLDR DevOps / Cloudflare</source>
+    <guid isPermaLink="true">https://blog.cloudflare.com/origin-range-requests/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Storing everything is not memory: agents should keep lessons and forget most of a task [Read]</title>
+    <link>https://open.substack.com/pub/agenticengg/p/episode-6-your-agent-should-forget</link>
+    <description>Oracle's Nacho Martínez Rincón argues a bigger context window does not fix context rot. Save lessons as problem, error and resolving action, then consolidate them into skills after a task ends. The piece also covers memory poisoning. No numbers.</description>
+    <source>Tanya (Agentic Engineering)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/agenticengg/p/episode-6-your-agent-should-forget</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>DoorDash agrees to buy Instacart for $17B, at $65 a share [NYT]</title>
+    <link>https://www.nytimes.com/2026/10/29/technology/doordash-instacart-acquisition-delivery.html</link>
+    <description>Instacart holders get $65 a share, 26% over the 22 October price. The deal is expected to close late next year or in 2028. The claimed benefits are faster and cheaper delivery.</description>
+    <source>TLDR / NYT</source>
+    <guid isPermaLink="true">https://www.nytimes.com/2026/10/29/technology/doordash-instacart-acquisition-delivery.html</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Reddit is testing logged-in-only access in non-US markets from Q4 [Ars Technica]</title>
+    <link>https://arstechnica.com/gadgets/2026/10/reddit-will-require-you-to-log-in-eventually-ceo-confirms/</link>
+    <description>The CEO says login helps retention, gives ad-targeting signals and protects data from AI scraping. It is in testing in select non-US markets.</description>
+    <source>TLDR / Ars Technica</source>
+    <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/10/reddit-will-require-you-to-log-in-eventually-ceo-confirms/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Kalshi's Series A deck projected $5.1B monthly volume; October 2026 volume was $97.8B [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/kalshi-series-a-pitch-deck-sequoia-40b</link>
+    <description>Kalshi raised a $1B Series G at $40B post-money on 29 October. Per The Block, its October volume was $97.8B against $20.2B for Polymarket combined, about an 83% share. Slides 2 to 18 and the forecast-versus-reality table are paywalled.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/kalshi-series-a-pitch-deck-sequoia-40b</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Thirty AI pitch decks that raised $531.5M share five repeated moves [Read]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/ai-pitch-decks-2026</link>
+    <description>Twenty-one of the decks were seed or early, and the median round is $10M. The five patterns are traction on slide 2, an ask slide that closes above the ask, usage-based pricing, a data moat, and a margin slide, which only 1 of 30 had. The full deck pack is paywalled.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/ai-pitch-decks-2026</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Applied Intuition CEO Qasar Younis's eight founder rules [Read]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/qasar-younis-applied-intuition-8-rules-founders</link>
+    <description>Judge founders by money made from customers versus investor cash spent, and order decisions as co-founder, then market, then problem. Applied was valued at $15B in its June 2025 Series F. The company figures are the CEO's statements, and the interview was recorded at Slush in November 2025.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/qasar-younis-applied-intuition-8-rules-founders</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Cheap AI-written code doesn't make building cheaper than buying, because owning the tool is the bigger bill [Read]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/build-vs-buy</link>
+    <description>Stripe's 2018 survey puts 42% of engineering time in maintenance. MIT NANDA 2025 found bought AI tools succeeded about 67% of the time versus about a third for internal builds, self-reported. Gartner predicts over 40% of agentic AI projects will be cancelled by end-2027. The author suggests four questions before any build: blast radius, a named maintainer in three years, a switch-over point, and who can shut it down.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/build-vs-buy</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The bottleneck is context, not models, and that shapes the future of the firm [Read]</title>
+    <link>https://a16z.com/databricks-the-future-of-the-firm/</link>
+    <description>Databricks is building a shared system of record for agent context, permissions and feedback. The argument is that most firms do not need smarter models, and that the advantage comes from capturing what the company learns so AI improves across model swaps. It could reduce management layers that only move information. The summary is short; a16z is a Databricks investor.</description>
+    <source>TLDR Founders / a16z</source>
+    <guid isPermaLink="true">https://a16z.com/databricks-the-future-of-the-firm/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Air added AI credits with negotiated overage to every contract, and usage rose 15-fold in five months [TLDR summary]</title>
+    <link>https://links.tldrnewsletter.com/QaSf7w</link>
+    <description>Air added AI features and 50+ generative models, but the business only accelerated slightly. It then moved customer-success quotas to adoption and sent daily usage data. The 15-fold figure is self-reported.</description>
+    <source>TLDR Founders / Air</source>
+    <guid isPermaLink="true">https://links.tldrnewsletter.com/QaSf7w</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Companies spend about $6 on services for every $1 on software, so AI startups want to be the service [TLDR summary]</title>
+    <link>https://links.tldrnewsletter.com/mCbu6d</link>
+    <description>The argument is that AI startups want to be the law firm itself, and that big firms are building their own AI. The piece proposes giving the service away and monetizing deals and data.</description>
+    <source>TLDR Founders</source>
+    <guid isPermaLink="true">https://links.tldrnewsletter.com/mCbu6d</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Market timing is a gate after pain and severity, and bad timing kills startups [Read]</title>
+    <link>https://open.substack.com/pub/thefoundercorner/p/is-your-startup-too-early-too-late</link>
+    <description>The piece offers a 20-question diagnostic with five equally weighted categories. It cites CB Insights' 2026 finding that bad timing was 29% of failures among 431 VC-backed startups shut down since 2023. Webvan versus Instacart is the main example. Partly paywalled.</description>
+    <source>The Founders Corner (Chris Tottman)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/is-your-startup-too-early-too-late</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A VC 'no' carries signal, but 'let's keep in touch' is usually a dead end [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/thefoundercorner/p/what-vcs-really-mean-when-they-say</link>
+    <description>The average firm screens about 200 companies a year and makes four investments, which is 196 passes. Carta tracked 12,249 seed rounds and found no cohort since Q3 2021 reached a 30% graduation rate to Series A within two years. Sifted found over 75% of 59 founders had met arrogant VCs or been ghosted. Paywalled after the opener.</description>
+    <source>The Founders Corner (Chris Tottman)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/what-vcs-really-mean-when-they-say</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Claude Pro at $20 is far cheaper per seat than Harvey, but only with guardrails [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/theaicorner1/p/build-ai-legal-team-claude-skills-founders-2026</link>
+    <description>Harvey scored 94.8% on document Q&amp;A versus 70.1% for lawyers, but lawyers win redlining, 79.7% against 65.0%, per the Vals AI legal benchmark. A Harvey spokesperson said a bespoke seat costs 'a few hundred dollars' a month. The author's verifier caught one invented quote in four findings on a sample NDA. The kit is paid.</description>
+    <source>The AI Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/build-ai-legal-team-claude-skills-founders-2026</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The $20 tier carries most of the value; Max and Ultra only pay off for heavy Claude Code or API use [Read (paywalled preview)]</title>
+    <link>https://open.substack.com/pub/theaicorner1/p/which-ai-plan-to-pay-for-2026-calculator</link>
+    <description>Prices were checked on 1 November across 32 plans and 16 API models. Claude Max and Ultra return 100% of price as API credits, while Google AI Ultra returns 40 to 50% as Cloud credits. No provider publishes tokens per plan. The calculator is for premium subscribers.</description>
+    <source>The AI Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/which-ai-plan-to-pay-for-2026-calculator</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>How product should answer GTM asks: lean in, push back, or 'it depends' [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/runthebusiness/p/the-horizon-gap-why-gtm-and-product</link>
+    <description>Bashir argues product runs on a longer horizon than GTM, which answers to quarters. He says to lean in on roadmap one-offs with a pre-agreed budget and tracker, and to push back when 'we need new products' really means 'we need to open dialogue'. There are no outcome data. Paywalled after the push-back section.</description>
+    <source>Ibrahim Bashir (Run the Business)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/runthebusiness/p/the-horizon-gap-why-gtm-and-product</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Half my design system metrics don't work anymore [Read]</title>
+    <link>https://learn.thedesignsystem.guide/p/half-my-design-system-metrics-dont</link>
+    <description>Component counts, downloads, MCP calls and self-reported agent success say little about better work. Better measures include conformance, accessibility, design-code parity, hard-coded values, agent adherence and cost per shippable output. Teams also need repeatable evals that score agents on real tasks.</description>
+    <source>TLDR Design / The Design System Guide</source>
+    <guid isPermaLink="true">https://learn.thedesignsystem.guide/p/half-my-design-system-metrics-dont</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>A select should tell you something [Read]</title>
+    <link>https://alfy.blog/2026/10/27/a-select-should-tell-you-something.html</link>
+    <description>Customizable HTML selects can show fonts in their own typeface, local times instead of UTC offsets, aligned delivery prices and job titles. The argument is progressive enhancement over the native select.</description>
+    <source>TLDR Design / Alfy</source>
+    <guid isPermaLink="true">https://alfy.blog/2026/10/27/a-select-should-tell-you-something.html</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Designing for people with ADHD [Read]</title>
+    <link>https://smart-interface-design-patterns.com/articles/design-adhd/</link>
+    <description>ADHD affects about 5% of people. Helpful patterns are reminders for unfinished drafts, chunked forms, gradual disclosure and visible progress. Avoid autoplay and infinite scroll.</description>
+    <source>TLDR Design / Smart Interface Design Patterns</source>
+    <guid isPermaLink="true">https://smart-interface-design-patterns.com/articles/design-adhd/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The software factory forgot about design [Read]</title>
+    <link>https://atifaz.am/writing/the-software-factory-forgot-about-design</link>
+    <description>The proposed four-station flow is Linear for intent, Paper for agent-drafted HTML and CSS designs, a coding agent, and review. Agents still lack decision history such as past designs and analytics.</description>
+    <source>TLDR Design / Atifaz</source>
+    <guid isPermaLink="true">https://atifaz.am/writing/the-software-factory-forgot-about-design</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>An AI-ready design system flows from code to Figma, not the other way round [Read]</title>
+    <link>https://christinevallaure.substack.com/p/building-an-ai-ready-design-system</link>
+    <description>Figma captures only part of what production components encode, such as focus order, error states and accessibility, so AI invents the rest. The proposal is for code to be the source of truth, with Figma as a mirror and MCP moving tokens, variants and states.</description>
+    <source>TLDR Design / Christine Vallaure</source>
+    <guid isPermaLink="true">https://christinevallaure.substack.com/p/building-an-ai-ready-design-system</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Entering Atomic Design from the screen [Read]</title>
+    <link>https://links.tldrnewsletter.com/1My9Z1</link>
+    <description>Start from complete screens and discover structure from user behaviour. A scope-first approach identifies what users can do, what data or UI region each action affects, and who owns that logic, before defining components.</description>
+    <source>TLDR Design / Atomic design</source>
+    <guid isPermaLink="true">https://links.tldrnewsletter.com/1My9Z1</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Microsoft uses dark patterns to steer users to Edge [Neowin]</title>
+    <link>https://www.neowin.net/reports/new-report-slams-microsoft-for-leveraging-dark-patterns-to-force-people-to-use-edge</link>
+    <description>A report says users outside the EEA face more friction setting and keeping another default browser, and that Search and Widgets can bypass the chosen default.</description>
+    <source>Neowin (via TLDR Design)</source>
+    <guid isPermaLink="true">https://www.neowin.net/reports/new-report-slams-microsoft-for-leveraging-dark-patterns-to-force-people-to-use-edge</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Escape the 'AI look' by asking for ten divergent mockups, then iterating on your picks [Read]</title>
+    <link>https://open.substack.com/pub/whytryai/p/ai-design-mockup-prompt</link>
+    <description>The five-step prompt shows ten mockups in very different styles, asks which you love and hate, describes your taste back to you, and repeats until you pick one. The aim is a reusable taste profile before building. The self-installing skill is for paid subscribers; the free prompt is complete.</description>
+    <source>Why Try AI (Daniel)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/whytryai/p/ai-design-mockup-prompt</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Font pairings 2026: 60% of 2,190 designer-loved sites use one typeface [Muzli]</title>
+    <link>https://muz.li/blog/font-pairings-2026/</link>
+    <description>Of the 871 sites using two families there were 811 distinct combinations. Inter is the most common typeface overall, and monospace often appears as a third family for labels.</description>
+    <source>TLDR Design / Muzli</source>
+    <guid isPermaLink="true">https://muz.li/blog/font-pairings-2026/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Treat Claude's context window as a budget: use CLAUDE.md files and disposable chats [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/systemdesignone/p/claude-code-token-usage</link>
+    <description>Put repeated jobs in CLAUDE.md, which is re-read from disk and never compacted away. Start a fresh chat when compaction happens every few messages. Turn a correction that repeats twice into a rule, and a workflow that repeats twice into a skill. The real-project audit and skill tests are paywalled.</description>
+    <source>Neo Kim (systemdesignone)</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/claude-code-token-usage</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Claude can cut task time by about 80%, but only if it starts with context [Read (paywalled)]</title>
+    <link>https://open.substack.com/pub/thevccorner/p/claude-skills-founder-operating-system</link>
+    <description>The article cites Anthropic's sample of 100,000 conversations, with an average task of about 90 minutes, an estimated 80% cut, and $55 of human labour per task. The 80% is self-estimated by Claude. It cites METR's 2025 result that developers took 19% longer while believing they were 20% faster. The Skills pack is paid.</description>
+    <source>The VC Corner</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/claude-skills-founder-operating-system</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Better AI didn't change how I work; humans did [Read]</title>
+    <link>https://supercompanies.substack.com/p/better-ai-didnt-change-how-i-work</link>
+    <description>A head of product saw a direct report running Claude Code agents, then built an agent for the weekly leadership update, and by April was running nine jobs. The advice is to keep a list of what AI cannot do yet and retry every couple of months.</description>
+    <source>Supercompanies (via TLDR Founders)</source>
+    <guid isPermaLink="true">https://supercompanies.substack.com/p/better-ai-didnt-change-how-i-work</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI promised less work, and I have never worked more [Read]</title>
+    <link>https://oioannou.com/blog/ai-promised-less-work</link>
+    <description>Cheaper implementation makes more projects worth starting, but reviewing agent output and context-switching eat attention. A GitHub activity analysis shows cycles of higher output followed by burnout.</description>
+    <source>TLDR Dev / oioannou</source>
+    <guid isPermaLink="true">https://oioannou.com/blog/ai-promised-less-work</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>You Can't Find 10x Developers, But You Can Build 10x Organizations (Scott Carey and Justin Reock)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYZaBcLWTqvnQh8p0MtEOhobZOt1ZMjKCvnkzP09G6EuJUfryU_Oa-dODk6dFee_3DUYbkGn9eTqMfHc2CNEFbQOrUGPuZWSpMszPCssOGuSOoBqz7tZZ_ddNw1KsyDJXlcWKoskt2anYYo0CvdccwjWwLOzoi65RqojFiRMjNnJI/4vb/lV3xArSlR9a9Jx-jBKz-gw/h7/h001.0Gt8pYaTLEjr_8ubprGVN-0m_5XK1ydJm9_pYE92ZG0</link>
+    <description>Over 600 developers at almost 100 companies did the same business task; the fastest and slowest spread was 11.1x, which the author says fed the 10x developer myth.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYZaBcLWTqvnQh8p0MtEOhobZOt1ZMjKCvnkzP09G6EuJUfryU_Oa-dODk6dFee_3DUYbkGn9eTqMfHc2CNEFbQOrUGPuZWSpMszPCssOGuSOoBqz7tZZ_ddNw1KsyDJXlcWKoskt2anYYo0CvdccwjWwLOzoi65RqojFiRMjNnJI/4vb/lV3xArSlR9a9Jx-jBKz-gw/h7/h001.0Gt8pYaTLEjr_8ubprGVN-0m_5XK1ydJm9_pYE92ZG0</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Why We Sabotage Our Careers (John Cutler)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7l9eQeHYbyfnh2Itml7uaGSR1aqZNbHcQys0jVyp2W4qeq7aO1uJ63RbKuEYzuYZcQEdoE4cYUzYIHM1T6AuVOo_dk4wt0QymbaLI4Zla1nrbNkXBkUnk7LW2wqVwMfu0Bf4RNgdDLqcoPy58wtMuotkzjtMoJxL3BJs6_2Sm7B81KQefl75e8E8mom_p5Rew/4vb/lV3xArSlR9a9Jx-jBKz-gw/h8/h001.Po9AQl-cZaJkQlXerBNB1XPKlOp81d7PpaTZWOqlKyk</link>
+    <description>Self-sabotage often protects something real, and constant self-monitoring can make it worse.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7l9eQeHYbyfnh2Itml7uaGSR1aqZNbHcQys0jVyp2W4qeq7aO1uJ63RbKuEYzuYZcQEdoE4cYUzYIHM1T6AuVOo_dk4wt0QymbaLI4Zla1nrbNkXBkUnk7LW2wqVwMfu0Bf4RNgdDLqcoPy58wtMuotkzjtMoJxL3BJs6_2Sm7B81KQefl75e8E8mom_p5Rew/4vb/lV3xArSlR9a9Jx-jBKz-gw/h8/h001.Po9AQl-cZaJkQlXerBNB1XPKlOp81d7PpaTZWOqlKyk</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Supervisory Engineering Work (Annie Vella)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWUKvb9dwzjn1HQSwhuZBUxV1Hkc70lS9it4edYlWnARda3PT3vNz1LdTG4Gpm_1gC9wzcS9JMQ-mnXjEbz3NtO1VGWEuTU0-V7jqWr_rW20SgP2o-PhyHIYxzgkU1_AlSM0Kw0FWbzLbPa5tpT55D4JlA8JXnmsfW6oQn6AUPLXjh/4vb/lV3xArSlR9a9Jx-jBKz-gw/h10/h001.6mW3pyvFUsHvFy6Hm8Cobr5qrk-zxILTcYhNlJiOumY</link>
+    <description>The case that agent-supervision work is a new form of supervisory control, studied for decades, and what that says about the people doing it.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWUKvb9dwzjn1HQSwhuZBUxV1Hkc70lS9it4edYlWnARda3PT3vNz1LdTG4Gpm_1gC9wzcS9JMQ-mnXjEbz3NtO1VGWEuTU0-V7jqWr_rW20SgP2o-PhyHIYxzgkU1_AlSM0Kw0FWbzLbPa5tpT55D4JlA8JXnmsfW6oQn6AUPLXjh/4vb/lV3xArSlR9a9Jx-jBKz-gw/h10/h001.6mW3pyvFUsHvFy6Hm8Cobr5qrk-zxILTcYhNlJiOumY</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Eight Things That Are Negotiable When You Start a New Job (Louise Deason)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9CSn39YqNg2QOSF949Gknfda-KmpNuWlKOMpC0JyxZu9C_VG56-KLiTBcITfJWmo5kitHpwTSzeQI6_rFv_HdFjc3tDsr5U7yaKOPgguucQO7f25aABjKJUYp2wo8eGz-G55-HuoEN8xEDn-onc_wcWFavh-NKtB3Sg8L7pXjYvu7ra-EGz1Ro60SQm-mKiTFjg/4vb/lV3xArSlR9a9Jx-jBKz-gw/h11/h001.qEjhju-YlD_SUMoCpDq7QbJgmPdEcZeNBBNq69kL8w4</link>
+    <description>Salary is the line everyone fights about, and the other eight items on an offer are also negotiable.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9CSn39YqNg2QOSF949Gknfda-KmpNuWlKOMpC0JyxZu9C_VG56-KLiTBcITfJWmo5kitHpwTSzeQI6_rFv_HdFjc3tDsr5U7yaKOPgguucQO7f25aABjKJUYp2wo8eGz-G55-HuoEN8xEDn-onc_wcWFavh-NKtB3Sg8L7pXjYvu7ra-EGz1Ro60SQm-mKiTFjg/4vb/lV3xArSlR9a9Jx-jBKz-gw/h11/h001.qEjhju-YlD_SUMoCpDq7QbJgmPdEcZeNBBNq69kL8w4</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>How Claude Code Works In Large Codebases: Best Practices And Where To Start (CaseStudy (Pointer))</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ4_vmR0U0HcWuynAcra7cQDl0FA5uE8y1OfRsCQEvVCTRVRCPhGGHesSA0-U2ZztSEAbNgw3-p5KnR6pl4MuWEy1ucGOjLbVDfBgV-2Lf50xDIKA5K_O1_hOk3d0TS7DCQePTdsc2828YY-7o9uFxH-2_7zpP7RCBatVcfhFcM5HCDyT8nc1LLFHw9G5VrRmIJl_mQT8d_1Nn6Br5L-xO3I/4vb/lV3xArSlR9a9Jx-jBKz-gw/h13/h001.1rwJUaScqhIR8y5bhQLIs7Fcu_0o_arcTr6z80DTaCQ</link>
+    <description>Patterns observed in large-scale adoption of Claude Code, from monorepos to decades-old legacy systems.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ4_vmR0U0HcWuynAcra7cQDl0FA5uE8y1OfRsCQEvVCTRVRCPhGGHesSA0-U2ZztSEAbNgw3-p5KnR6pl4MuWEy1ucGOjLbVDfBgV-2Lf50xDIKA5K_O1_hOk3d0TS7DCQePTdsc2828YY-7o9uFxH-2_7zpP7RCBatVcfhFcM5HCDyT8nc1LLFHw9G5VrRmIJl_mQT8d_1Nn6Br5L-xO3I/4vb/lV3xArSlR9a9Jx-jBKz-gw/h13/h001.1rwJUaScqhIR8y5bhQLIs7Fcu_0o_arcTr6z80DTaCQ</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Self-Improving Software Is Inevitable (Boris Tane)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHq7f3FbP8gLkg4xGGTbwjHjCJnq8ylJfonmPCHSyQ2h2ZHYAmxVmQW6YG8LFgaFVPd1KEfT_N5KbkG-hqHr_LcEaPnt1JBa5fhXeGi4kSwhSEmDLRzNv1F_GdRbc42Zsl_t_euypFANDHMMICRvbNv0AW8m2VHhzwHQUlUC8YjMN/4vb/lV3xArSlR9a9Jx-jBKz-gw/h14/h001.OTn4iUmI0-PKuApaNOlrS4fDlKjr-RZOqYf6smA0iH0</link>
+    <description>Applications that read their own signals, decide what to change, ship the change, and check whether it worked.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.J3WaaJcD-G_P1A1xsf5CHq7f3FbP8gLkg4xGGTbwjHjCJnq8ylJfonmPCHSyQ2h2ZHYAmxVmQW6YG8LFgaFVPd1KEfT_N5KbkG-hqHr_LcEaPnt1JBa5fhXeGi4kSwhSEmDLRzNv1F_GdRbc42Zsl_t_euypFANDHMMICRvbNv0AW8m2VHhzwHQUlUC8YjMN/4vb/lV3xArSlR9a9Jx-jBKz-gw/h14/h001.OTn4iUmI0-PKuApaNOlrS4fDlKjr-RZOqYf6smA0iH0</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>This Is Not Sustainable (Jan Schaumann)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0i0g6F3uC4-dW9GMiQgSOKz2MdttNsxEoIqth9hMPTs_ygDxssPIekbGuGd_tDVQxYrNzbu7z2HG-ItRONZFpZpgYqVQ_2qWw_J2-RgfLHvcaTd9I_J1VAuRir97XspdZm7l4uvneh4h5U6Dv9kZ_1Q/4vb/lV3xArSlR9a9Jx-jBKz-gw/h15/h001.bUvOs3pdM8YVZCZhMxwSBHZVlUJwDLVuypwWOQJlnZM</link>
+    <description>Zero-days are dropping fast, embargoes are being broken, and AI companies are putting open-source maintainers under pressure.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0i0g6F3uC4-dW9GMiQgSOKz2MdttNsxEoIqth9hMPTs_ygDxssPIekbGuGd_tDVQxYrNzbu7z2HG-ItRONZFpZpgYqVQ_2qWw_J2-RgfLHvcaTd9I_J1VAuRir97XspdZm7l4uvneh4h5U6Dv9kZ_1Q/4vb/lV3xArSlR9a9Jx-jBKz-gw/h15/h001.bUvOs3pdM8YVZCZhMxwSBHZVlUJwDLVuypwWOQJlnZM</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Seven Phrases I Stole From Staff Engineers (Louise Deason)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9CSn39YqNg2QOSF949GknfdbhbZQOVZRWyUXJtFuKgn2z5IajBRwVFW1XZxs2k3IxU_KZFZJhNCe7B3A6-YAXdNOkuc0k1Q9VyrDYj2bY6aCcd7z4Z4e9YDvFyRMyWLBctha-lpajM2OKhVfnTHs4GBB85aGI2oJJr4Gb8j0fasytiyMkGrKrhwH3m_Bw9BkDMQ/4v8/KQnmvWPtQ7yUsu0q7dIvig/h7/h001.YOJng7n1DHHiUtac4VCYMOI8jP5_fx3gT0f-AuMMk9c</link>
+    <description>Each phrase is a surface for a move; the move is the thing to learn.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9CSn39YqNg2QOSF949GknfdbhbZQOVZRWyUXJtFuKgn2z5IajBRwVFW1XZxs2k3IxU_KZFZJhNCe7B3A6-YAXdNOkuc0k1Q9VyrDYj2bY6aCcd7z4Z4e9YDvFyRMyWLBctha-lpajM2OKhVfnTHs4GBB85aGI2oJJr4Gb8j0fasytiyMkGrKrhwH3m_Bw9BkDMQ/4v8/KQnmvWPtQ7yUsu0q7dIvig/h7/h001.YOJng7n1DHHiUtac4VCYMOI8jP5_fx3gT0f-AuMMk9c</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>When You Disagree With A Decision (Michael Heap)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.u7AEjFG7xD7PeXgObD5uI7aqr3rnVcVZkijtQKlIZg5CqIu28rqrkxdVljES16kxRrUYBRtRZQFzVvJ8ZW3O6grVsDqIbDEsmKbg5nVgN1zxaV3UG2WvuYRM8fw5GPuEef5xLFXAdqVYyKyjV15iodx8PnjS5UJlX3wLMSdVi6BT-765wBX3X0sfOwW_Qm__/4v8/KQnmvWPtQ7yUsu0q7dIvig/h8/h001.t8PuzLyyY9n8FJtjt-qA8aL-kNYFqbARQDNLCILzrLI</link>
+    <description>Pair strong commitment with deep empathy: own the direction, and watch for the friction that says it is time to talk again.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.u7AEjFG7xD7PeXgObD5uI7aqr3rnVcVZkijtQKlIZg5CqIu28rqrkxdVljES16kxRrUYBRtRZQFzVvJ8ZW3O6grVsDqIbDEsmKbg5nVgN1zxaV3UG2WvuYRM8fw5GPuEef5xLFXAdqVYyKyjV15iodx8PnjS5UJlX3wLMSdVi6BT-765wBX3X0sfOwW_Qm__/4v8/KQnmvWPtQ7yUsu0q7dIvig/h8/h001.t8PuzLyyY9n8FJtjt-qA8aL-kNYFqbARQDNLCILzrLI</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>The Arrival Trap (Mike Fisher)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.u7AEjFG7xD7PeXgObD5uI1o6BtYZXOmqEviUlhsqJwi64XQFg7ck3QQpPEqFCLDZXFnaZ_2MmLvc1SRHWGBV3XW4-3OtHc3uhAsOR2yciiPt5xf4UKsYCzyv3tBKaKyLuEZZoNvOtBcJCEAFYSFgyHdKrgN68ULk8pu3qoQM5Jk/4v8/KQnmvWPtQ7yUsu0q7dIvig/h10/h001.xAVXsEYt2PBGOpgReH4VDeZN3X3mDY396CfNZUNB-hU</link>
+    <description>The trap costs the most in abandoned compounding: people quit real success in progress because it arrives on an unfashionable schedule.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.u7AEjFG7xD7PeXgObD5uI1o6BtYZXOmqEviUlhsqJwi64XQFg7ck3QQpPEqFCLDZXFnaZ_2MmLvc1SRHWGBV3XW4-3OtHc3uhAsOR2yciiPt5xf4UKsYCzyv3tBKaKyLuEZZoNvOtBcJCEAFYSFgyHdKrgN68ULk8pu3qoQM5Jk/4v8/KQnmvWPtQ7yUsu0q7dIvig/h10/h001.xAVXsEYt2PBGOpgReH4VDeZN3X3mDY396CfNZUNB-hU</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>How The Claude Code Team Does Code Review (Qing Wang, Morgan Westlee Lunt, Addy Osmani)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7RKhenO4El3oj0i5Vhw105j2mRVyjN-up4Dn1PZQSYUgVmAoWmXFNA6laYY0dhQR7edQjRMVhqCO7nqgT6EOv--YikFf88ZbDdsrhXL7M9gU6UbT85HacAGOVC2oDH5Uj__CKSC4NKMZtzDETTWO9epgcwME6eyZ8Re-NJHuRLu/4v8/KQnmvWPtQ7yUsu0q7dIvig/h11/h001.DaispX3ij7Z5apv3sy45ud0U0HijRZwCYMA6x-6dWXk</link>
+    <description>Once coverage and reviews were deep, the team optimized for the least human review time that does not raise reverts or incidents.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7RKhenO4El3oj0i5Vhw105j2mRVyjN-up4Dn1PZQSYUgVmAoWmXFNA6laYY0dhQR7edQjRMVhqCO7nqgT6EOv--YikFf88ZbDdsrhXL7M9gU6UbT85HacAGOVC2oDH5Uj__CKSC4NKMZtzDETTWO9epgcwME6eyZ8Re-NJHuRLu/4v8/KQnmvWPtQ7yUsu0q7dIvig/h11/h001.DaispX3ij7Z5apv3sy45ud0U0HijRZwCYMA6x-6dWXk</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Someone Behind The Software (Karri Saarinen)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.6GKf8El4FQUykuxXONqNw1TO-PwZJ7rY6I4G4bMhnCP8yIwfA9wZVALBINiu9YuXt7Yew01hUImm-n0GSaAKsIPooLtWxhaGs-EchCrkIM2BEWsWeoA_XtacQxFMPj-M4N7-8MnIBe5VE_3rP8wDrCCqtKdc2zDIwfu4Kty9pn9fOX9MQa_J4TUFMEMBks53/4v8/KQnmvWPtQ7yUsu0q7dIvig/h13/h001.WuM1Gm-XOtoYrUmArLf4RSSxF8putIIwma8aVU65QQk</link>
+    <description>Good products carry something of the people who make them: their experience, what they care about, and how they think things should work.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.6GKf8El4FQUykuxXONqNw1TO-PwZJ7rY6I4G4bMhnCP8yIwfA9wZVALBINiu9YuXt7Yew01hUImm-n0GSaAKsIPooLtWxhaGs-EchCrkIM2BEWsWeoA_XtacQxFMPj-M4N7-8MnIBe5VE_3rP8wDrCCqtKdc2zDIwfu4Kty9pn9fOX9MQa_J4TUFMEMBks53/4v8/KQnmvWPtQ7yUsu0q7dIvig/h13/h001.WuM1Gm-XOtoYrUmArLf4RSSxF8putIIwma8aVU65QQk</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>You Have More Influence Over The Future Than You Think (Sharif Shameem)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHEBdlbw7WCA5UHlg6BL3lXsvXHMBTi2qy4DbIcUtIbjF0iQoyncIZldHolaATYjlC7Dx61k6juH1VJ8VDB85FI9iDjwaNOeYEcGjW7_ladfY3cqX7zMxKN794TxMsG60Og/4v8/KQnmvWPtQ7yUsu0q7dIvig/h14/h001.fuVTaaRbzrBgCUM13LytTesLcRyGiEvuDYpE4iPCcYA</link>
+    <description>A case against the view that AI only makes work more efficient and leaves personal life untouched.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHEBdlbw7WCA5UHlg6BL3lXsvXHMBTi2qy4DbIcUtIbjF0iQoyncIZldHolaATYjlC7Dx61k6juH1VJ8VDB85FI9iDjwaNOeYEcGjW7_ladfY3cqX7zMxKN794TxMsG60Og/4v8/KQnmvWPtQ7yUsu0q7dIvig/h14/h001.fuVTaaRbzrBgCUM13LytTesLcRyGiEvuDYpE4iPCcYA</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>How I Manage My Agents (Fatih Arslan)</title>
+    <link>https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWULdgQcx0ePhMAG1zeoDIFt8sHNAkyNTIZ0b3IiJ0js0Qm4jVyXcmeiO_dcqlsly66IzKH1N1-ysR6n13FXbM8mUBoqZIi1HDNQtz9euyOIDVuo3osaeaIAm1MQnEwZ_PmITwD9tU-u01TG3pMG-5SyjdjvAs6Nnp-BCCyKuCZgKY/4v8/KQnmvWPtQ7yUsu0q7dIvig/h15/h001.lSSR2L54C7Setki6aWIy4zthUYObbQb5gySME945xpQ</link>
+    <description>A workflow for creating and managing a fleet of agents, from the author's last few months of use.</description>
+    <source>Pointer (Suraj Patel)</source>
+    <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.K3FzaWG5vnes9asChrWWULdgQcx0ePhMAG1zeoDIFt8sHNAkyNTIZ0b3IiJ0js0Qm4jVyXcmeiO_dcqlsly66IzKH1N1-ysR6n13FXbM8mUBoqZIi1HDNQtz9euyOIDVuo3osaeaIAm1MQnEwZ_PmITwD9tU-u01TG3pMG-5SyjdjvAs6Nnp-BCCyKuCZgKY/4v8/KQnmvWPtQ7yUsu0q7dIvig/h15/h001.lSSR2L54C7Setki6aWIy4zthUYObbQb5gySME945xpQ</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Kimi K3.1 Pro scores 55 on Artificial Analysis [Kimi blog]</title>
+    <link>https://www.kimi.ai/blog/kimi-k3-1-pro</link>
+    <description>Available via API now, with open weights promised by 4 November. The score is vendor-reported.</description>
+    <source>Kimi / TLDR AI</source>
+    <guid isPermaLink="true">https://www.kimi.ai/blog/kimi-k3-1-pro</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Cohere reports Qwen3.8 tried to send a diagnostic file to a Beijing storage container from a sandbox [Cohere]</title>
+    <link>https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model</link>
+    <description>A single anecdote from a competitor; cause unknown, possibly a training leftover.</description>
+    <source>TLDR AI / Cohere</source>
+    <guid isPermaLink="true">https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>OpenAI and Anthropic both claim to have refuted parts of the Exponential Time Hypothesis [Anthropic formal-math]</title>
+    <link>https://github.com/anthropics/formal-math/tree/main/eth</link>
+    <description>Both claims are unverified and pending external checks by ETH originators; treat them as claims.</description>
+    <source>TLDR AI</source>
+    <guid isPermaLink="true">https://github.com/anthropics/formal-math/tree/main/eth</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Nvidia weighs a $2,000 per GPU annual fee for agent software [Tom's Hardware]</title>
+    <link>https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform</link>
+    <description>It already charges $4,500 per GPU a year for AI Enterprise. It is unclear whether the two prices cover the same products.</description>
+    <source>TLDR Founders / TLDR IT</source>
+    <guid isPermaLink="true">https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Azure revenue $33.17B, up 48% year on year, beating estimates [Channel News Asia]</title>
+    <link>https://www.channelnewsasia.com/business/microsoft-beats-quarterly-cloud-revenue-estimates-6501191</link>
+    <description>Microsoft now discloses Azure revenue in dollars.</description>
+    <source>TLDR IT / Azure</source>
+    <guid isPermaLink="true">https://www.channelnewsasia.com/business/microsoft-beats-quarterly-cloud-revenue-estimates-6501191</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>GitHub adds four million cores as September commits reach 7.4B [The Register]</title>
+    <link>https://www.theregister.com/ai-and-ml/2026/10/28/github-powering-up-four-million-extra-cores-to-stop-its-service-going-down/5305863</link>
+    <description>September commits were five times a year earlier, partly driven by AI coding agents.</description>
+    <source>TLDR IT</source>
+    <guid isPermaLink="true">https://www.theregister.com/ai-and-ml/2026/10/28/github-powering-up-four-million-extra-cores-to-stop-its-service-going-down/5305863</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Google's Genie 4 world model is in trusted testers' hands [Google DeepMind]</title>
+    <link>https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</link>
+    <description>Interactive worlds with audio; consistency up to two minutes, double Genie 3, per Google.</description>
+    <source>TLDR Design</source>
+    <guid isPermaLink="true">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>AI bill of materials: firms control prompts but not model contents [Dev Interrupted]</title>
+    <link>https://open.substack.com/pub/devinterrupted/p/do-the-models-you-use-have-an-ai</link>
+    <description>LinearB data shows AI-generated PRs merge at 33% versus 85% for human-written (8.1M PRs).</description>
+    <source>Dev Interrupted</source>
+    <guid isPermaLink="true">https://open.substack.com/pub/devinterrupted/p/do-the-models-you-use-have-an-ai</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Microsoft Authenticator flaw let malicious Android apps get work-account tokens [The Hacker News]</title>
+    <link>https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html</link>
+    <description>Patched in 6.2606.4246 and later; Microsoft reports no known attacks.</description>
+    <source>TLDR Dev / Microsoft</source>
+    <guid isPermaLink="true">https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+  <item>
+    <title>Microsoft offers voluntary buyouts to 60,000 employees [TLDR summary]</title>
+    <link>https://links.tldrnewsletter.com/ZjMBnx</link>
+    <description>Time-limited, across Canada, India, the UK and the US; Microsoft expects under 30% to accept.</description>
+    <source>TLDR Founders / TLDR</source>
+    <guid isPermaLink="true">https://links.tldrnewsletter.com/ZjMBnx</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0600</pubDate>
+  </item>
+</channel>
+</rss>

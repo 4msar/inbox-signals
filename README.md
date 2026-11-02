@@ -8,6 +8,7 @@ Everything in this repository is published at **https://pockets.msar.me/signals*
 
 | Week ending | Page |
 | --- | --- |
+| 2 Nov 2026 | [Inbox-Signal-2026-11-02.html](https://pockets.msar.me/signals/file/Inbox-Signal-2026-11-02.html) |
 | 26 Oct 2026 | [Inbox-Signal-2026-10-26.html](https://pockets.msar.me/signals/file/Inbox-Signal-2026-10-26.html) |
 | 19 Oct 2026 | [Inbox-Signal-2026-10-19.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-10-19.html) |
 | 12 Oct 2026 | [Inbox-Signal-2026-10-12.html](https://pockets.msar.me/signals/?file=Inbox-Signal-2026-10-12.html) |
@@ -23,6 +24,7 @@ Everything in this repository is published at **https://pockets.msar.me/signals*
 
 Every linked item from an issue is also available as an RSS 2.0 feed in `feed/`:
 
+- [feed/rss-2026-11-02.xml](https://pockets.msar.me/signals/feed/rss-2026-11-02.xml) (week of 26 Oct – 2 Nov 2026)
 - [feed/rss-2026-10-26.xml](https://pockets.msar.me/signals/feed/rss-2026-10-26.xml) (week of 19–26 Oct 2026)
 - [feed/rss-2026-10-19.xml](https://pockets.msar.me/signals/feed/rss-2026-10-19.xml) (week of 12–19 Oct 2026)
 - [feed/rss-2026-10-12.xml](https://pockets.msar.me/signals/feed/rss-2026-10-12.xml) (week of 5–12 Oct 2026)

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Inbox Signal — Week of 2–9 Nov 2026</title>
+    <link>Inbox-Signal-2026-11-09.html</link>
+    <description>Linked items from the Inbox Signal digest for the week of 2–9 Nov 2026.</description>
+    <language>en</language>
+    <pubDate>Mon, 09 Nov 2026 11:36:00 +0600</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2026 11:36:00 +0600</lastBuildDate>
+    <item>
+      <title>Neil Kakkar’s AI-native work took his PR output to roughly 10x, and the costs moved to review and shared context</title>
+      <link>https://open.substack.com/pub/pragmaticengineer/p/how-software-engineering-is-changing</link>
+      <description>Kakkar merged between eight and 20 PRs a month before joining an AI-native startup, where he ships 200+ a month, which he puts at roughly a tenfold increase.</description>
+      <source>The Pragmatic Engineer</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/how-software-engineering-is-changing</guid>
+      <pubDate>Wed, 04 Nov 2026 05:03:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>The software factory isn’t a prompt: review capacity is the bottleneck</title>
+      <link>https://open.substack.com/pub/devinterrupted/p/the-software-factory-isnt-a-prompt</link>
+      <description>Cate Huston mined 4,176 review comments from 12 reviewers across 1,700+ PRs into 57 checks.</description>
+      <source>Dev Interrupted</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/devinterrupted/p/the-software-factory-isnt-a-prompt</guid>
+      <pubDate>Fri, 06 Nov 2026 08:09:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Netflix’s profiling agent found production bugs costing up to 66% of CPU</title>
+      <link>https://substack.com/app-link/post?publication_id=817132&amp;post_id=222755655</link>
+      <description>The pipeline feeds scoped profiler data to an LLM.</description>
+      <source>ByteByteGo</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=817132&amp;post_id=222755655</guid>
+      <pubDate>Wed, 04 Nov 2026 04:35:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Framework choice barely changes agent cost, but it does change the JavaScript you ship</title>
+      <link>https://javascriptweekly.com/link/192302/eee9e2e0f2</link>
+      <description>Nolan Lawson had agents build the same app in 12 stacks, five runs each.</description>
+      <source>JavaScript Weekly / React Digest</source>
+      <guid isPermaLink="true">https://javascriptweekly.com/link/192302/eee9e2e0f2</guid>
+      <pubDate>Wed, 04 Nov 2026 07:07:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Anthropic replaced Git-based clones with a server-side source control service</title>
+      <link>https://substack.com/app-link/post?publication_id=817132&amp;post_id=223344070</link>
+      <description>ByteByteGo’s summary of Anthropic’s Scion: merged changes rose from about 2,500 a day in May 2026 to over 30,000 by September, and CI does about 25 million checkouts a day.</description>
+      <source>ByteByteGo</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=817132&amp;post_id=223344070</guid>
+      <pubDate>Thu, 05 Nov 2026 04:36:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Anthropic’s S-1 shows H1 revenue of $16.3B and a Q2 operating profit, against $895B in compute commitments</title>
+      <link>https://open.substack.com/pub/thevccorner/p/anthropic-commitments-enterprise-ai-177b-sequoia-london</link>
+      <description>The Batch reads the filing as H1 revenue of $16.3B (against $1.2B a year earlier), Q2 operating profit of $974M on $11.6B of revenue, and $895B in compute commitments, with founders holding 50.1% of the vote.</description>
+      <source>The Batch / The VC Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/anthropic-commitments-enterprise-ai-177b-sequoia-london</guid>
+      <pubDate>Fri, 06 Nov 2026 13:08:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>OpenAI’s GPT-6 Cyber finds, verifies and helps fix vulnerabilities; sources disagree on whether the Linux figure is 948 patches or exploits</title>
+      <link>https://open.substack.com/pub/aidisruption/p/gpt-6-cyber-officially-launches</link>
+      <description>Meng Li reports about a 51% relative gain on exploit testing over GPT-5.6 Cyber, and 81 previously unknown high-severity Firefox bugs.</description>
+      <source>Meng Li (AI Disruption) / Rohit (AI Engineering)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/gpt-6-cyber-officially-launches</guid>
+      <pubDate>Fri, 06 Nov 2026 23:26:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Pichai says Gemini 4 Argon produced almost 25 trillion tokens in 72 hours, and rollbacks fell by a third</title>
+      <link>https://open.substack.com/pub/theaicorner1/p/sundar-pichai-gemini-4-argon-interview</link>
+      <description>Argon’s first 72 hours produced almost 25 trillion tokens, about 3x Gemini 3.0’s first 72 hours, and Google is capacity constrained.</description>
+      <source>The AI Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/sundar-pichai-gemini-4-argon-interview</guid>
+      <pubDate>Tue, 03 Nov 2026 01:20:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Nvidia’s Nemotron 3 uses sparse MoE and hybrid Mamba layers to cut per-token compute</title>
+      <link>https://substack.com/app-link/post?publication_id=817132&amp;post_id=222754258</link>
+      <description>Super has about 120B total and 12B active parameters, Ultra 550B total and 55B active, and Lightning 30B total with about 3B active.</description>
+      <source>ByteByteGo</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=817132&amp;post_id=222754258</guid>
+      <pubDate>Tue, 03 Nov 2026 04:35:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Proven track records lock people out of the work that would build one</title>
+      <link>https://leadershipintech.com/links/23645/2c8b17c2-c8a5-4928-93ea-ce276b049077/email</link>
+      <description>Goedecke argues managers keep giving important projects to engineers with proven records, which denies everyone else the experience that would create a record.</description>
+      <source>Leadership in Tech (Sean Goedecke)</source>
+      <guid isPermaLink="true">https://leadershipintech.com/links/23645/2c8b17c2-c8a5-4928-93ea-ce276b049077/email</guid>
+      <pubDate>Thu, 05 Nov 2026 19:07:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Adobe’s tech lead: about 40% of the job is technical, and AI raises her floor but not her ceiling</title>
+      <link>https://open.substack.com/pub/gregorojstersek/p/how-adobes-tech-lead-works-and-uses</link>
+      <description>Navya Agarwal says the other 60% is turning ambiguity into structure and spotting decisions that sound clear but are not, and she measures success by whether the team needs her less.</description>
+      <source>Gregor Ojstersek (Engineering Leadership)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/gregorojstersek/p/how-adobes-tech-lead-works-and-uses</guid>
+      <pubDate>Tue, 03 Nov 2026 12:00:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>How to communicate with stakeholders: a RACI first, then a short spec as the plan [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/gregorojstersek/p/how-to-communicate-with-stakeholders-7c7</link>
+      <description>The sequence is to understand each stakeholder’s need and the reason behind the ask, run a RACI, shape a communication plan, then write a short technical spec with goals, non-goals, risks and rollout.</description>
+      <source>Gregor Ojstersek (Engineering Leadership)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/gregorojstersek/p/how-to-communicate-with-stakeholders-7c7</guid>
+      <pubDate>Thu, 05 Nov 2026 09:09:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Senior leaders invent a harsher boss than the real one, and code review was never the quality gate</title>
+      <link>https://open.substack.com/pub/hagakure/p/notes-from-the-week-d5d</link>
+      <description>Paulo says leaders often hold themselves to a standard harsher than their boss’s, and suggests asking “What are you most anxious about right now?” In a second note he argues that LGTM-style review was ritual, and that knowledge moved through pairing and ensemble work instead.</description>
+      <source>The Hagakure (Paulo André)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/hagakure/p/notes-from-the-week-d5d</guid>
+      <pubDate>Mon, 09 Nov 2026 02:43:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Moving from tech lead to architect depends on closing breadth gaps, not on coding skill</title>
+      <link>https://substack.com/app-link/post?publication_id=5388100&amp;post_id=214218949</link>
+      <description>Hardzeenka’s 1 to 5 self-assessment sets 3 as the minimum for an architect role.</description>
+      <source>Software Architecture Guild (Ilya Hardzeenka)</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=5388100&amp;post_id=214218949</guid>
+      <pubDate>Mon, 02 Nov 2026 18:06:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Removing a bottleneck can also remove an enabling constraint</title>
+      <link>https://open.substack.com/pub/cutlefish/p/tbm-450-the-loss-of-positive-friction</link>
+      <description>A slow contractor produced better decisions, and a six-round document revision took an afternoon but gave the team days to reflect.</description>
+      <source>TBM (John Cutler)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/cutlefish/p/tbm-450-the-loss-of-positive-friction</guid>
+      <pubDate>Sun, 08 Nov 2026 11:05:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Design the consulting engagement as a cooperative game</title>
+      <link>https://open.substack.com/pub/cutlefish/p/tbm-449-game-design-consulting-and</link>
+      <description>Cutler names three traps: assuming your way of working suits the client, over-accommodating under “the customer is always right”, and letting unexamined incentives such as margin or renewals set the rules.</description>
+      <source>TBM (John Cutler)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/cutlefish/p/tbm-449-game-design-consulting-and</guid>
+      <pubDate>Fri, 06 Nov 2026 10:12:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Software has no “done”, so the human check-in still matters</title>
+      <link>https://open.substack.com/pub/tidyfirst/p/not-a-copier</link>
+      <description>Copying has fixed completion criteria and a fixed process, while software changes from feature 1 to feature 35.</description>
+      <source>Kent Beck (Software Design: Tidy First?)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/tidyfirst/p/not-a-copier</guid>
+      <pubDate>Tue, 03 Nov 2026 02:18:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Human psychology, not skill, is what limits software quality</title>
+      <link>https://open.substack.com/pub/hagakure/p/our-brains-werent-built-for-software</link>
+      <description>Paulo lists practices people know work but find threatening: pairing, simpler code, small releases, blameless failure analysis, deleting features.</description>
+      <source>The Hagakure (Paulo André)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/hagakure/p/our-brains-werent-built-for-software</guid>
+      <pubDate>Fri, 06 Nov 2026 02:33:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Parcel 3 alpha is a Rust rewrite that drops disk caching</title>
+      <link>https://v3.parceljs.org/blog/v3-alpha/</link>
+      <description>The CLI, dev server, transformers and bundler ship in one binary under 30 MB, down from a roughly 120 MB v2 install.</description>
+      <source>Fireship, Bytes</source>
+      <guid isPermaLink="true">https://v3.parceljs.org/blog/v3-alpha/</guid>
+      <pubDate>Sat, 07 Nov 2026 04:44:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Redux Toolkit plans 3.0 as ESM-only, with “React 19-scale” breaking changes</title>
+      <link>https://react.statuscode.com/link/192560/9a7a5b4387</link>
+      <description>Mark Erikson expects RTK 3.0 in six to eight months, with 2.x releases laying the groundwork from 2.14 this week.</description>
+      <source>React Status</source>
+      <guid isPermaLink="true">https://react.statuscode.com/link/192560/9a7a5b4387</guid>
+      <pubDate>Sat, 07 Nov 2026 06:30:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Claude Code’s Monitor tool replaces sleep-and-poll loops with event-driven watching [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/aidisruption/p/claude-code-now-watches-its-own-logs</link>
+      <description>The author describes Claude Code running “sleep 30” repeatedly while waiting on a service, until it was told to use Monitor, which pushes events only when logs, CI or WebSocket state changes.</description>
+      <source>Meng Li (AI Disruption)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/claude-code-now-watches-its-own-logs</guid>
+      <pubDate>Wed, 04 Nov 2026 00:15:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Claude Code plugins break when skills, agents, hooks or MCP files sit in the wrong folder [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/aidisruption/p/claude-code-plugins-one-folder-one</link>
+      <description>The .claude-plugin/ directory can hold only plugin.json.</description>
+      <source>Meng Li (AI Disruption)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/claude-code-plugins-one-folder-one</guid>
+      <pubDate>Wed, 04 Nov 2026 22:57:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Repeated AI tasks should become standalone, deterministic tools rather than chat sessions [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/whytryai/p/ai-prompts-to-tools</link>
+      <description>The argument is that AI outputs are “a roll of the dice” and chat adds friction for well-scoped tasks.</description>
+      <source>Why Try AI (Daniel Nest)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/whytryai/p/ai-prompts-to-tools</guid>
+      <pubDate>Thu, 05 Nov 2026 22:38:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Eight messaging models differ in delivery, retention and ordering, so “message queue” hides a lot [Read (paywalled preview)]</title>
+      <link>https://substack.com/app-link/post?publication_id=6702521&amp;post_id=223242168</link>
+      <description>A work queue delivers each message to one consumer and deletes it on ack, a pub/sub topic gives each subscription a copy, and a partitioned log retains messages for replay, with parallelism capped by partition count.</description>
+      <source>System Design Nuggets</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=6702521&amp;post_id=223242168</guid>
+      <pubDate>Sat, 07 Nov 2026 04:29:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Kafka is a retained commit log: use it when replay, fan-out or per-key ordering matter [Read (paywalled preview)]</title>
+      <link>https://substack.com/app-link/post?publication_id=6702521&amp;post_id=223254367</link>
+      <description>Kafka keeps messages for a time or size limit and each consumer tracks its own offset, which gives replay, many independent readers and per-key order.</description>
+      <source>System Design Nuggets</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=6702521&amp;post_id=223254367</guid>
+      <pubDate>Thu, 05 Nov 2026 03:19:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Replication copies data, but only sharding scales writes [Read (paywalled preview)]</title>
+      <link>https://substack.com/app-link/post?publication_id=6702521&amp;post_id=223253775</link>
+      <description>Range partitioning risks hot spots on the newest partition, and hash partitioning spreads rows evenly but makes range queries touch every partition.</description>
+      <source>System Design Nuggets</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=6702521&amp;post_id=223253775</guid>
+      <pubDate>Wed, 04 Nov 2026 03:36:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>A 50M-viewer live stream needs CDN-delivered HLS, not a central server [Read (paywalled preview)]</title>
+      <link>https://substack.com/app-link/post?publication_id=1511845&amp;post_id=209259249</link>
+      <description>At 5 Mbps average, 50 million concurrent viewers need 250 Tbps, so the design needs compression, adaptive bitrate and a CDN.</description>
+      <source>Neo Kim</source>
+      <guid isPermaLink="true">https://substack.com/app-link/post?publication_id=1511845&amp;post_id=209259249</guid>
+      <pubDate>Sat, 07 Nov 2026 01:36:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Slack capped custom emojis at 23 to stop thundering herds</title>
+      <link>https://open.substack.com/pub/pragmaticengineer/p/scaling-slack-and-github-with-maude</link>
+      <description>In a 100,000-member channel, 10 emojis mean 1,000,000 fan-outs and 100 mean 10,000,000.</description>
+      <source>The Pragmatic Engineer (Maude Lemaire)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/scaling-slack-and-github-with-maude</guid>
+      <pubDate>Fri, 06 Nov 2026 04:01:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>OpenAI’s funding round is reportedly cut from about $30B to about $20B, with a lower target valuation [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/aidisruption/p/openai-funding-target-cut-10b-ai</link>
+      <description>Per media reports the target valuation fell from $1.4T to $1.25T and some institutional investors reduced commitments.</description>
+      <source>Meng Li (AI Disruption)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/openai-funding-target-cut-10b-ai</guid>
+      <pubDate>Tue, 03 Nov 2026 00:48:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Kalshi’s $40B valuation: October volume reached $97.8B, against a 2020 deck projecting $5.1B a month</title>
+      <link>https://open.substack.com/pub/thefoundercorner/p/kalshi-40b-meta-15b-bonds-binance-hack-weekly-recap</link>
+      <description>A $1B Series G at $40B post-money closed on 29 October.</description>
+      <source>The Founders Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/kalshi-40b-meta-15b-bonds-binance-hack-weekly-recap</guid>
+      <pubDate>Sat, 07 Nov 2026 21:26:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>YC’s Winter 2027 wishlist: the bottleneck is now physical supply, financing, regulation and data access [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/thefoundercorner/p/yc-just-published-its-startup-wishlist</link>
+      <description>The US installed 38,400 industrial robots in 2025, and China made 94% of sintered rare-earth magnets in 2024.</description>
+      <source>The Founders Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/yc-just-published-its-startup-wishlist</guid>
+      <pubDate>Mon, 02 Nov 2026 21:07:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>European startups grant employee equity less often than US peers [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/thevccorner/p/rewarding-talent-2026-edition-the</link>
+      <description>Index Ventures found 75% of Bay Area Series A and B companies granted equity to all employees, against 32% in continental Europe.</description>
+      <source>The VC Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/rewarding-talent-2026-edition-the</guid>
+      <pubDate>Sat, 07 Nov 2026 04:34:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Median seed fell to $3.0M while the median Series A rose to $17.4M [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/thevccorner/p/the-us-investor-list-2026-894-funds</link>
+      <description>PitchBook-NVCA reports US deal value of $515.8bn through September across about 14,199 deals, with AI taking 82.7% of dollars.</description>
+      <source>The VC Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/the-us-investor-list-2026-894-funds</guid>
+      <pubDate>Sun, 08 Nov 2026 04:22:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>RB2B reached $10M ARR with one full-time employee; free-to-paid conversion rose from 0.2% to 9% [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/thevccorner/p/adam-robinson-playbook-bootstrapping-rb2b-10m-arr</link>
+      <description>Conversion jumped within three weeks of tiered pricing from $99 a month, LinkedIn drove 75% of traffic, and AI support resolved 98.9% of tickets by May 2026 (up from 25%).</description>
+      <source>The VC Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/adam-robinson-playbook-bootstrapping-rb2b-10m-arr</guid>
+      <pubDate>Thu, 05 Nov 2026 01:25:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Agents are now a user cohort for analytics: a third of organisations querying PostHog do it through agents</title>
+      <link>https://open.substack.com/pub/productforengineers/p/analytics-changed</link>
+      <description>Agents create about half of PostHog’s dashboards, insights and flags, and one in 20 of Anthropic’s internal analytics queries is wrong.</description>
+      <source>PostHog build mode (Ian Vanagas)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/productforengineers/p/analytics-changed</guid>
+      <pubDate>Tue, 03 Nov 2026 07:04:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Pick two or three dimensions to own, then score yourself against each competitor on the same scale [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/thefoundercorner/p/the-positioning-shift-that-doubled</link>
+      <description>Crayon found sellers faced a competitor in 68% of deals and rated their own competitive selling 3.8 of 10.</description>
+      <source>The Founders Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/the-positioning-shift-that-doubled</guid>
+      <pubDate>Thu, 05 Nov 2026 21:04:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Safari’s opt-in adaptive dark mode auto-darkens light sites</title>
+      <link>https://frontendfoc.us/link/192398/21b65b1c52</link>
+      <description>WebKit’s feature in the Safari 27.3 beta exists because about 40% of pages are loaded by users in dark mode, but only 10% of page loads directly support it.</description>
+      <source>Frontend Focus</source>
+      <guid isPermaLink="true">https://frontendfoc.us/link/192398/21b65b1c52</guid>
+      <pubDate>Thu, 05 Nov 2026 05:55:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Cleaning for the cleaners: prerequisites that are the goal itself</title>
+      <link>https://open.substack.com/pub/alifeengineered/p/cleaning-for-the-cleaners</link>
+      <description>The test is simple: if the prerequisite is the target, you have found a loop, such as interview prep that needs mock interviews.</description>
+      <source>A Life Engineered (Steve Huynh)</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/alifeengineered/p/cleaning-for-the-cleaners</guid>
+      <pubDate>Thu, 05 Nov 2026 01:10:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Salah as the daily habit that brings barakah and success</title>
+      <link>https://fivedailyresets.com/</link>
+      <description>The adhan’s “come to prayer, come to success” line prompts the question of how prayer relates to success.</description>
+      <source>The Productive Muslim Co. (Mohammed Faris)</source>
+      <guid isPermaLink="true">https://fivedailyresets.com/</guid>
+      <pubDate>Fri, 06 Nov 2026 05:00:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Crowdfunding to revive the Abu Productive animations, watched six million times</title>
+      <link>https://LaunchGood.com/ProductiveMuslimCartoons</link>
+      <description>The originals stopped in 2016 because production cost too much.</description>
+      <source>The Productive Muslim Co. (Mohammed Faris)</source>
+      <guid isPermaLink="true">https://LaunchGood.com/ProductiveMuslimCartoons</guid>
+      <pubDate>Tue, 03 Nov 2026 06:34:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>How Software Engineering Is Changing: A Tale Of Two Eras [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwURlmGzIy8lY5VbxA0ScInjIicDkHArjwIpE1H5Piy3HfJA5Ynyx2zYlZ8CjP8QeIaf1gmvl333MQRfP9KcjX2UDW9h5pNrEhq2o_uYDt0r1Bwktf4iFmztlGGBf-jBB2CG1mnHzFgprucKz_McVuUQ/4vi/wAbOrokcSvqPN3-Y4wVZFA/h8/h001.yAvq7sOnj16iqwHzrWfHU2Rb3IeS8yIGMY-rzjma56A</link>
+      <description>Neil Kakkar’s essay on AI-native work, from 8 to 20 PRs a month to 200+.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwURlmGzIy8lY5VbxA0ScInjIicDkHArjwIpE1H5Piy3HfJA5Ynyx2zYlZ8CjP8QeIaf1gmvl333MQRfP9KcjX2UDW9h5pNrEhq2o_uYDt0r1Bwktf4iFmztlGGBf-jBB2CG1mnHzFgprucKz_McVuUQ/4vi/wAbOrokcSvqPN3-Y4wVZFA/h8/h001.yAvq7sOnj16iqwHzrWfHU2Rb3IeS8yIGMY-rzjma56A</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Modern Engineering Values [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQw27UDFWbjr9tW_N-luvaqfcuy4Iu4eS00xoZ_HOoSeLU8wMYReyJ3T9rkV-BNNqiuDnA0bTxBHDWvHqz6DWpXOsXGpBpHBwo-qIJQ-rFg_gnd2UgqVsmC2nlEb244Ec6kv-d2u_EPYhVasPSu7IQMc/4vi/wAbOrokcSvqPN3-Y4wVZFA/h10/h001.enwv0ZGKS2Bx-_B0NnI_XGRriUb6RsZ80cAqgd8O9i8</link>
+      <description>Which engineering values still matter in 2026, when everything in the workflow changed and little else did.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQw27UDFWbjr9tW_N-luvaqfcuy4Iu4eS00xoZ_HOoSeLU8wMYReyJ3T9rkV-BNNqiuDnA0bTxBHDWvHqz6DWpXOsXGpBpHBwo-qIJQ-rFg_gnd2UgqVsmC2nlEb244Ec6kv-d2u_EPYhVasPSu7IQMc/4vi/wAbOrokcSvqPN3-Y4wVZFA/h10/h001.enwv0ZGKS2Bx-_B0NnI_XGRriUb6RsZ80cAqgd8O9i8</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Fast Is Better Than Slow [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.biwauLeAd2Zg7_5VVe_dVMQX45jnlFWIgYh8FRgjXtvvID7GBNnHestos_ZdY_kE7MnaoEQIhXwOnOD68RXxjrlxAoF5PaIVl4y6KEu_--0zLhc4hjaygfSq7kLcqg8Wjll6uAxPc_eJUVLxVIQVrVP5NjMBwN3bEipSsRUth5g/4vi/wAbOrokcSvqPN3-Y4wVZFA/h11/h001.vdavMuFVh3II8DEptI6A3eSiMWBOMoxJ8fl-ZSk83ok</link>
+      <description>The best programmers he knew moved fast: a prototype within an hour or two of discussing a problem.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.biwauLeAd2Zg7_5VVe_dVMQX45jnlFWIgYh8FRgjXtvvID7GBNnHestos_ZdY_kE7MnaoEQIhXwOnOD68RXxjrlxAoF5PaIVl4y6KEu_--0zLhc4hjaygfSq7kLcqg8Wjll6uAxPc_eJUVLxVIQVrVP5NjMBwN3bEipSsRUth5g/4vi/wAbOrokcSvqPN3-Y4wVZFA/h11/h001.vdavMuFVh3II8DEptI6A3eSiMWBOMoxJ8fl-ZSk83ok</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Resisting Cognitive Surrender [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.6GKf8El4FQUykuxXONqNwyqHJyN0LwY0FrRir_WISBmCeBDLofQ477J298T04Dzen2vxW775KE2kkzFvjiGB2hUCz7NAN9oNu79HQRIDpZ0vYIPlV_KAL-nujR6pY5qdCm-hQcNxTGUJ5cf-_Sgs6A/4vi/wAbOrokcSvqPN3-Y4wVZFA/h14/h001.5jUbAQIezaoZuMEP3zb3FmCRRd-2D5YVlBWfCo-b7Fk</link>
+      <description>Finding the right balance of trust while working with agents.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.6GKf8El4FQUykuxXONqNwyqHJyN0LwY0FrRir_WISBmCeBDLofQ477J298T04Dzen2vxW775KE2kkzFvjiGB2hUCz7NAN9oNu79HQRIDpZ0vYIPlV_KAL-nujR6pY5qdCm-hQcNxTGUJ5cf-_Sgs6A/4vi/wAbOrokcSvqPN3-Y4wVZFA/h14/h001.5jUbAQIezaoZuMEP3zb3FmCRRd-2D5YVlBWfCo-b7Fk</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>The AI Cost Of JavaScript Frameworks [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYa8oADzTZm7XrPv6h-srH65sbyVHpo7EL0iYfqnn0YFix-7O-sai2AThIjCBcPo5xY8zC-nLt7NoVtcoj0cAunJlyrokfBI9aVv64j9E5_YJCB9yFEK3-UFIHWhLBvCY44VXe4MysvwKxt8VWNc1Xb1PlMrsH4vhYVK13P3VtfmaT704zldL9fPT7UkfNx8PAg/4vi/wAbOrokcSvqPN3-Y4wVZFA/h15/h001.p4WOtOuuP_XKCQFNJoc_r6_GkruZDo-m6rMhf9WsyE4</link>
+      <description>Where are the benchmarks behind the claim that agents make frameworks faster and code better?</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYa8oADzTZm7XrPv6h-srH65sbyVHpo7EL0iYfqnn0YFix-7O-sai2AThIjCBcPo5xY8zC-nLt7NoVtcoj0cAunJlyrokfBI9aVv64j9E5_YJCB9yFEK3-UFIHWhLBvCY44VXe4MysvwKxt8VWNc1Xb1PlMrsH4vhYVK13P3VtfmaT704zldL9fPT7UkfNx8PAg/4vi/wAbOrokcSvqPN3-Y4wVZFA/h15/h001.p4WOtOuuP_XKCQFNJoc_r6_GkruZDo-m6rMhf9WsyE4</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>How Hard Is It To Check For Whitespace? [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHMkSG94TkvWcmAMLM9PL9ZIbh436sInecUTJhOi32sQCC4Dv-Rfj7fT7SoH2nT9sopQgAoEFtnmv4V4OpKG9SYcTUpADx6lmwIQOZbt8PSSBQ0Me4aCx-tC-djM1RQ1izIJkrsL7CtHmSJ1KXhPMaZgmE7Yfog6mZt1bBJ_J31LpJoEQyhhFbl9vpWCDZrxfvw/4vi/wAbOrokcSvqPN3-Y4wVZFA/h16/h001.7K4cOASLKkU5wXDrXcsgsFj27lrqMy151q3XjOoTbK8</link>
+      <description>Guava’s whitespace matcher and a clever use of a perfect hash function.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.T-cngy-HiLjOztVyxmCjHMkSG94TkvWcmAMLM9PL9ZIbh436sInecUTJhOi32sQCC4Dv-Rfj7fT7SoH2nT9sopQgAoEFtnmv4V4OpKG9SYcTUpADx6lmwIQOZbt8PSSBQ0Me4aCx-tC-djM1RQ1izIJkrsL7CtHmSJ1KXhPMaZgmE7Yfog6mZt1bBJ_J31LpJoEQyhhFbl9vpWCDZrxfvw/4vi/wAbOrokcSvqPN3-Y4wVZFA/h16/h001.7K4cOASLKkU5wXDrXcsgsFj27lrqMy151q3XjOoTbK8</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Becoming A Better Writer [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwswLdVA-iTThAktiagOu52cwpoD6e-l_MP83wLDYRT6ryfKmLGd2F-5oRl8uT6j-8MI4-VJZsg_VAZlxK4nYy734ZNfdvI6izAjznBBHgYKApr-6gSL3NUi8YJFFdxmRMKChra3aVw-5rpvw6t93GVQ/4vi/wAbOrokcSvqPN3-Y4wVZFA/h19/h001.GrXH1Y3-l2sqNUtT_gRycOS9WVV8d1l49nW81p_2QyI</link>
+      <description>Writing is an increasingly important skill for engineering leaders; tactics for clearer, more frequent and more confident writing.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYc6Roum41tU9YvWrxTcURupr9TFTmoGO6OCTwo0MrYEwswLdVA-iTThAktiagOu52cwpoD6e-l_MP83wLDYRT6ryfKmLGd2F-5oRl8uT6j-8MI4-VJZsg_VAZlxK4nYy734ZNfdvI6izAjznBBHgYKApr-6gSL3NUi8YJFFdxmRMKChra3aVw-5rpvw6t93GVQ/4vi/wAbOrokcSvqPN3-Y4wVZFA/h19/h001.GrXH1Y3-l2sqNUtT_gRycOS9WVV8d1l49nW81p_2QyI</guid>
+      <pubDate>Sat, 07 Nov 2026 02:45:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>How To Sequence Annual Planning And Reorgs [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYeLe-jxs2LYvQM-vuSTxhWm4ks5hZyPbWppKyvb9TsXPVQLEtElSqKXdgu7d5p_4XbJla5qCZaeh8mY2Vuvm-D_XtYBYGuPk9D-FNz4pStiu4etu0cU8914S6xbpjHwYmpsDoRt44Z37fk7EzC3IdlmPqjIEzkVFVu18ObAldaq0mKRaxdjE6e6Wva8-QSQDfw/4vf/W7kAZBYMR5ysGovafRsniQ/h8/h001.3ZWgV4Lsud1rtqpuwhu4F6wKYzi78Dk1-HVGpTfC-a8</link>
+      <description>Form a planning team for each major investment area, with members from every function, to scope next year without reshuffling delivery.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.yC9eJs5Q3flddlsql05gYeLe-jxs2LYvQM-vuSTxhWm4ks5hZyPbWppKyvb9TsXPVQLEtElSqKXdgu7d5p_4XbJla5qCZaeh8mY2Vuvm-D_XtYBYGuPk9D-FNz4pStiu4etu0cU8914S6xbpjHwYmpsDoRt44Z37fk7EzC3IdlmPqjIEzkVFVu18ObAldaq0mKRaxdjE6e6Wva8-QSQDfw/4vf/W7kAZBYMR5ysGovafRsniQ/h8/h001.3ZWgV4Lsud1rtqpuwhu4F6wKYzi78Dk1-HVGpTfC-a8</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Fast And Slow Ways To Improve Your Reputation [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0nlI2N4DuGMKadU0rdUBb5GHNF1ZH5JZLIRaZhw8UE2OOwiWN8ItRaTcEAyxzaukwj3E2IsfXA-FrBYpAzfm0SiL_OKjXwSsEGTbJXIq8qO1WYvC3kkLVA_3dUwpH4eoQw1SBCVMkcqFcLr8pIEcygmG2d6n830BrVDV_A02TvMS/4vf/W7kAZBYMR5ysGovafRsniQ/h10/h001.Z1IRV3RpC_K_gsKcWYxZhfjexA_CWXmPKRGbbQcQ7Fg</link>
+      <description>You need a reputation to get important projects, and important projects to build one.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0nlI2N4DuGMKadU0rdUBb5GHNF1ZH5JZLIRaZhw8UE2OOwiWN8ItRaTcEAyxzaukwj3E2IsfXA-FrBYpAzfm0SiL_OKjXwSsEGTbJXIq8qO1WYvC3kkLVA_3dUwpH4eoQw1SBCVMkcqFcLr8pIEcygmG2d6n830BrVDV_A02TvMS/4vf/W7kAZBYMR5ysGovafRsniQ/h10/h001.Z1IRV3RpC_K_gsKcWYxZhfjexA_CWXmPKRGbbQcQ7Fg</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Hunger Beats Tenure: Advice For Junior Engineers [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.TDQMwwTUsDB62J0OSnrlnGDlMYPwcFEGl4EpLkDb-HRD4HtF_6Nu7gmo7KCFqbX2tAV3FNnJzEsm8OpM0SWuUw10jF46PoRwet3f-ddN9c213_zsRfROr5OGbFaTH8e4mH-NFtaddU3R9pH0eOTwm4Gy2Rvfxai22w-wHAjTlr1Awim7KgmPDmqIgT76cJeUAoxuM7OikX_lluGeQPVt6Q/4vf/W7kAZBYMR5ysGovafRsniQ/h11/h001.CHhupibwKJU-VjvS27DSKX_x4UWRbbYg8zTesOlUSvs</link>
+      <description>As a hiring manager at Anthropic he stopped running coding interviews; the old test was a weak predictor of success.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.TDQMwwTUsDB62J0OSnrlnGDlMYPwcFEGl4EpLkDb-HRD4HtF_6Nu7gmo7KCFqbX2tAV3FNnJzEsm8OpM0SWuUw10jF46PoRwet3f-ddN9c213_zsRfROr5OGbFaTH8e4mH-NFtaddU3R9pH0eOTwm4Gy2Rvfxai22w-wHAjTlr1Awim7KgmPDmqIgT76cJeUAoxuM7OikX_lluGeQPVt6Q/4vf/W7kAZBYMR5ysGovafRsniQ/h11/h001.CHhupibwKJU-VjvS27DSKX_x4UWRbbYg8zTesOlUSvs</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Self-Reinforcing Quality / Adopting Verification Pattern [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9CYtqLvmjSmMxWlOmhEcLoRVKMEGW4e4KYjN6FO1y-qj6EPYJgkTrf2bi-9jKgq70GOjyVUtRlN2E_YRgwbqlfC1aob7ubHbqRAHBSkPn5IGcqDfninlMR18v3LIFncr6mmegEwEF43oueR-jggQyywc/4vf/W7kAZBYMR5ysGovafRsniQ/h14/h001.5iPMeEpUvPB7seaBeZ_FKhhK9jZiMV4nEuvjyTMfwR0</link>
+      <description>Harnesses must document the verification steps they ran, rather than assume lint and checks happened.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.WjplEBHoYsVAvmS39jW9CYtqLvmjSmMxWlOmhEcLoRVKMEGW4e4KYjN6FO1y-qj6EPYJgkTrf2bi-9jKgq70GOjyVUtRlN2E_YRgwbqlfC1aob7ubHbqRAHBSkPn5IGcqDfninlMR18v3LIFncr6mmegEwEF43oueR-jggQyywc/4vf/W7kAZBYMR5ysGovafRsniQ/h14/h001.5iPMeEpUvPB7seaBeZ_FKhhK9jZiMV4nEuvjyTMfwR0</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>How DoorDash Reduced LLM Search Costs By 98% Without Losing Accuracy [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ2_9_8Gutp2DJMIJWuPHbx3t5cI6Xosj1Pddhy95dVNpNgOA48aM8xUKliEaw49lDF69JZC4poVo8xn9AnYyb_EtfPLT6ABSfe12kbXam3NfnV7lH5Z5Nca8RKZsoZ4otyVaxaemYEINccqvNGgzU3EXeYoZeD0JbYLQuHoTy3SvxgHCbshth_oZapZsfMSqT_oNgtL0g0zmTzp9JTKCGl1M82j3QdwyA-k2uwL20MFO/4vf/W7kAZBYMR5ysGovafRsniQ/h15/h001.qxqGu7nuWhU1Uf6sG_hS4BSoF3BDoD0ew0Z4efDT87I</link>
+      <description>Separating reasoning models from evidence retrieval let each improve independently and kept accuracy while cutting search cost.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ2_9_8Gutp2DJMIJWuPHbx3t5cI6Xosj1Pddhy95dVNpNgOA48aM8xUKliEaw49lDF69JZC4poVo8xn9AnYyb_EtfPLT6ABSfe12kbXam3NfnV7lH5Z5Nca8RKZsoZ4otyVaxaemYEINccqvNGgzU3EXeYoZeD0JbYLQuHoTy3SvxgHCbshth_oZapZsfMSqT_oNgtL0g0zmTzp9JTKCGl1M82j3QdwyA-k2uwL20MFO/4vf/W7kAZBYMR5ysGovafRsniQ/h15/h001.qxqGu7nuWhU1Uf6sG_hS4BSoF3BDoD0ew0Z4efDT87I</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>The Skill Of Using AI Agents Well [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0sOYEwVAzhiICFz2CovPnwO_KsDoXo-ST2cfqZ_Xh-REAvRqWpU74KL5Wk431lm-YNaPzKVg7jUH5TavFzoF4Of7UlvsYoi-sr117xcYlDKTWnVt5JsFG6OS6_0EfJVEDkjT4iBJchRzmgf1oWRkiKWAML9WaDie8879QYz_U19a1lY9gZbGCFLI6ry1hoAo5LlHt3lvgKKtWQeX3b6oVGs/4vf/W7kAZBYMR5ysGovafRsniQ/h16/h001.J7E732bWzEqHDjnEarUwvQzkZqjFBK6DMJTtBA2B_nQ</link>
+      <description>Tips and confidence levels for getting more out of Claude Code and Codex CLI.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.3a5P_SwQzY5x8USD2q4p0sOYEwVAzhiICFz2CovPnwO_KsDoXo-ST2cfqZ_Xh-REAvRqWpU74KL5Wk431lm-YNaPzKVg7jUH5TavFzoF4Of7UlvsYoi-sr117xcYlDKTWnVt5JsFG6OS6_0EfJVEDkjT4iBJchRzmgf1oWRkiKWAML9WaDie8879QYz_U19a1lY9gZbGCFLI6ry1hoAo5LlHt3lvgKKtWQeX3b6oVGs/4vf/W7kAZBYMR5ysGovafRsniQ/h16/h001.J7E732bWzEqHDjnEarUwvQzkZqjFBK6DMJTtBA2B_nQ</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Why We Sabotage Our Careers [Pointer]</title>
+      <link>https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7l9eQeHYbyfnh2Itml7uaGSR1aqZNbHcQys0jVyp2W4qeq7aO1uJ63RbKuEYzuYZcQEdoE4cYUzYIHM1T6AuVNwuBQ664WL0ifSQuIBaesTuhmRa963sRYg94q-_FAzV2pW5xC_swPgV86fWLMKXyViSOwzf2mZbBtKLvE5iHkZelvTFzPfTvTuRCPr-wiIJw/4vf/W7kAZBYMR5ysGovafRsniQ/h17/h001.k_-W9gS63LvDuJd9f6lVMRU5W_X8xEfT4GYj0SQnjAg</link>
+      <description>Self-sabotage often protects something real; Pointer’s most popular piece from the previous issue.</description>
+      <source>Pointer</source>
+      <guid isPermaLink="true">https://link.mail.beehiiv.com/ss/c/u001.Ira8ofUIq_P_lCLURPEgQ7l9eQeHYbyfnh2Itml7uaGSR1aqZNbHcQys0jVyp2W4qeq7aO1uJ63RbKuEYzuYZcQEdoE4cYUzYIHM1T6AuVNwuBQ664WL0ifSQuIBaesTuhmRa963sRYg94q-_FAzV2pW5xC_swPgV86fWLMKXyViSOwzf2mZbBtKLvE5iHkZelvTFzPfTvTuRCPr-wiIJw/4vf/W7kAZBYMR5ysGovafRsniQ/h17/h001.k_-W9gS63LvDuJd9f6lVMRU5W_X8xEfT4GYj0SQnjAg</guid>
+      <pubDate>Wed, 04 Nov 2026 02:02:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Vote for CSS features in Interop 2027 [Vote]</title>
+      <link>https://interop-rank.fxdx.dev/</link>
+      
+      <source>Fireship, Bytes</source>
+      <guid isPermaLink="true">https://interop-rank.fxdx.dev/</guid>
+      <pubDate>Wed, 04 Nov 2026 06:27:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Nasdaq enters correction [Read (paywalled preview)]</title>
+      <link>https://open.substack.com/pub/theaicorner1/p/nasdaq-correction-where-to-invest-tech-ai-2026</link>
+      
+      <source>The AI Corner</source>
+      <guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/nasdaq-correction-where-to-invest-tech-ai-2026</guid>
+      <pubDate>Fri, 06 Nov 2026 10:53:00 +0600</pubDate>
+    </item>
+  </channel>
+</rss>

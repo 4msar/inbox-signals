@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Inbox Signal — Week of 9–16 Nov 2026</title>
+<link>Inbox-Signal-2026-11-16.html</link>
+<description>Weekly digest of linked items from the newsletter inbox, 9–16 November 2026.</description>
+<language>en</language>
+<pubDate>Mon, 16 Nov 2026 12:30:00 +0600</pubDate>
+<lastBuildDate>Mon, 16 Nov 2026 12:30:00 +0600</lastBuildDate>
+<item>
+<title>Code review has become a stage: the job is now to classify, route and rebalance review</title>
+<link>https://open.substack.com/pub/devinterrupted/p/all-the-code-review-is-a-stage</link>
+<description>In LinearB’s benchmark of 8.1M PRs, AI-generated PRs merge at 32.7% against 84.4% for human PRs, and agentic PRs wait 5.3 times longer for a reviewer.</description>
+<source>Dev Interrupted</source>
+<guid isPermaLink="true">https://open.substack.com/pub/devinterrupted/p/all-the-code-review-is-a-stage</guid>
+<pubDate>Fri, 13 Nov 2026 03:12:00 +0600</pubDate>
+</item>
+<item>
+<title>incident.io cut AI spend per developer from $4,500 to $1,600 a month while shipping more PRs</title>
+<link>https://open.substack.com/pub/pragmaticengineer/p/the-pulse-details-of-incidentios</link>
+<description>Spend runs near $1.6M for the year, peaking above $300K in July, roughly 80% Claude and 20% Cursor.</description>
+<source>The Pragmatic Engineer</source>
+<guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/the-pulse-details-of-incidentios</guid>
+<pubDate>Fri, 13 Nov 2026 01:07:00 +0600</pubDate>
+</item>
+<item>
+<title>Buy hosted agents; build only the rules file and the gates</title>
+<link>https://open.substack.com/pub/theaicorner1/p/ai-native-software-factory-small-teams</link>
+<description>The newsletter cites Bloomberg on Uber, where more than 70% of PRs come from agents and review time rose from about 3 hours in 2024 to about 9 hours in 2026.</description>
+<source>The AI Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/ai-native-software-factory-small-teams</guid>
+<pubDate>Thu, 12 Nov 2026 20:50:00 +0600</pubDate>
+</item>
+<item>
+<title>LinkedIn’s AI reviewer runs parallel subagents across 40,000+ PRs a week</title>
+<link>https://open.substack.com/pub/bytebytego/p/how-linkedin-uses-ai-to-review-40000</link>
+<description>The final design uses independent parallel subagents, a merge step, a verification step, and layered rules for company, repo and PR.</description>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/how-linkedin-uses-ai-to-review-40000</guid>
+<pubDate>Mon, 09 Nov 2026 22:35:00 +0600</pubDate>
+</item>
+<item>
+<title>A three-month rewrite took nine months, and Brooks’s Law explains why</title>
+<link>https://open.substack.com/pub/techworldwithmilan/p/we-promised-three-months-it-took</link>
+<description>Milanović describes a rewrite that hit 140 special cases, added five engineers and ten agents, built 40 microservices, and broke the biggest customer’s import in month nine.</description>
+<source>Tech World With Milan</source>
+<guid isPermaLink="true">https://open.substack.com/pub/techworldwithmilan/p/we-promised-three-months-it-took</guid>
+<pubDate>Thu, 12 Nov 2026 22:06:00 +0600</pubDate>
+</item>
+<item>
+<title>Nvidia’s board pushed Jensen Huang out within days, despite his founder control</title>
+<link>https://open.substack.com/pub/theaicorner1/p/nvidia-without-jensen-huang-founder-control-playbook-2026</link>
+<description>The board opened a probe on 8 November, and Huang resigned as CEO and director on 12 November.</description>
+<source>The AI Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/nvidia-without-jensen-huang-founder-control-playbook-2026</guid>
+<pubDate>Sun, 15 Nov 2026 00:57:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic opens its IPO roadshow with a $70–$78 price range, pricing on 18 November</title>
+<link>https://open.substack.com/pub/aidisruption/p/anthropic-ipo-roadshow-begins-despite</link>
+<description>The post gives the range, pricing on 18 November and a Nasdaq listing as ANT on 19 November.</description>
+<source>Meng Li (AI Disruption)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/aidisruption/p/anthropic-ipo-roadshow-begins-despite</guid>
+<pubDate>Wed, 11 Nov 2026 19:55:00 +0600</pubDate>
+</item>
+<item>
+<title>Gemini 4 Hydrogen targets fast, cheap agent work at $1.50 in and $7.50 out per million tokens</title>
+<link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/</link>
+<description>TLDR AI reports a score of 51 on the Artificial Analysis Intelligence Index, ahead of Gemini 4 Argon.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/</guid>
+<pubDate>Fri, 13 Nov 2026 21:08:00 +0600</pubDate>
+</item>
+<item>
+<title>Claude Fable 5.2 and Mythos 5.2 launch with up to 30% faster output</title>
+<link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
+<description>Both models share one architecture, with gains in coding, reasoning and vision.</description>
+<source>TLDR AI / TLDR Dev</source>
+<guid isPermaLink="true">https://www.anthropic.com/claude-fable-and-mythos-5-2</guid>
+<pubDate>Tue, 10 Nov 2026 20:57:00 +0600</pubDate>
+</item>
+<item>
+<title>OpenAI reportedly raises $11B at a $1.25T valuation, short of its earlier target</title>
+<link>https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/</link>
+<description>TechCrunch reports the round could reach $20B before it closes, and that it falls short of the $30B the company had sought, amid valuation uncertainty.</description>
+<source>TLDR IT / TechCrunch</source>
+<guid isPermaLink="true">https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/</guid>
+<pubDate>Mon, 09 Nov 2026 19:46:00 +0600</pubDate>
+</item>
+<item>
+<title>Horizon3’s AI hacker took 14 minutes 25 seconds to own a patched, Defender-protected lab</title>
+<link>https://open.substack.com/pub/theaicorner1/p/horizon3-nodezero-ai-hacker-frontier-lab</link>
+<description>NodeZero compromised the GOAD lab, with Defender on every host, with no humans involved.</description>
+<source>The AI Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/theaicorner1/p/horizon3-nodezero-ai-hacker-frontier-lab</guid>
+<pubDate>Sat, 14 Nov 2026 03:32:00 +0600</pubDate>
+</item>
+<item>
+<title>Gartner: AI creates 10.6M jobs and eliminates 8.9M by 2030</title>
+<link>https://www.computerworld.com/article/4247895/ai-related-job-creation-to-outpace-losses-by-2030-says-gartner.html</link>
+<description>The forecast excludes China and India.</description>
+<source>Gartner via TLDR IT</source>
+<guid isPermaLink="true">https://www.computerworld.com/article/4247895/ai-related-job-creation-to-outpace-losses-by-2030-says-gartner.html</guid>
+<pubDate>Fri, 13 Nov 2026 19:47:00 +0600</pubDate>
+</item>
+<item>
+<title>Ramp: AI token spending grew only 1.5% across August and September</title>
+<link>https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/</link>
+<description>Ramp’s transaction data shows AI token spend flat through the two months despite rising usage, then growing again in October.</description>
+<source>Ramp via TLDR IT</source>
+<guid isPermaLink="true">https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/</guid>
+<pubDate>Mon, 09 Nov 2026 19:46:00 +0600</pubDate>
+</item>
+<item>
+<title>OpenAI’s GPT-6 Cyber produced 948 Linux kernel findings, and the two sources disagree on what they are</title>
+<link>https://open.substack.com/pub/devopsbulletin/p/digest-240-948-linux-root-exploits</link>
+<description>The Batch counts 2,308 candidates, 1,724 confirmed, 1,169 exploits and 948 patches, at about $1,280 per finding.</description>
+<source>DevOps Bulletin / The Batch</source>
+<guid isPermaLink="true">https://open.substack.com/pub/devopsbulletin/p/digest-240-948-linux-root-exploits</guid>
+<pubDate>Fri, 13 Nov 2026 22:33:00 +0600</pubDate>
+</item>
+<item>
+<title>Runway’s Praxis-1 is an open-weight 27B robotics model under Apache 2.0</title>
+<link>https://runway.com/news/company-news/praxis-1-is-now-available</link>
+<description>Runway reports 46.2% success on NVIDIA’s RoboLab-120 benchmark across 1,200 episodes, and says the model supports full and LoRA fine-tuning on NVIDIA hardware.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://runway.com/news/company-news/praxis-1-is-now-available</guid>
+<pubDate>Thu, 12 Nov 2026 21:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Most decisions are two-way doors, and treating them as one-way kills velocity</title>
+<link>https://open.substack.com/pub/theengineeringmanager/p/one-way-and-two-way-doors</link>
+<description>Stanier cites Bezos’s Type 1 and Type 2 framing and warns about one-way doors disguised as two-way ones, such as public APIs, data models and customer commitments.</description>
+<source>The Engineering Manager (James Stanier)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/theengineeringmanager/p/one-way-and-two-way-doors</guid>
+<pubDate>Fri, 13 Nov 2026 23:32:00 +0600</pubDate>
+</item>
+<item>
+<title>Architects become the bottleneck when teams learn that asking the architect is the safe route</title>
+<link>https://open.substack.com/pub/softwarearchitectureguild/p/avoid-becoming-a-bottleneck</link>
+<description>Each request seems reasonable, but together they form an unofficial architecture gate.</description>
+<source>Software Architecture Guild (Ilya Hardzeenka)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/softwarearchitectureguild/p/avoid-becoming-a-bottleneck</guid>
+<pubDate>Mon, 16 Nov 2026 12:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Correctness comes from types and realistic workloads, not from more unit tests</title>
+<link>https://open.substack.com/pub/pragmaticengineer/p/software-correctness</link>
+<description>Sean Allen of Antithesis argues that sum types with exhaustive matching turn a forgotten case into a compile error.</description>
+<source>The Pragmatic Engineer</source>
+<guid isPermaLink="true">https://open.substack.com/pub/pragmaticengineer/p/software-correctness</guid>
+<pubDate>Tue, 10 Nov 2026 21:05:00 +0600</pubDate>
+</item>
+<item>
+<title>Managed personal agents hand too much power to firms that may not be trustworthy</title>
+<link>https://open.substack.com/pub/carlytaylor/p/when-giving-an-agent-your-credit</link>
+<description>Grok Bot launched at $300 a month, then dropped to $30, and its quotas were halved.</description>
+<source>Good at Business (Carly Taylor)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/carlytaylor/p/when-giving-an-agent-your-credit</guid>
+<pubDate>Thu, 12 Nov 2026 21:45:00 +0600</pubDate>
+</item>
+<item>
+<title>About one in four two-founder teams lost a co-founder within four years</title>
+<link>https://open.substack.com/pub/thefoundercorner/p/one-signature-could-save-you-45-of</link>
+<description>Carta tracked 13,133 founders from US two-founder teams (2015–2024), and puts the 2017 cohort’s departure rate at 24.1%.</description>
+<source>The Founders Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/one-signature-could-save-you-45-of</guid>
+<pubDate>Wed, 11 Nov 2026 15:02:00 +0600</pubDate>
+</item>
+<item>
+<title>Two $15K hires turn a default-alive startup into a default-dead one by month 16</title>
+<link>https://open.substack.com/pub/thefoundercorner/p/your-startup-has-15-months-or-does</link>
+<description>The example company has $2M cash, $170K monthly expenses and $40K monthly revenue growing 7% a month, giving 15.4 months of runway.</description>
+<source>The Founders Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/your-startup-has-15-months-or-does</guid>
+<pubDate>Mon, 09 Nov 2026 15:03:00 +0600</pubDate>
+</item>
+<item>
+<title>People read the same leadership statement as either an audit or an aspiration</title>
+<link>https://open.substack.com/pub/cutlefish/p/tbm-451-what-we-learn-to-notice-and</link>
+<description>Some people compare what leaders say with actual incentives and feel uncomfortable.</description>
+<source>The Beautiful Mess (John Cutler)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/cutlefish/p/tbm-451-what-we-learn-to-notice-and</guid>
+<pubDate>Thu, 12 Nov 2026 14:08:00 +0600</pubDate>
+</item>
+<item>
+<title>The gap between elite and median teams keeps widening: 8x, then 9x, then 10x</title>
+<link>https://open.substack.com/pub/refactoring/p/whats-next-for-refactoring</link>
+<description>Quarterly research shows elite teams’ throughput advantage grew from 8x in Q1 to 9x in Q2 and 10x in Q3.</description>
+<source>Refactoring (Luca Rossi)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/refactoring/p/whats-next-for-refactoring</guid>
+<pubDate>Wed, 11 Nov 2026 17:11:00 +0600</pubDate>
+</item>
+<item>
+<title>Resend moved its email API from Node to Go in seven weeks</title>
+<link>https://resend.com/blog/migrating-our-email-api-to-go</link>
+<description>At a 50% rollout, median latency fell from 58 ms to 31 ms and memory per task from about 1.3 GB to 180 MB.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://resend.com/blog/migrating-our-email-api-to-go</guid>
+<pubDate>Fri, 13 Nov 2026 18:50:00 +0600</pubDate>
+</item>
+<item>
+<title>Cloudflare’s targeted DNS zone builds cut peak memory from 79 GiB to 12 GiB</title>
+<link>https://blog.cloudflare.com/dns-targeted-zone-builds/</link>
+<description>The same change took the median build from 7.7 seconds to 3.3 seconds.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://blog.cloudflare.com/dns-targeted-zone-builds/</guid>
+<pubDate>Mon, 09 Nov 2026 18:45:00 +0600</pubDate>
+</item>
+<item>
+<title>Apache HTTP Server has a remote-code-execution race; upgrade to 2.4.71 or disable HTTP/2</title>
+<link>https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</link>
+<description>The flaw is a race in assign_headers() in the HTTP/2 module.</description>
+<source>TLDR DevOps / Wiz</source>
+<guid isPermaLink="true">https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</guid>
+<pubDate>Fri, 13 Nov 2026 18:43:00 +0600</pubDate>
+</item>
+<item>
+<title>GitHub used Copilot agents to port the Copilot runtime from TypeScript to Rust</title>
+<link>https://open.substack.com/pub/bytebytego/p/how-github-used-ai-to-port-copilot</link>
+<description>The body says 430K lines of TypeScript moved, at about $120K of AI tokens (136B tokens); the intro says nearly 800K lines.</description>
+<source>ByteByteGo</source>
+<guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/how-github-used-ai-to-port-copilot</guid>
+<pubDate>Tue, 10 Nov 2026 22:36:00 +0600</pubDate>
+</item>
+<item>
+<title>An independent threat model found 30 Linkerd threats, and only one was a software bug</title>
+<link>https://linkerd.io/2026/11/10/what-an-independent-threat-model-found-in-linkerd-and-what-you-should-do-next/</link>
+<description>28 of the 30 threats are rated medium or high, and most come from default and configuration choices.</description>
+<source>TLDR DevOps</source>
+<guid isPermaLink="true">https://linkerd.io/2026/11/10/what-an-independent-threat-model-found-in-linkerd-and-what-you-should-do-next/</guid>
+<pubDate>Fri, 13 Nov 2026 18:43:00 +0600</pubDate>
+</item>
+<item>
+<title>X rebuilt its web app as one server, in under six months</title>
+<link>https://blog.x.com/en/engineering/rebuilding-the-global-town-square-from-scratch</link>
+<description>One Fastify and React app with streaming SSR replaces three servers.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://blog.x.com/en/engineering/rebuilding-the-global-town-square-from-scratch</guid>
+<pubDate>Mon, 09 Nov 2026 18:53:00 +0600</pubDate>
+</item>
+<item>
+<title>Google’s Gemini Decisions API evaluates up to 1,000 yes/no or rubric questions in one pass</title>
+<link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
+<description>The newsletter gives the price as $0.10 per two million input tokens, with outputs free.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</guid>
+<pubDate>Thu, 12 Nov 2026 21:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Dropbox’s scoped agent tasks delivered 22 accessibility fixes and cleared 53 test cleanups in a week</title>
+<link>https://dropbox.tech/machine-learning/how-aiassisted-development-helped-us-build-the-new-dropbox-experience</link>
+<description>Engineers reviewed the agent output.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://dropbox.tech/machine-learning/how-aiassisted-development-helped-us-build-the-new-dropbox-experience</guid>
+<pubDate>Tue, 10 Nov 2026 18:38:00 +0600</pubDate>
+</item>
+<item>
+<title>NVIDIA’s NeMo case: malformed agent tool calls fell from 142 to zero at Dassault</title>
+<link>https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/</link>
+<description>The evaluation score rose 28% and each run made 35% fewer tool calls, according to NVIDIA’s case study.</description>
+<source>TLDR Dev</source>
+<guid isPermaLink="true">https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/</guid>
+<pubDate>Mon, 09 Nov 2026 18:53:00 +0600</pubDate>
+</item>
+<item>
+<title>No model escaped the VM-host boundary in Perplexity’s SPACE tests, but several bypassed network controls</title>
+<link>https://www.perplexity.ai/hub/blog/escaping-space-part-ii</link>
+<description>Twelve models were tested against an agent sandbox.</description>
+<source>TLDR AI</source>
+<guid isPermaLink="true">https://www.perplexity.ai/hub/blog/escaping-space-part-ii</guid>
+<pubDate>Thu, 12 Nov 2026 21:10:00 +0600</pubDate>
+</item>
+<item>
+<title>Agent debugging needs OpenTelemetry traces, and the key metric is cost per successful task</title>
+<link>https://open.substack.com/pub/systemdesignone/p/ai-agent-observability-opentelemetry</link>
+<description>The guest post treats the whole agent harness (reasoning loop, memory, evals, guardrails and human-in-the-loop) as the unit to trace.</description>
+<source>System Design Newsletter (Neo Kim)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/ai-agent-observability-opentelemetry</guid>
+<pubDate>Sat, 14 Nov 2026 17:59:00 +0600</pubDate>
+</item>
+<item>
+<title>Agents opened more than 40% of GitHub PRs in September, up from 17% in March</title>
+<link>https://open.substack.com/pub/bytebytego/p/the-roundup-by-bytebytego</link>
+<description>The figure comes from GitHub’s Octoverse, as relayed by ByteByteGo, which says more than 40% of September PRs started with agents.</description>
+<source>ByteByteGo Roundup</source>
+<guid isPermaLink="true">https://open.substack.com/pub/bytebytego/p/the-roundup-by-bytebytego</guid>
+<pubDate>Wed, 11 Nov 2026 22:36:00 +0600</pubDate>
+</item>
+<item>
+<title>Partial failure: losing 2 of 10 cache nodes can double database load and cascade</title>
+<link>https://open.substack.com/pub/designgurus/p/10-distributed-systems-failure-scenarios</link>
+<description>The preview covers partial failure, split-brain and cascading failure, with defences such as idempotency keys, the outbox pattern, sagas, quorums, fencing tokens and circuit breakers.</description>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/10-distributed-systems-failure-scenarios</guid>
+<pubDate>Fri, 13 Nov 2026 17:46:00 +0600</pubDate>
+</item>
+<item>
+<title>Idempotency keys alone don’t give exactly-once payments</title>
+<link>https://open.substack.com/pub/designgurus/p/how-to-prevent-double-charges-3-patterns</link>
+<description>The post treats exactly-once as a semantic achieved with three patterns: idempotency keys, deduplication and a transactional outbox.</description>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/how-to-prevent-double-charges-3-patterns</guid>
+<pubDate>Wed, 11 Nov 2026 23:12:00 +0600</pubDate>
+</item>
+<item>
+<title>Deploying is not releasing: blast radius, detection and rollback decide the pattern</title>
+<link>https://open.substack.com/pub/designgurus/p/top-10-deployment-patterns-every</link>
+<description>The post frames the choice around three questions.</description>
+<source>System Design Nuggets</source>
+<guid isPermaLink="true">https://open.substack.com/pub/designgurus/p/top-10-deployment-patterns-every</guid>
+<pubDate>Tue, 10 Nov 2026 13:43:00 +0600</pubDate>
+</item>
+<item>
+<title>Continuous batching and PagedAttention are the main levers for LLM inference cost</title>
+<link>https://open.substack.com/pub/systemdesignone/p/how-to-optimize-llm-inference</link>
+<description>Iteration-level scheduling, from Orca and vLLM, lets batches refill as requests finish.</description>
+<source>System Design Newsletter (Neo Kim)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/systemdesignone/p/how-to-optimize-llm-inference</guid>
+<pubDate>Mon, 09 Nov 2026 16:36:00 +0600</pubDate>
+</item>
+<item>
+<title>Shield AI is buying Echodyne for $5.3B, with $500M tied to targets</title>
+<link>https://open.substack.com/pub/thefoundercorner/p/nvidia-drops-30-anthropic-ipo-could</link>
+<description>$4.8B is paid upfront and $500M depends on milestones.</description>
+<source>The Founders Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thefoundercorner/p/nvidia-drops-30-anthropic-ipo-could</guid>
+<pubDate>Sat, 14 Nov 2026 16:01:00 +0600</pubDate>
+</item>
+<item>
+<title>Horizon3 went from $1M ARR in September 2021 to over $100M in October 2026</title>
+<link>https://open.substack.com/pub/thevccorner/p/horizon3-100m-arr-series-e-ai-lab-playbook</link>
+<description>Its figures show 95% gross and 125% net retention, with about 80% of the first 3,000 customers coming through MSSPs.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/horizon3-100m-arr-series-e-ai-lab-playbook</guid>
+<pubDate>Sat, 14 Nov 2026 04:13:00 +0600</pubDate>
+</item>
+<item>
+<title>Of 222 funded pitch decks, 121 belong to pre-seed or seed companies</title>
+<link>https://open.substack.com/pub/thevccorner/p/startup-pitch-deck-examples-database</link>
+<description>Those companies raised $117B in total.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/startup-pitch-deck-examples-database</guid>
+<pubDate>Wed, 11 Nov 2026 23:30:00 +0600</pubDate>
+</item>
+<item>
+<title>The one-line VC method overprices a $4M seed by 2.9 times</title>
+<link>https://open.substack.com/pub/thevccorner/p/the-vc-method-2026-how-investors</link>
+<description>The naive method gives $38.6M pre-money, but once later rounds dilute the stake the same investment is worth $13.2M.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/the-vc-method-2026-how-investors</guid>
+<pubDate>Tue, 10 Nov 2026 00:52:00 +0600</pubDate>
+</item>
+<item>
+<title>A data room has 71 documents in three tiers, with 43 needed for confirmatory diligence</title>
+<link>https://open.substack.com/pub/thevccorner/p/startup-data-room-template-notion-2026</link>
+<description>The tiers are 4 first-look, 24 partner diligence and 43 confirmatory documents.</description>
+<source>The VC Corner</source>
+<guid isPermaLink="true">https://open.substack.com/pub/thevccorner/p/startup-data-room-template-notion-2026</guid>
+<pubDate>Tue, 10 Nov 2026 20:45:00 +0600</pubDate>
+</item>
+<item>
+<title>LinkedIn comment outreach booked 321 calls in two months, according to the vendor</title>
+<link>https://needle.app/blog/how-we-booked-321-calls-linkedin-outreach</link>
+<description>Prospects who had commented on a target’s post replied 34.2% of the time, against 9.9% for company-page followers, in a two-week test of 2,253 prospects.</description>
+<source>Needle (via TLDR Founders)</source>
+<guid isPermaLink="true">https://needle.app/blog/how-we-booked-321-calls-linkedin-outreach</guid>
+<pubDate>Fri, 13 Nov 2026 19:41:00 +0600</pubDate>
+</item>
+<item>
+<title>The EU’s Digital Fairness Act proposal would ban dark patterns and hard-to-cancel subscriptions</title>
+<link>https://www.engadget.com/2313329/europe-wants-to-ban-dark-patterns-in-apps-and-loot-boxes-for-minors/</link>
+<description>The proposal allows fines up to 6% of global revenue, and gives the Commission direct enforcement powers.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://www.engadget.com/2313329/europe-wants-to-ban-dark-patterns-in-apps-and-loot-boxes-for-minors/</guid>
+<pubDate>Fri, 13 Nov 2026 19:35:00 +0600</pubDate>
+</item>
+<item>
+<title>Paired CSS system colours can fail contrast: HighlightText on Highlight reaches 1.98:1</title>
+<link>https://www.aaron-gustafson.com/notebook/system-colors-need-to-work-together/</link>
+<description>In Chrome on Android dark mode, that pair reaches only 1.98:1 contrast.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://www.aaron-gustafson.com/notebook/system-colors-need-to-work-together/</guid>
+<pubDate>Fri, 13 Nov 2026 19:35:00 +0600</pubDate>
+</item>
+<item>
+<title>In a 20-person trial, AI moderators drew less depth than human moderators</title>
+<link>https://measuringu.com/do-participants-provide-the-same-depth-of-insight-to-human-and-ai-moderators/</link>
+<description>Human moderators averaged 6.9 of 8 themes and the AI moderator 5.0.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://measuringu.com/do-participants-provide-the-same-depth-of-insight-to-human-and-ai-moderators/</guid>
+<pubDate>Fri, 13 Nov 2026 19:35:00 +0600</pubDate>
+</item>
+<item>
+<title>Touch beat trackpad on laptops in one small test, 1.39 s against 1.74 s</title>
+<link>https://www.tannerchristensen.com/blog/when-touch-makes-sense-laptop/</link>
+<description>Touch averaged 1.39 seconds against 1.74 for the trackpad across six tasks.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://www.tannerchristensen.com/blog/when-touch-makes-sense-laptop/</guid>
+<pubDate>Wed, 11 Nov 2026 19:34:00 +0600</pubDate>
+</item>
+<item>
+<title>Accessible LLM chat: announce the finished answer once, not every streamed token</title>
+<link>https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/</link>
+<description>The guidance is a single live region after streaming, skip links and Control+F6 for moving between regions.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/</guid>
+<pubDate>Wed, 11 Nov 2026 19:34:00 +0600</pubDate>
+</item>
+<item>
+<title>GitHub’s pull-request overview redesign puts merge readiness at the top</title>
+<link>https://ux-news.com/github-pull-request-overview-redesign/</link>
+<description>The redesign is opt-in as a public preview from 5 November.</description>
+<source>TLDR Design</source>
+<guid isPermaLink="true">https://ux-news.com/github-pull-request-overview-redesign/</guid>
+<pubDate>Tue, 10 Nov 2026 19:32:00 +0600</pubDate>
+</item>
+<item>
+<title>Conversational AI swaps feel like redesigns, and users’ expectations move with them</title>
+<link>https://jakobnielsenphd.substack.com/p/user-expectations</link>
+<description>Nielsen’s 39-minute essay sets out seven principles and 37 guidelines.</description>
+<source>Jakob Nielsen</source>
+<guid isPermaLink="true">https://jakobnielsenphd.substack.com/p/user-expectations</guid>
+<pubDate>Mon, 09 Nov 2026 19:35:00 +0600</pubDate>
+</item>
+<item>
+<title>Copy the shape of outliers, not their details</title>
+<link>https://open.substack.com/pub/alifeengineered/p/copy-the-shape</link>
+<description>Huynh’s argument is that outperformers reveal what works, so copy the structure and fill in your own examples rather than the scripts.</description>
+<source>A Life Engineered (Steve Huynh)</source>
+<guid isPermaLink="true">https://open.substack.com/pub/alifeengineered/p/copy-the-shape</guid>
+<pubDate>Wed, 11 Nov 2026 19:15:00 +0600</pubDate>
+</item>
+<item>
+<title>Microsoft 365 outage on 12 November</title>
+<link>https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531</link>
+<description>Email and Intune were disrupted across Microsoft 365, and Microsoft was still working on the fix at the time of writing, per The Register.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531</guid>
+<pubDate>Fri, 13 Nov 2026 19:47:00 +0600</pubDate>
+</item>
+<item>
+<title>Yandex restores 97% of customer data</title>
+<link>https://www.datacenterdynamics.com/en/news/yandex-restores-97-of-customer-data-after-drone-attacks-the-rest-is-permanently-lost/</link>
+<description>About 97% of affected data came back after October drone strikes on three data centres.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://www.datacenterdynamics.com/en/news/yandex-restores-97-of-customer-data-after-drone-attacks-the-rest-is-permanently-lost/</guid>
+<pubDate>Thu, 12 Nov 2026 19:47:00 +0600</pubDate>
+</item>
+<item>
+<title>Anthropic adds up to $4.3B of Microsoft cloud compute</title>
+<link>https://www.datacenterdynamics.com/en/news/anthropic-signs-another-43bn-in-compute-agreements-with-microsoft/</link>
+<description>Expanded agreements ahead of its planned IPO, per TLDR IT and Data Center Dynamics.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://www.datacenterdynamics.com/en/news/anthropic-signs-another-43bn-in-compute-agreements-with-microsoft/</guid>
+<pubDate>Thu, 12 Nov 2026 19:47:00 +0600</pubDate>
+</item>
+<item>
+<title>Google announces a $17B Cheyenne data-centre campus</title>
+<link>https://www.datacenterdynamics.com/en/news/google-announces-17bn-data-center-campus-in-cheyenne-wyoming/</link>
+<description>It takes over a Crusoe-developed campus, using gas fuel cells, carbon capture and air cooling.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://www.datacenterdynamics.com/en/news/google-announces-17bn-data-center-campus-in-cheyenne-wyoming/</guid>
+<pubDate>Mon, 09 Nov 2026 19:46:00 +0600</pubDate>
+</item>
+<item>
+<title>Adobe opens Creative Cloud to third-party AI assistants</title>
+<link>https://www.computerworld.com/article/4247247/adobe-opens-creative-cloud-apps-to-third-party-ai-assistants.html</link>
+<description>ChatGPT and Claude would edit Photoshop, Illustrator, Premiere and After Effects through MCP.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://www.computerworld.com/article/4247247/adobe-opens-creative-cloud-apps-to-third-party-ai-assistants.html</guid>
+<pubDate>Thu, 12 Nov 2026 19:47:00 +0600</pubDate>
+</item>
+<item>
+<title>Gemini in Gmail reaches more Workspace users</title>
+<link>https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html</link>
+<description>Thread summaries and Help me write roll out on by default for all Workspace users aged 18 and over, starting 10 November.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html</guid>
+<pubDate>Wed, 11 Nov 2026 19:47:00 +0600</pubDate>
+</item>
+<item>
+<title>Outlook rejects some legitimate email</title>
+<link>https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428</link>
+<description>SPF and DMARC enforcement is bouncing real messages, per The Register.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428</guid>
+<pubDate>Tue, 10 Nov 2026 19:46:00 +0600</pubDate>
+</item>
+<item>
+<title>Fly.io patched its fleet over 10 hours</title>
+<link>https://fly.io/blog/well-that-wasnt-fun/</link>
+<description>A Linux kernel flaw let guest VMs read host memory.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://fly.io/blog/well-that-wasnt-fun/</guid>
+<pubDate>Mon, 09 Nov 2026 18:45:00 +0600</pubDate>
+</item>
+<item>
+<title>Rust 1.100.0 is stable</title>
+<link>https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</link>
+<description>It stabilises the never type and Allocator and DropGuard APIs, and Cargo adds unused-dependency reporting.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</guid>
+<pubDate>Fri, 13 Nov 2026 17:59:00 +0600</pubDate>
+</item>
+<item>
+<title>Chrome’s Modern Web Guidance 1.0</title>
+<link>https://developer.chrome.com/blog/modern-web-guidance-v1</link>
+<description>Skills that embed web-platform expertise and browser compatibility data into coding agents.</description>
+<source>Quick hit</source>
+<guid isPermaLink="true">https://developer.chrome.com/blog/modern-web-guidance-v1</guid>
+<pubDate>Wed, 11 Nov 2026 18:00:00 +0600</pubDate>
+</item>
+</channel>
+</rss>
